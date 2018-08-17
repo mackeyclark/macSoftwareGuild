@@ -29,22 +29,23 @@ public class GuseeMeMore {
         
         System.out.println("Your guess: " + userNumber);
         
-        if(userNumber == numberPicked){
-            System.out.println("Uh wow, yeah, you got it.");
-            
-        }else if(userNumber > numberPicked){
-            System.out.print("Ah, too high, try again.");
-            userGuess = userInt.nextLine();
-            
-        }else{
-            System.out.print("Ah, too low, try again.");
+        while(userNumber < numberPicked){
+            System.out.print("Nope - too low. Try again: ");
             userGuess = userInt.nextLine();
         
-        /*else if(userNumber > numberPicked){
-            System.out.println("Ha! Too high, I picked " + numberPicked + "! you owe me $20!");
+            userNumber = Integer.parseInt(userGuess);
             
-        } else{
-            System.out.println("Sorry, too low, I picked " + numberPicked + "! you owe me $20!");*/
+        }
+        
+        while(userNumber > numberPicked){
+            System.out.print("Nope - too high. Try again: ");
+            userGuess = userInt.nextLine();
+        
+            userNumber = Integer.parseInt(userGuess);
+        }
+        
+                if(userNumber == numberPicked){
+            System.out.println("Uh wow, yeah, you got it.");
             
         }
     }
