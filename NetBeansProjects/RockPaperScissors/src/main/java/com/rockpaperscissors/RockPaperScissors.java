@@ -19,16 +19,17 @@ public class RockPaperScissors {
         Scanner userInput = new Scanner(System.in);
         Random randomNumber = new Random();
         
-        int rock = 1;
-        int paper = 2;
-        int scissors = 3;
+        final int rock = 1;
+        final int paper = 2;
+        final int scissors = 3;
+        
         int userWins = 0;
         int cPUWins = 0;
         
         System.out.print("How many games of Ro-Sham-Bo do you want to play? ");
         int roundsDesired = userInput.nextInt();
         
-        if(roundsDesired <= 10){
+        if(roundsDesired <= 10 && roundsDesired >=0){
             
         for(int i = 0; i < roundsDesired; i++) {
         
@@ -37,12 +38,13 @@ public class RockPaperScissors {
         
         int randomHand = randomNumber.nextInt(3) + 1;
         
+            if(userHand == randomHand){
+                System.out.println("Its a tie!");
+            }
+        
             if(randomHand == rock){
-            
-                if(userHand == rock){
-                    System.out.println("Its a tie!");
                 
-                }else if(userHand == scissors){
+                if(userHand == scissors){
                     System.out.println("You lose this round!");
                     cPUWins++;
                 
@@ -54,27 +56,21 @@ public class RockPaperScissors {
             }
         
             if(randomHand == paper){
-            
-                if(userHand == paper){
-                    System.out.println("Its a tie!");
                 
-                }else if(userHand == rock){
+                if(userHand == rock){
                     System.out.println("You lose this round!");
                     cPUWins++;
                 
                 }else if(userHand == scissors){
                     System.out.println("You win this time!");
-                        userWins++;
+                    userWins++;
                 
                 }
             }
         
             if(randomHand == scissors){
-            
-                if(userHand == scissors){
-                    System.out.println("Its a tie!");
                 
-                }else if(userHand == paper){
+                if(userHand == paper){
                     System.out.println("You lose this round!");
                     cPUWins++;
                 
@@ -86,7 +82,7 @@ public class RockPaperScissors {
             }
         }
         
-            if(userWins == cPUWins){
+           if(userWins == cPUWins){
                 System.out.println("Draw game :T");
             
             }
@@ -103,6 +99,7 @@ public class RockPaperScissors {
             System.out.println("I don't wanna play that many games!");
         }
         
-    }
+        
     
+    }
 }
