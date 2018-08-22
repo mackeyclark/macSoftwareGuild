@@ -16,6 +16,21 @@ public class RockPaperScissors {
     
     public static void main(String[] args) {
         
+        String playAgain;
+        Scanner userInput = new Scanner(System.in);
+        
+        do{
+            roShamBo();
+            System.out.print("Woud you like to play again? (y/n) ");
+            playAgain = userInput.next();
+            
+        }while(playAgain.equalsIgnoreCase("y"));
+        System.out.println("Thanks for playing!");
+        
+    }
+        
+        public static void roShamBo(){
+        
         Scanner userInput = new Scanner(System.in);
         Random randomNumber = new Random();
         

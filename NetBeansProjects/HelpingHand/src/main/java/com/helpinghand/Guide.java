@@ -19,7 +19,7 @@ private static final ArrayList<Integer> breedPercentageArrayList = new ArrayList
 
     public static void main(String[] args) {
 
-       final Scanner scanner = new Scanner(System.in);
+      final Scanner scanner = new Scanner(System.in);
       System.out.print("What is your dogs name?: ");
       final String userDogName = scanner.nextLine();
 
