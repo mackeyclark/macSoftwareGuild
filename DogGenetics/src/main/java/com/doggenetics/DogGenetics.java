@@ -20,7 +20,7 @@ public class DogGenetics {
         
         String dogBreedArray[] = {"husky", "shepard", "collie", "corgi", "coyote"};
         
-        int percentArray[] = {initialDogBreedPercent(int) };
+        //int percentArray[] = {initialDogBreedPercent(int) };
     }
     
     public static int initialDogBreedPercent(int rangeFloor, int rangeCieling){
@@ -33,7 +33,7 @@ public class DogGenetics {
     
     public static int secondDogBreedPercent(int rangeFloor, int rangeCieling){
         Random randomPercent = new Random();
-        rangeFloor = randomPercent.nextInt(99 - percentArray[1] + 1) + percentArray[1];
+        //rangeFloor = randomPercent.nextInt(99 - percentArray[1] + 1) + percentArray[1];
         rangeCieling = 101;
         return rangeFloor;
         
