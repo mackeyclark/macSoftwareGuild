@@ -18,7 +18,8 @@ public class ConsoleIO implements UserIO {
     
     @Override
     public void print(String message) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        System.out.println(message);
     }
 
     @Override
@@ -151,6 +152,7 @@ public class ConsoleIO implements UserIO {
         
         boolean isValid = false;
         while(!isValid){
+            toReturn = readInt(prompt);
             if(toReturn < min || toReturn > max){
                 System.out.println("Please enter a number between " + min + " and " + max + ".");
                 
@@ -193,6 +195,7 @@ public class ConsoleIO implements UserIO {
         
         boolean isValid = false;
         while(!isValid){
+            toReturn = readLong(prompt);
             if(toReturn < min || toReturn > max){
                 System.out.println("Please enter a number between " + min + " and " + max + ".");
             
