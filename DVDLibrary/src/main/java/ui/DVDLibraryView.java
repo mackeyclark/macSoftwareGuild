@@ -17,7 +17,7 @@ public class DVDLibraryView {
     private UserIO io;
     
     public DVDLibraryView(UserIO io){
-        
+        this.io = io;
     }
     
     public int printMenuAndGetSelection(){
@@ -118,6 +118,12 @@ public class DVDLibraryView {
     
     public void displayErrorBanner(){
         io.print("UNKNOWN COMMAND");
+        
+    }
+    
+    public void displayErrorMessage(String erroMsg){
+        io.print("=== ERROR ===");
+        io.print(erroMsg);
         
     }
     

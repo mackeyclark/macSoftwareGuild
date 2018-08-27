@@ -24,14 +24,14 @@ public interface DVDLibraryDao {
      * @return the DVD object previously associated with the given title if it
      * exists, null otherwise
      */
-    DVD addDVD(String title, DVD dvd);
+    DVD addDVD(String title, DVD dvd) throws DVDLibraryDaoException;
     
     /**
      * Returns a String array containing the titles of all DVDs in the library
      * 
      * @return String array containing the titles of all the DVDs in the library
      */
-    List<DVD> getAllDVDs();
+    List<DVD> getAllDVDs() throws DVDLibraryDaoException;
     
     /**
      * Returns the DVD object associated with the given title. Returns null if
@@ -41,7 +41,7 @@ public interface DVDLibraryDao {
      * @return The DVD object associated with the given title, null if no such
      * DVD exists
      */
-    DVD getDVD(String title);
+    DVD getDVD(String title) throws DVDLibraryDaoException;
     
     /**
      * Removes from the library the DVD associated with the given title. Returns
@@ -52,6 +52,6 @@ public interface DVDLibraryDao {
      * @return DVD object that was removed or null if no DVD was associated with
      * the given title
      */
-    DVD removeDVD(String title);
-    
+    DVD removeDVD(String title) throws DVDLibraryDaoException;
+        
 }
