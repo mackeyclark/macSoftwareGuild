@@ -50,6 +50,23 @@ public class DVDLibraryView {
         
     }
     
+    public DVD getDVDEditInfo(){
+        String title = io.readString("Please edit the movie title");
+        String releaseDate = io.readString("Please enter the date the movie was released");
+        String mpaaRating = io.readString("Plese enter the official MPAA rating");
+        String director = io.readString("Please enter the director's name");
+        String studio = io.readString("Please enter the studio name");
+        String userRating = io.readString("Please enter any additional notes about the movie");
+        DVD currentDvd = new DVD(title);
+        currentDvd.setReleaseDate(releaseDate);
+        currentDvd.setMpaaRating(mpaaRating);
+        currentDvd.setDirector(director);
+        currentDvd.setStudio(studio);
+        currentDvd.setUserRating(userRating);
+        return currentDvd;
+        
+    }
+    
     public void displayCreateDVDBanner(){
         io.print("=== Create DVD ===");
         
@@ -108,6 +125,16 @@ public class DVDLibraryView {
     
     public void displayRemoveSuccessBanner(){
         io.readString("DVD successfully removed. Please hit enter to continue.");
+        
+    }
+    
+    public void displayEditDVDBanner(){
+        io.print("=== Edit DVD ===");
+        
+    }
+    
+    public void displayEditSuccessBanner(){
+        io.print("DVD successfully edited. Please hit enter to continue.");
         
     }
     

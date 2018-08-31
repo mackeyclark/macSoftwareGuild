@@ -21,7 +21,7 @@ public class DvdLibraryController {
     
     DVDLibraryView view;
     DVDLibraryDao dao;
-    private UserIO io = new UserIOConsoleImpl();
+    //private UserIO io = new UserIOConsoleImpl();
     
     public DvdLibraryController(DVDLibraryDao dao, DVDLibraryView view){
         this.dao = dao;
@@ -50,7 +50,7 @@ public class DvdLibraryController {
                         removeDVD();
                         break;
                     case 5:
-                        io.print("EDIT DVD");
+                        editDVD();
                         break;
                     case 6:
                         keepGoing = false;
@@ -99,6 +99,15 @@ public class DvdLibraryController {
         String title = view.getDvdChoice();
         dao.removeDVD(title);
         view.displayRemoveSuccessBanner();
+        
+    }
+    
+    private void editDVD() throws DVDLibraryDaoException{
+        view.displayEditDVDBanner();
+        String title = view.getDvdChoice();
+        DVD editDvd = view.getDVDEditInfo();
+        dao.editDvd(title, editDvd);
+        view.displayEditSuccessBanner();
         
     }
     

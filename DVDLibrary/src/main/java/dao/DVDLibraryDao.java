@@ -53,5 +53,13 @@ public interface DVDLibraryDao {
      * the given title
      */
     DVD removeDVD(String title) throws DVDLibraryDaoException;
+    
+    /**
+     * 
+     * @param title
+     * @param editDvd 
+     */
+    public void editDvd(String title, DVD editDvd) throws DVDLibraryDaoException;
+    
         
 }
