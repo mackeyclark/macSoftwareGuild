@@ -24,7 +24,7 @@ public interface DVDLibraryDao {
      * @return the DVD object previously associated with the given title if it
      * exists, null otherwise
      */
-    DVD addDVD(String title, DVD dvd) throws DVDLibraryDaoException;
+    DVD addDVD(DVD dvd) throws DVDLibraryDaoException;
     
     /**
      * Returns a String array containing the titles of all DVDs in the library
