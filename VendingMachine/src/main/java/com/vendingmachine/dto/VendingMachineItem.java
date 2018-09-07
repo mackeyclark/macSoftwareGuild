@@ -14,14 +14,14 @@ import java.math.BigDecimal;
 public class VendingMachineItem {
     
     String name;
-    BigDecimal priceInPennies;
+    int priceInPennies;
     int inventory;
 
     public VendingMachineItem(String name){
         this.name = name;
     }
     
-    public VendingMachineItem(BigDecimal priceInPennies){
+    public VendingMachineItem(int priceInPennies){
         this.priceInPennies = priceInPennies;
     }
     
@@ -29,16 +29,16 @@ public class VendingMachineItem {
         return name;
     }
 
-    public BigDecimal getPriceInPennies() {
+    public int getPriceInPennies() {
         return priceInPennies;
+    }
+    
+    public void setInventory(int inventory) {
+        this.inventory = inventory;
     }
 
     public int getInventory() {
         return inventory;
-    }
-
-    public void setInventory(int inventory) {
-        this.inventory = inventory;
     }
     
 }

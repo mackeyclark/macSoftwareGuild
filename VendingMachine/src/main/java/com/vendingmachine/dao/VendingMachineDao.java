@@ -19,5 +19,5 @@ public interface VendingMachineDao {
      * @param priceInPennies
      * @return 
      */
-    VendingMachineItem getPrice(BigDecimal priceInPennies);
+    BigDecimal getPrice(VendingMachineItem priceInPennies);
 }

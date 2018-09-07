@@ -23,7 +23,7 @@ public class VendingMachineDaoFileImpl implements VendingMachineDao{
     VendingMachineItem bagJerky = new VendingMachineItem("Bag o' Jerky");
     
     @Override
-    public VendingMachineItem getPrice(BigDecimal priceInPennies) {
-        return items.get(priceInPennies);
+    public BigDecimal getPrice(VendingMachineItem priceInPennies) {
+        return items
     }
 }
