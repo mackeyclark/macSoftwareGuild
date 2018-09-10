@@ -5,15 +5,14 @@
  */
 package com.vendingmachine01.service;
 
-import com.vendingmachine01.dao.VmDao;
-import com.vendingmachine01.dao.VmDaoStubImpl;
-import com.vendingmachine01.dto.Change;
 import org.junit.After;
 import org.junit.AfterClass;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -24,9 +23,12 @@ public class VmServiceTest {
     private VmService service;
     
     public VmServiceTest() {
-        VmDao dao = new VmDaoStubImpl();
-        
-        service = new VmServiceImpl(dao);
+//        VmDao dao = new VmDaoStubImpl();
+//        
+//        service = new VmServiceImpl(dao);
+
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        service = ctx.getBean("VmServiceLayer", VmServiceImpl.class);
     }
     
     @BeforeClass
