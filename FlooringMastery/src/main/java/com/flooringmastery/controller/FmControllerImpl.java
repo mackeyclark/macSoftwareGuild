@@ -1,0 +1,97 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.flooringmastery.controller;
+
+import com.flooringmastery.dto.Order;
+import com.flooringmastery.service.FmServiceLayer;
+import com.flooringmastery.view.FmView;
+import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
+import java.time.LocalDate;
+import java.util.List;
+
+/**
+ *
+ * @author macam
+ */
+public class FmControllerImpl implements FmController {
+
+    FmView view = null;
+    FmServiceLayer service = null;
+    
+    public FmControllerImpl(FmView view, FmServiceLayer service) {
+        this.view = view;
+        this.service = service;
+    }
+    
+    @Override
+    public void run() {
+        //step 1. Display menu
+        boolean keepGoing = true;
+        int menuSelect = 0;
+        while (keepGoing) {
+
+            menuSelect = getMenuSelection();
+
+            switch (menuSelect) {
+                case 1:
+                    listOrders();
+                    break;
+                case 2:
+                    crateOrder();
+                    break;
+                case 3:
+                    editOrder();
+                case 4:
+                    removeOrder();
+                case 5:
+                    keepGoing = false;
+                    break;
+                default:
+                    unknownCommand();
+            }
+            exitMessage();
+        }
+    }
+
+    private int getMenuSelection() {
+        return view.printMenuAndGetSelection();
+    }
+    
+    //step 2. Show all orders
+    private void listOrders() {
+//        view.displayAllBanner();
+//        List<Order> orderList = service.getAllOrders();
+//        view.displayOrderList();
+        LocalDate ld = view.enterDate();
+        view.displayAllBanner();
+        List<Order> orderList = service.getOrdersByDate(ld);
+        view.displayOrderList(orderList);
+    }
+
+    //step 3. Add order
+    private void crateOrder() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    //step 4. edit order
+    private void editOrder() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    //step 5. remove an order
+    private void removeOrder() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void unknownCommand() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    //step 6. exit
+    private void exitMessage() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}

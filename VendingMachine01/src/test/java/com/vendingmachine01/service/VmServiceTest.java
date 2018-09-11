@@ -5,14 +5,18 @@
  */
 package com.vendingmachine01.service;
 
+import com.vendingmachine01.dao.VmAuditDao;
+import com.vendingmachine01.dao.VmAuditDaoStubImpl;
+import com.vendingmachine01.dao.VmDao;
+import com.vendingmachine01.dao.VmDaoStubImpl;
+import com.vendingmachine01.dao.VmPersistenceException;
+import com.vendingmachine01.dto.Item;
 import org.junit.After;
 import org.junit.AfterClass;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -23,12 +27,11 @@ public class VmServiceTest {
     private VmService service;
     
     public VmServiceTest() {
-//        VmDao dao = new VmDaoStubImpl();
-//        
-//        service = new VmServiceImpl(dao);
+        VmDao dao = new VmDaoStubImpl();
+        VmAuditDao auditDao = new VmAuditDaoStubImpl();
+        
+        service = new VmServiceImpl(dao, auditDao);
 
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-        service = ctx.getBean("VmServiceLayer", VmServiceImpl.class);
     }
     
     @BeforeClass
@@ -51,16 +54,31 @@ public class VmServiceTest {
      * Test of vend method, of class VmService.
      */
     @Test
-    public void testVend() throws Exception {
-        //???
+    public void testVend()  {
+        Item onlyItem = new Item("Candy", 500, 999);
+        
     }
-
+    
+    @Test
+    public void testVendInsufficentFunds() throws Exception {
+        
+    }
+    
+    @Test
+    public void testVendNoItem() throws Exception {
+        
+    }
+    
     /**
      * Test of getProducts method, of class VmService.
      */
     @Test
-    public void testGetProducts() throws Exception {
-        assertEquals(1, service.getProducts().size());
+    public void testGetProducts() {
+        try {
+            assertEquals(1, service.getProducts().size());
+        } catch (VmPersistenceException ex) {
+            
+        }
     }
     
 }

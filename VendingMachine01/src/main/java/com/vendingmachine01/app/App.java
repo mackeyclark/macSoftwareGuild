@@ -19,7 +19,8 @@ public class App {
     public static void main(String[] args) throws UnsupportedOperationException{
 //        UserIO myIo = new UserIOConsoleImpl();
 //        VmDao dao = new VmFileImpl();
-//        VmService service = new VmServiceImpl(dao);
+//        VmAuditDao auditDao = new VmAuditFileImpl();
+//        VmService service = new VmServiceImpl(dao, auditDao);
 //        VmView view = new VmViewImpl(myIo);
 //        VmController controller = new VmControllerImpl(service, view);
 //        controller.run();

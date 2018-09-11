@@ -1,0 +1,31 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.flooringmastery.service;
+
+import com.flooringmastery.dao.FmDao;
+import com.flooringmastery.dao.FmPersistenceException;
+import com.flooringmastery.dto.Order;
+import java.time.LocalDate;
+import java.util.List;
+
+/**
+ *
+ * @author macam
+ */
+public class FmServiceLayerImpl implements FmServiceLayer {
+
+    FmDao dao = null;
+    
+    public FmServiceLayerImpl(FmDao dao){
+        this.dao = dao;
+    }
+    
+    @Override
+    public List<Order> getOrdersByDate(LocalDate ld) throws FmPersistenceException {
+        return dao.getOrdersByDate(ld);
+    }
+    
+}

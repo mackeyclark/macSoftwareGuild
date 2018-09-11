@@ -24,7 +24,7 @@ import org.junit.Test;
  */
 public class VmDaoTest {
     
-    private VmDao dao = new VmFileImpl();
+    private VmDao dao = new VmDaoFileImpl();
     
     public VmDaoTest() {
     }

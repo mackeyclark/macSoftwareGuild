@@ -16,8 +16,5 @@
           http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
 
     <!-- Bean definitions go here -->
-   <bean id="VmDaoStub" class="com.vendingmachine01.dao.VmDaoStubImpl"/>
-   <bean id="VmServiceLayer" class="com.vendingmachine01.service.VmServiceImpl">
-       <constructor-arg ref="VmDaoStub"/>
-   </bean>
+
 </beans>

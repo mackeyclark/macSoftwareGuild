@@ -75,4 +75,9 @@ public class Item {
         return true;
     }
     
+    @Override
+    public String toString() {
+        return "Item: " + name + "|price: " + pricePennies + "|inv: " + inventory;
+    }
+    
 }

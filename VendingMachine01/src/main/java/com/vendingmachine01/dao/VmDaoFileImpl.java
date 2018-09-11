@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
  *
  * @author macam
  */
-public class VmFileImpl implements VmDao {
+public class VmDaoFileImpl implements VmDao {
 
     public static final String VM_FILE = "vm.txt";
     public static final String DELIMITER = "^^";

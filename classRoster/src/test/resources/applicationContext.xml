@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16,24 +17,5 @@
           http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
 
     <!-- Bean definitions go here -->
-    <bean id="UserIO" class="com.vendingmachine01.view.UserIOConsoleImpl"/>
-    <bean id="Dao" class="com.vendingmachine01.dao.VmDaoFileImpl"/>
-    <bean id="service" class="com.vendingmachine01.service.VmServiceImpl">
-        <constructor-arg ref="Dao"/>
-    </bean>
-    <bean id="view" class="com.vendingmachine01.view.VmViewImpl">
-        <constructor-arg ref="UserIO"/>
-    </bean>
-    <bean id="controller" class="com.vendingmachine01.controller.VmControllerImpl">
-        <constructor-arg ref="service"/>
-        <constructor-arg ref="view"/>
-    </bean>
-    <bean id="loggingAdvice" class="com.vendingmachine01.advice.LoggingAdvice">
-        <constructor-arg ref="auditDao"/>
-    </bean>
-    <aop:config>
-        <aop:aspect ref="loggingAdvice">
-            <aop:after-throwing method="vend" pointcut="execution (* com.vendingmachine01.service.VmServiceImpl.vend(..))"/>
-        </aop:aspect>
-    </aop:config>
+   
 </beans>

@@ -1,0 +1,8 @@
+2018-09-06T08:45:45.540: Student 00001 CREATED
+2018-09-10T10:16:33.032: createStudent: ID: 0001|Name: ReaverHanson|Cohort: Java
+2018-09-10T10:17:56.087: createStudent: ID: 12345|Name: GabrielIndigo|Cohort: .NET
+2018-09-10T10:18:15.507: removeStudent: 12345
+2018-09-10T10:18:56.214: createStudent: ID: 12345|Name: FreddrickPerkins|Cohort: Java
+2018-09-10T10:20:12.184: removeStudent: 12345
+2018-09-10T10:25:44.491: createStudent: ID: 0001|Name: DouglasStevenson|Cohort: Java
+2018-09-10T10:29:46.230: removeStudent: 0001
