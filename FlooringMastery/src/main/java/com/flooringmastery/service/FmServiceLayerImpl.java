@@ -5,11 +5,11 @@
  */
 package com.flooringmastery.service;
 
-import com.flooringmastery.dao.FmDao;
 import com.flooringmastery.dao.FmPersistenceException;
 import com.flooringmastery.dto.Order;
 import java.time.LocalDate;
 import java.util.List;
+import com.flooringmastery.dao.FmOrdersDao;
 
 /**
  *
@@ -17,9 +17,9 @@ import java.util.List;
  */
 public class FmServiceLayerImpl implements FmServiceLayer {
 
-    FmDao dao = null;
+    FmOrdersDao dao = null;
     
-    public FmServiceLayerImpl(FmDao dao){
+    public FmServiceLayerImpl(FmOrdersDao dao){
         this.dao = dao;
     }
     

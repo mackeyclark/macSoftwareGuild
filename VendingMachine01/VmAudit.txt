@@ -1,0 +1,2 @@
+2018-09-12T11:00:28.596: vend: 100Item: Potato Crisps|price: 99|inv: 0
+2018-09-12T11:01:42.946: vend: 100Item: Potato Crisps|price: 99|inv: 0

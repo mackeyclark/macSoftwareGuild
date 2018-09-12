@@ -5,10 +5,10 @@
  */
 package com.flooringmastery.controller;
 
+import com.flooringmastery.dao.FmPersistenceException;
 import com.flooringmastery.dto.Order;
 import com.flooringmastery.service.FmServiceLayer;
 import com.flooringmastery.view.FmView;
-import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.date;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -31,6 +31,7 @@ public class FmControllerImpl implements FmController {
         //step 1. Display menu
         boolean keepGoing = true;
         int menuSelect = 0;
+        try{
         while (keepGoing) {
 
             menuSelect = getMenuSelection();
@@ -54,6 +55,9 @@ public class FmControllerImpl implements FmController {
             }
             exitMessage();
         }
+        }catch(FmPersistenceException e){
+            view.displayErrorMessage(e.getMessage());
+        }
     }
 
     private int getMenuSelection() {
@@ -61,7 +65,7 @@ public class FmControllerImpl implements FmController {
     }
     
     //step 2. Show all orders
-    private void listOrders() {
+    private void listOrders() throws FmPersistenceException {
 //        view.displayAllBanner();
 //        List<Order> orderList = service.getAllOrders();
 //        view.displayOrderList();

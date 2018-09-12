@@ -34,5 +34,7 @@ public interface FmView {
     public void displayOrderList(List<Order> orderList);
 
     public LocalDate enterDate();
+
+    public void displayErrorMessage(String message);
     
 }

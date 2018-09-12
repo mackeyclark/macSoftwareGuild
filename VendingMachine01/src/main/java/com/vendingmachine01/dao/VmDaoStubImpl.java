@@ -19,7 +19,7 @@ public class VmDaoStubImpl implements VmDao {
     List<Item> products = new ArrayList<>();
     
     public VmDaoStubImpl(){
-        onlyItem = new Item("Candy", 500, 999);
+        onlyItem = new Item("Candy", 100, 1);
         
         products.add(onlyItem);
     }

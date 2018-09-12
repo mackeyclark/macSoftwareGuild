@@ -5,6 +5,7 @@
  */
 package com.flooringmastery.service;
 
+import com.flooringmastery.dao.FmPersistenceException;
 import com.flooringmastery.dto.Order;
 import java.time.LocalDate;
 import java.util.List;
@@ -15,6 +16,6 @@ import java.util.List;
  */
 public interface FmServiceLayer {
     
-    public List<Order> getOrdersByDate(LocalDate date);
+    public List<Order> getOrdersByDate(LocalDate ld) throws FmPersistenceException;
     
 }

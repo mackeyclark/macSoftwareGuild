@@ -23,7 +23,7 @@ public class LoggingAdvice {
         this.auditDao = auditDao;
     }
     
-    public void createAuditEntry(JoinPoint jp, InsufficentFundsException ex, NoItemInventoryException e){
+    public void createAuditEntry(JoinPoint jp, Throwable ex){
         Object[] args = jp.getArgs();
         String auditEntry = jp.getSignature().getName() + ": ";
         for (Object currentArg : args) {

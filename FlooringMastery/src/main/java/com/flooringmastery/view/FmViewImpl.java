@@ -54,7 +54,12 @@ public class FmViewImpl implements FmView {
     public void displayRemoveSuccessBanner() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
+        @Override
+    public void displayErrorMessage(String message) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
     @Override
     public int printMenuAndGetSelection() {
         io.print("<< Flooring program >>");
@@ -78,6 +83,5 @@ public class FmViewImpl implements FmView {
         LocalDate ld = LocalDate.parse(userDate, DateTimeFormatter.ofPattern("MMddyyyy"));
         return ld;
     }
-    
 
 }

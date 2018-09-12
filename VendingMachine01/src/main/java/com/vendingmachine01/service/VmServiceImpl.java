@@ -6,11 +6,11 @@
 package com.vendingmachine01.service;
 
 import com.vendingmachine01.dao.VmAuditDao;
-import com.vendingmachine01.dao.VmDao;
 import com.vendingmachine01.dao.VmPersistenceException;
 import com.vendingmachine01.dto.Change;
 import com.vendingmachine01.dto.Item;
 import java.util.List;
+import com.vendingmachine01.dao.VmDao;
 
 /**
  *
@@ -18,17 +18,13 @@ import java.util.List;
  */
 public class VmServiceImpl implements VmService {
 
-    private VmAuditDao auditDao;
     VmDao dao = null;
 
-    public VmServiceImpl(VmDao dao, VmAuditDao auditDao) {
+    public VmServiceImpl(VmDao dao) {
         this.dao = dao;
-        this.auditDao = auditDao;
+
     }
 
-    VmServiceImpl(VmDao dao) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     @Override
     public Change vend(int moneyAsPennies, Item selectItem) throws InsufficentFundsException, NoItemInventoryException, VmPersistenceException{

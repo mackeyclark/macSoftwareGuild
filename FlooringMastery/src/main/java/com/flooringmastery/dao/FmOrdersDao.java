@@ -13,8 +13,8 @@ import java.util.List;
  *
  * @author macam
  */
-public interface FmDao {
+public interface FmOrdersDao {
     
-    List<Order> getOrdersByDate(LocalDate date);
+    List<Order> getOrdersByDate(LocalDate date) throws FmPersistenceException;
     
 }

@@ -97,8 +97,13 @@ public class VmDaoTest {
         
         dao.saveItem(singleItem);
         
-        assertEquals(2, singleItem.getInventory());
-
+        
+        Item validationItem = dao.getProducts().stream()
+                .filter(p -> p.getName().equals("Chocolate Bar"))
+                .collect(Collectors.toList())
+                .get(0);
+        
+        assertEquals(2, validationItem.getInventory());
     }
 
 }

@@ -27,6 +27,8 @@ public class VmDaoFileImpl implements VmDao {
 
     public static final String VM_FILE = "vm.txt";
     public static final String DELIMITER = "^^";
+    
+    private Map<String, Item> products = new HashMap<>();    
 
     private void loadVm() throws VmPersistenceException {
         Scanner scanner;
@@ -68,8 +70,6 @@ public class VmDaoFileImpl implements VmDao {
         // close scanner
         scanner.close();
     }
-
-    private Map<String, Item> products = new HashMap<>();
 
     @Override
     public List<Item> getProducts() throws VmPersistenceException {

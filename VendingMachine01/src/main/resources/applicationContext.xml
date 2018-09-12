@@ -18,6 +18,7 @@
     <!-- Bean definitions go here -->
     <bean id="UserIO" class="com.vendingmachine01.view.UserIOConsoleImpl"/>
     <bean id="Dao" class="com.vendingmachine01.dao.VmDaoFileImpl"/>
+    <bean id="auditDao" class="com.vendingmachine01.dao.VmAuditDaoFileImpl"/>
     <bean id="service" class="com.vendingmachine01.service.VmServiceImpl">
         <constructor-arg ref="Dao"/>
     </bean>
@@ -33,7 +34,11 @@
     </bean>
     <aop:config>
         <aop:aspect ref="loggingAdvice">
-            <aop:after-throwing method="vend" pointcut="execution (* com.vendingmachine01.service.VmServiceImpl.vend(..))"/>
+            <aop:after-throwing 
+                method="createAuditEntry" 
+                pointcut="execution (* com.vendingmachine01.service.VmServiceImpl.vend(..))"
+                throwing="ex"
+            />
         </aop:aspect>
     </aop:config>
 </beans>

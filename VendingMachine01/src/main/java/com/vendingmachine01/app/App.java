@@ -5,7 +5,6 @@
  */
 package com.vendingmachine01.app;
 
-import com.vendingmachine01.controller.VmController;
 import com.vendingmachine01.controller.VmControllerImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
