@@ -110,7 +110,51 @@ public class FmViewImpl implements FmView {
     @Override
     public Order getNewOrderInfo(List<TaxRate> taxList, List<Product> productList) {
         String name = io.readString("Please enter customer name");
-        
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        TaxRate state = getTaxRate(taxList);
+        Product prod = getProduct(productList);
+        BigDecimal area = io.readBigDecimal("Please enter the total area of flooring requested");
+        Order currentOrder = new Order();
+        currentOrder.setCustomerName(name);
+        currentOrder.setState(state.getState());
+        currentOrder.setTaxRate(state.getTaxRate());
+        currentOrder.setProductType(prod.getProduct());
+        currentOrder.setCostSqFt(prod.getCostSqFt());
+        currentOrder.setCostLaborSqFt(prod.getLaborCostSqFt());
+        currentOrder.setArea(area);
+        currentOrder.getMaterialCost();
+        currentOrder.getLaborCost();
+        currentOrder.getTaxOnTotal();
+        currentOrder.getTotal();
+        return currentOrder;
+    }
+
+    private TaxRate getTaxRate(List<TaxRate> taxList) {
+        TaxRate toReturn = null;
+        boolean isValid = false;
+        while (!isValid) {
+            String userInput = io.readString("Please enter customer state (initials only)");
+            for (TaxRate toCheck : taxList) {
+                if (toCheck.getState().equalsIgnoreCase(userInput)) {
+                    toReturn = toCheck;
+                    isValid = true;
+                }
+            }
+        }
+        return toReturn;
+    }
+
+    private Product getProduct(List<Product> productList) {
+        Product toReturn = null;
+        boolean isValid = false;
+        while (!isValid){
+            String userInput = io.readString("Please enter product requested");
+            for (Product toCheck : productList) {
+                if (toCheck.getProduct().equalsIgnoreCase(userInput)) {
+                    toReturn = toCheck;
+                    isValid = true;
+                }
+            }
+        }
+        return toReturn;
     }
 }

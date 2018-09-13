@@ -80,7 +80,7 @@ public class FmControllerImpl implements FmController {
     }
 
     //step 3. Add order
-    private void crateOrder() {
+    private void crateOrder() throws FmPersistenceException {
         view.displayCreateBanner();
         //getting a list of all taxes and states
         List<TaxRate> taxList = service.getAllStateTaxRates();

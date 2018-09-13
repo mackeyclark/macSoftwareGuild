@@ -14,8 +14,6 @@ import java.util.List;
  */
 public interface FmTaxesDao {
 
-    public List<TaxRate> getAllStateTaxRates();
-    
-    //Set up a function that looks at "Taxes.txt" and retrives the tax for provided state
-    
+    public List<TaxRate> getAllStateTaxRates() throws FmPersistenceException;
+
 }

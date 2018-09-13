@@ -27,6 +27,8 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
     public static final String ROSTER_FILE = "roster.txt";
     public static final String DELIMITER = "::";
     
+    private Map<String, Student> students = new HashMap<>();
+
     private void loadRoster() throws ClassRosterPersistenceException{
         Scanner scanner;
         
@@ -83,7 +85,6 @@ public class ClassRosterDaoFileImpl implements ClassRosterDao {
         
     }
     
-    private Map<String, Student> students = new HashMap<>();
 
     @Override
     public Student addStudent(String studentID, Student student) throws ClassRosterPersistenceException {

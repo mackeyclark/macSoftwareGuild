@@ -14,9 +14,6 @@ import java.util.List;
  */
 public interface FmProductsDao {
 
-    public List<Product> getAllMaterialCosts();
-    
-    //set up function that looks at "Products.txt" and gets cost and labor cost
-    //for provided String
-    
+    public List<Product> getAllMaterialCosts()  throws FmPersistenceException ;
+
 }

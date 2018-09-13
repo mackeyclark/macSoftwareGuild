@@ -22,8 +22,8 @@ public interface FmServiceLayer {
 
     public void createOrder(Order currentOrder);
 
-    public List<TaxRate> getAllStateTaxRates();
+    public List<TaxRate> getAllStateTaxRates() throws FmPersistenceException;
 
-    public List<Product> getAllMaterialCosts();
+    public List<Product> getAllMaterialCosts() throws FmPersistenceException;
     
 }

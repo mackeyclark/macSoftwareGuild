@@ -42,12 +42,12 @@ public class FmServiceLayerImpl implements FmServiceLayer {
     }
 
     @Override
-    public List<TaxRate> getAllStateTaxRates() {
+    public List<TaxRate> getAllStateTaxRates() throws FmPersistenceException {
         return Tdao.getAllStateTaxRates();
     }
 
     @Override
-    public List<Product> getAllMaterialCosts() {
+    public List<Product> getAllMaterialCosts() throws FmPersistenceException  {
         return Pdao.getAllMaterialCosts();
     }
     

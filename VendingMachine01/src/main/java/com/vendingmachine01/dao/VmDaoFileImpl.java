@@ -53,7 +53,7 @@ public class VmDaoFileImpl implements VmDao {
         // └───────┴─────┴─────┘
         //    [0]    [1]   [2]
         String[] currentTokens;
-        // Go through VM_FILE line by line decoding each line into and Item 
+        // Go through VM_FILE line by line decoding each line into an Item 
         // object.
         // Process while we have more lines in the file
         while (scanner.hasNextLine()) {
