@@ -7,6 +7,8 @@ package com.flooringmastery.service;
 
 import com.flooringmastery.dao.FmPersistenceException;
 import com.flooringmastery.dto.Order;
+import com.flooringmastery.dto.Product;
+import com.flooringmastery.dto.TaxRate;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -17,5 +19,11 @@ import java.util.List;
 public interface FmServiceLayer {
     
     public List<Order> getOrdersByDate(LocalDate ld) throws FmPersistenceException;
+
+    public void createOrder(Order currentOrder);
+
+    public List<TaxRate> getAllStateTaxRates();
+
+    public List<Product> getAllMaterialCosts();
     
 }

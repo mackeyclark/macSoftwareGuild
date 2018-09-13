@@ -6,7 +6,11 @@
 package com.flooringmastery.controller;
 
 import com.flooringmastery.dao.FmPersistenceException;
+import com.flooringmastery.dao.FmProductsDao;
+import com.flooringmastery.dao.FmTaxesDao;
 import com.flooringmastery.dto.Order;
+import com.flooringmastery.dto.Product;
+import com.flooringmastery.dto.TaxRate;
 import com.flooringmastery.service.FmServiceLayer;
 import com.flooringmastery.view.FmView;
 import java.time.LocalDate;
@@ -20,6 +24,7 @@ public class FmControllerImpl implements FmController {
 
     FmView view = null;
     FmServiceLayer service = null;
+
 
     public FmControllerImpl(FmView view, FmServiceLayer service) {
         this.view = view;
@@ -76,8 +81,18 @@ public class FmControllerImpl implements FmController {
 
     //step 3. Add order
     private void crateOrder() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        view.displayCreateBanner();
+        //getting a list of all taxes and states
+        List<TaxRate> taxList = service.getAllStateTaxRates();
+        //getting a list of all products and prices
+        List<Product> productList = service.getAllMaterialCosts();
+        //pass lists into view to check if states are valid and to provide
+        //prices for user desired object
+        Order currentOrder = view.getNewOrderInfo(taxList, productList);
+        //pass the new order into service to check if a new file needs to be 
+        //made or if the new order continues the existing file
+        service.createOrder(currentOrder);
+        view.displayCreateSuccessBanner();
     }
 
     //step 4. edit order

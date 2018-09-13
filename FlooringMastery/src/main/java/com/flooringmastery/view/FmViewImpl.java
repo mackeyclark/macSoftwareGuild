@@ -6,13 +6,13 @@
 package com.flooringmastery.view;
 
 import com.flooringmastery.dto.Order;
+import com.flooringmastery.dto.Product;
+import com.flooringmastery.dto.TaxRate;
 import com.flooringmastery.ui.UserIO;
 import com.flooringmastery.ui.UserIOConsoleImpl;
 import java.math.BigDecimal;
 import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.List;
 
 /**
@@ -30,8 +30,7 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayCreateBanner() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        io.print("-~- Create New Order -~-");
     }
 
     @Override
@@ -84,7 +83,6 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayOrderList(List<Order> orderList) {
-        //TODO
         if (orderList.isEmpty()) {
             io.readString("No Orders found for date provided. Please press enter to continue");
         } else {
@@ -104,8 +102,15 @@ public class FmViewImpl implements FmView {
     }
 
     @Override
-    public LocalDate enterDate() throws DateTimeException{        
-            LocalDate ld = io.readLocalDate("Please enter the date the orders were stored on");
-            return ld;
+    public LocalDate enterDate() throws DateTimeException {
+        LocalDate ld = io.readLocalDate("Please enter the date the orders were stored on");
+        return ld;
+    }
+
+    @Override
+    public Order getNewOrderInfo(List<TaxRate> taxList, List<Product> productList) {
+        String name = io.readString("Please enter customer name");
+        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

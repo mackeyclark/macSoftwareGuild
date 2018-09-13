@@ -13,6 +13,10 @@ import com.flooringmastery.service.FmServiceLayerImpl;
 import com.flooringmastery.view.FmView;
 import com.flooringmastery.view.FmViewImpl;
 import com.flooringmastery.dao.FmOrdersDao;
+import com.flooringmastery.dao.FmProductsDao;
+import com.flooringmastery.dao.FmProductsDaoFileImpl;
+import com.flooringmastery.dao.FmTaxesDao;
+import com.flooringmastery.dao.FmTaxesDaoFileImpl;
 
 /**
  *
@@ -22,8 +26,10 @@ public class App {
     
     public static void main(String[] args) {
         FmView view = new FmViewImpl();
-        FmOrdersDao dao = new FmOrdersDaoFileImpl();
-        FmServiceLayer service = new FmServiceLayerImpl(dao);
+        FmOrdersDao Odao = new FmOrdersDaoFileImpl();
+        FmTaxesDao Tdao = new FmTaxesDaoFileImpl();
+        FmProductsDao Pdao = new FmProductsDaoFileImpl();
+        FmServiceLayer service = new FmServiceLayerImpl(Odao, Tdao, Pdao);
         FmController controller = new FmControllerImpl(view, service);
         controller.run();
     }

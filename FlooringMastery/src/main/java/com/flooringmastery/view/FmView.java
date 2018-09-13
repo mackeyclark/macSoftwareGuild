@@ -6,6 +6,8 @@
 package com.flooringmastery.view;
 
 import com.flooringmastery.dto.Order;
+import com.flooringmastery.dto.Product;
+import com.flooringmastery.dto.TaxRate;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -36,5 +38,7 @@ public interface FmView {
     public LocalDate enterDate();
 
     public void displayErrorMessage(String message);
+
+    public Order getNewOrderInfo(List<TaxRate> taxList, List<Product> productList);
     
 }

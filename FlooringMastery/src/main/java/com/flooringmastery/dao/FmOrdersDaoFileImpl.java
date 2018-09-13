@@ -21,9 +21,6 @@ import java.util.Scanner;
  */
 public class FmOrdersDaoFileImpl implements FmOrdersDao {
 
-    public FmOrdersDaoFileImpl() {
-    }
-
     public static final String DELIMITER = ",";
 
     @Override
