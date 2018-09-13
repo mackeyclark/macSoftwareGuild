@@ -8,8 +8,11 @@ package com.flooringmastery.view;
 import com.flooringmastery.dto.Order;
 import com.flooringmastery.ui.UserIO;
 import com.flooringmastery.ui.UserIOConsoleImpl;
+import java.math.BigDecimal;
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.List;
 
 /**
@@ -17,7 +20,7 @@ import java.util.List;
  * @author macam
  */
 public class FmViewImpl implements FmView {
-    
+
     UserIO io = new UserIOConsoleImpl();
 
     @Override
@@ -27,39 +30,46 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayCreateBanner() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void displayCreateSuccessBanner() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void displayEditBanner() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void displayEditSuccessBanner() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void displayRemoveBanner() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void displayRemoveSuccessBanner() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-        @Override
+
+    @Override
     public void displayErrorMessage(String message) {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     @Override
     public int printMenuAndGetSelection() {
         io.print("<< Flooring program >>");
@@ -68,20 +78,34 @@ public class FmViewImpl implements FmView {
         io.print("3. Edit an order");
         io.print("4. Remove an order");
         io.print("5. Exit");
-        
+
         return io.readInt("Please select from the above choices", 1, 5);
     }
-        
+
     @Override
     public void displayOrderList(List<Order> orderList) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //TODO
+        if (orderList.isEmpty()) {
+            io.readString("No Orders found for date provided. Please press enter to continue");
+        } else {
+            for (Order currentOrder : orderList) {
+                BigDecimal taxRate = currentOrder.getTaxRate();
+                BigDecimal area = currentOrder.getArea();
+                BigDecimal costSqFt = currentOrder.getCostSqFt();
+                BigDecimal laborCostSqFt = currentOrder.getCostLaborSqFt();
+                BigDecimal materialCost = currentOrder.getMaterialCost();
+                BigDecimal laborCost = currentOrder.getLaborCost();
+                BigDecimal tax = currentOrder.getTaxOnTotal();
+                BigDecimal total = currentOrder.getTotal();
+                io.print(Integer.toString(currentOrder.getOrderNumber()) + " " + currentOrder.getCustomerName() + " " + currentOrder.getState() + " (" + taxRate + "%) " + currentOrder.getProductType() + " " + area + "ft²" + " $" + costSqFt + " $" + laborCostSqFt + " $" + materialCost + " $" + laborCost + " $" + tax + " $" + total);
+            }
+        }
+        io.readString("Please press enter to continue");
     }
 
     @Override
-    public LocalDate enterDate() {
-        String userDate = io.readString("Please enter the date the orders were stored on");
-        LocalDate ld = LocalDate.parse(userDate, DateTimeFormatter.ofPattern("MMddyyyy"));
-        return ld;
+    public LocalDate enterDate() throws DateTimeException{        
+            LocalDate ld = io.readLocalDate("Please enter the date the orders were stored on");
+            return ld;
     }
-
 }

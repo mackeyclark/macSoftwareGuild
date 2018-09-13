@@ -20,42 +20,44 @@ public class FmControllerImpl implements FmController {
 
     FmView view = null;
     FmServiceLayer service = null;
-    
+
     public FmControllerImpl(FmView view, FmServiceLayer service) {
         this.view = view;
         this.service = service;
     }
-    
+
     @Override
     public void run() {
         //step 1. Display menu
         boolean keepGoing = true;
         int menuSelect = 0;
-        try{
-        while (keepGoing) {
+        try {
+            while (keepGoing) {
 
-            menuSelect = getMenuSelection();
+                menuSelect = getMenuSelection();
 
-            switch (menuSelect) {
-                case 1:
-                    listOrders();
-                    break;
-                case 2:
-                    crateOrder();
-                    break;
-                case 3:
-                    editOrder();
-                case 4:
-                    removeOrder();
-                case 5:
-                    keepGoing = false;
-                    break;
-                default:
-                    unknownCommand();
+                switch (menuSelect) {
+                    case 1:
+                        listOrders();
+                        break;
+                    case 2:
+                        crateOrder();
+                        break;
+                    case 3:
+                        editOrder();
+                        break;
+                    case 4:
+                        removeOrder();
+                        break;
+                    case 5:
+                        keepGoing = false;
+                        break;
+                    default:
+                        unknownCommand();
+                }
             }
             exitMessage();
-        }
-        }catch(FmPersistenceException e){
+        } catch (FmPersistenceException e) {
             view.displayErrorMessage(e.getMessage());
         }
     }
@@ -63,12 +65,9 @@ public class FmControllerImpl implements FmController {
     private int getMenuSelection() {
         return view.printMenuAndGetSelection();
     }
-    
+
     //step 2. Show all orders
     private void listOrders() throws FmPersistenceException {
-//        view.displayAllBanner();
-//        List<Order> orderList = service.getAllOrders();
-//        view.displayOrderList();
         LocalDate ld = view.enterDate();
         view.displayAllBanner();
         List<Order> orderList = service.getOrdersByDate(ld);
@@ -77,25 +76,30 @@ public class FmControllerImpl implements FmController {
 
     //step 3. Add order
     private void crateOrder() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     //step 4. edit order
     private void editOrder() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     //step 5. remove an order
     private void removeOrder() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     private void unknownCommand() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     //step 6. exit
     private void exitMessage() {
+        //TODO
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

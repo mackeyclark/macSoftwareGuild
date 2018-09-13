@@ -6,6 +6,9 @@
 package com.flooringmastery.ui;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 /**
@@ -243,6 +246,48 @@ public class UserIOConsoleImpl implements UserIO {
         boolean isValid = false;
         while (!isValid) {
             toReturn = readBigDecimal(prompt);
+            if (toReturn.compareTo(min) < 0 || toReturn.compareTo(max) > 0) {
+                System.out.println("Please enter a number between " + min + " and " + max + ".");
+
+            } else {
+                isValid = true;
+
+            }
+        }
+
+        return toReturn;
+    }
+
+    @Override
+    public LocalDate readLocalDate(String prompt) {
+        LocalDate toReturn = null;
+        System.out.println(prompt);
+
+        boolean validInput = false;
+        while (!validInput) {
+            try {
+                String toCheck = reader.nextLine();
+                LocalDate ld = LocalDate.parse(toCheck, DateTimeFormatter.ofPattern("MMddyyyy"));
+                toReturn = ld;
+
+                validInput = true;
+
+            } catch (DateTimeParseException e) {
+                System.out.println("Please enter a valid date.");
+
+            }
+        }
+
+        return toReturn;
+    }
+
+    @Override
+    public LocalDate readLocalDate(String prompt, LocalDate min, LocalDate max) {
+        LocalDate toReturn = null;
+
+        boolean isValid = false;
+        while (!isValid) {
+            toReturn = readLocalDate(prompt);
             if (toReturn.compareTo(min) < 0 || toReturn.compareTo(max) > 0) {
                 System.out.println("Please enter a number between " + min + " and " + max + ".");
 
