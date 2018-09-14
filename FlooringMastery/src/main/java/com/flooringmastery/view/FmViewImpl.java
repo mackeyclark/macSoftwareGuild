@@ -53,8 +53,7 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayRemoveBanner() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        io.print("-~- Remove Order -~-");
     }
 
     @Override
@@ -65,8 +64,7 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayErrorMessage(String message) {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        io.readString("ERROR: Please press enter to continue");
     }
 
     @Override
@@ -162,9 +160,22 @@ public class FmViewImpl implements FmView {
     }
 
     @Override
-    public boolean askToConfirmOrder(Order currentOrder) {
+    public boolean askToConfirm(Order currentOrder) {
         displayOrder(currentOrder);
-        String userChoice = io.readString("Would you like to save this order? (y/n)");
+        String userChoice = io.readString("Are you sure you want to continue? (y/n)");
         return !userChoice.equalsIgnoreCase("n");
+    }
+
+    @Override
+    public int getOrderNumber(List<Order> orderList) {
+        int toReturn = -1;
+        boolean isValid = false;
+        while (!isValid) {
+            toReturn = io.readInt("Please enter the order number");
+            final int dumbCopy = toReturn;
+            isValid = orderList
+                    .stream().anyMatch(o -> o.getOrderNumber() == dumbCopy);
+        }
+        return toReturn;
     }
 }

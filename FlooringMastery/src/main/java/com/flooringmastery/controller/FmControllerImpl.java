@@ -6,8 +6,6 @@
 package com.flooringmastery.controller;
 
 import com.flooringmastery.dao.FmPersistenceException;
-import com.flooringmastery.dao.FmProductsDao;
-import com.flooringmastery.dao.FmTaxesDao;
 import com.flooringmastery.dto.Order;
 import com.flooringmastery.dto.Product;
 import com.flooringmastery.dto.TaxRate;
@@ -89,7 +87,7 @@ public class FmControllerImpl implements FmController {
         //prices for user desired product
         Order currentOrder = view.getNewOrderInfo(taxList, productList);
         //ask if user wants to commit order?
-        if (view.askToConfirmOrder(currentOrder) == true) {
+        if (view.askToConfirm(currentOrder) == true) {
             //pass the new order into service with date to check against
             service.createOrder(currentOrder);
             view.displayCreateSuccessBanner();
@@ -103,9 +101,26 @@ public class FmControllerImpl implements FmController {
     }
 
     //step 5. remove an order
-    private void removeOrder() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private void removeOrder() throws FmPersistenceException {
+        view.displayRemoveBanner();
+        //ask user for date order occurs on
+        LocalDate ld = view.enterDate();
+        List<Order> orderList = service.getOrdersByDate(ld);
+        //ask user for the order's number
+        view.displayOrderList(orderList);
+        if (!orderList.isEmpty()) {
+            int orderNum = view.getOrderNumber(orderList);
+            Order currentOrder = service.getOrder(orderList, orderNum);
+            //display order
+            //ask if user wants to delete this order
+            if (view.askToConfirm(currentOrder) == true) {
+                //if yes, write new file without order specified
+                service.removeOrder(currentOrder);
+                view.displayRemoveSuccessBanner();
+            }
+        }else {
+            view.displayErrorMessage("Could not orders for date");
+        }
     }
 
     private void unknownCommand() {

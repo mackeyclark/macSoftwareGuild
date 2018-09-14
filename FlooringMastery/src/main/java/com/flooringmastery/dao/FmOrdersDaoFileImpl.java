@@ -18,8 +18,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -127,4 +126,35 @@ public class FmOrdersDaoFileImpl implements FmOrdersDao {
         }
     }
 
+    @Override
+    public Order getOrder(List<Order> orderList, int orderNum) {
+        Order toReturn = null;
+        
+        //filter the list of objects and get the one with the matching orderNum
+        List<Order> possibleOrder = orderList.stream()
+                .filter(o -> o.getOrderNumber() == orderNum)
+                .collect(Collectors.toList());
+        
+        if (!possibleOrder.isEmpty()) {
+            toReturn = possibleOrder.get(0);
+        } 
+        
+        //return the object that matches
+        return toReturn;
+    }
+
+    @Override
+    public Order removeOrder(Order currentOrder) {
+        //TODO
+        //get file by order date
+        String toLookFor = "Orders_" + currentOrder.getDate().toString() + ".txt";
+        //put all orders into list
+        List<Order> orderList = new ArrayList<>();
+        
+        File orderFile = new File(toLookFor);
+        //remove the matching order from the list
+        //write file with new data
+        //return object
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

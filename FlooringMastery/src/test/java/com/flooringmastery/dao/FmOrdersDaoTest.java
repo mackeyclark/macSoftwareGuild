@@ -6,6 +6,7 @@
 package com.flooringmastery.dao;
 
 import com.flooringmastery.dto.Order;
+import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
@@ -61,10 +62,26 @@ public class FmOrdersDaoTest {
     
     @Test
     public void testCreateOrder() throws Exception {
-        String dateToLookFor = "06012013";
-        LocalDate ld = LocalDate.parse(dateToLookFor, DateTimeFormatter.ofPattern("MMddyyyy"));
+        String date = "06012013";
+        LocalDate ld = LocalDate.parse(date, DateTimeFormatter.ofPattern("MMddyyyy"));
+        
         Order order = new Order();
         order.setDate(ld);
+        order.setCustomerName("Ganon");
+        order.setState("OH");
+        order.setTaxRate(BigDecimal.valueOf(6.25));
+        order.setProductType("Tile");
+        order.setArea(BigDecimal.valueOf(333));
+        order.setCostSqFt(BigDecimal.valueOf(3.50));
+        order.setCostLaborSqFt(BigDecimal.valueOf(4.15));
+        
+        dao.createOrder(order);
+        //get the orders of a file
+        //assert that there are two objects in the returned list
+        List<Order> ol = dao.getOrdersByDate(order.getDate());
+        
+        assertEquals(2, ol.stream().count());
+        
         
     }
     

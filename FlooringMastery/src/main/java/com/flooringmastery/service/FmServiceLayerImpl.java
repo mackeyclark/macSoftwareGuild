@@ -50,5 +50,15 @@ public class FmServiceLayerImpl implements FmServiceLayer {
     public List<Product> getAllMaterialCosts() throws FmPersistenceException  {
         return Pdao.getAllMaterialCosts();
     }
+
+    @Override
+    public Order getOrder(List<Order> orderList, int orderNum) {
+        return Odao.getOrder(orderList, orderNum);
+    }
+
+    @Override
+    public Order removeOrder(Order currentOrder) {
+        return Odao.removeOrder(currentOrder);
+    }
     
 }

@@ -41,6 +41,8 @@ public interface FmView {
 
     public Order getNewOrderInfo(List<TaxRate> taxList, List<Product> productList);
 
-    public boolean askToConfirmOrder(Order currentOrder);
+    public boolean askToConfirm(Order currentOrder);
+
+    public int getOrderNumber(List<Order> orderList);
 
 }

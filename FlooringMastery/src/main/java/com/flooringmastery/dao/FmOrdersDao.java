@@ -18,5 +18,9 @@ public interface FmOrdersDao {
     List<Order> getOrdersByDate(LocalDate ld) throws FmPersistenceException;
 
     public Order createOrder(Order currentOrder) throws FmPersistenceException;
+
+    public Order getOrder(List<Order> orderList, int orderNum);
+
+    public Order removeOrder(Order currentOrder);
     
 }
