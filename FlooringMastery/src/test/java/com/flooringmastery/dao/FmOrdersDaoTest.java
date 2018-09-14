@@ -82,7 +82,24 @@ public class FmOrdersDaoTest {
         
         assertEquals(2, ol.stream().count());
         
+    }
+    
+    @Test
+    public void testGetAndRemoveOrder() throws Exception {
+        String dateToLookFor = "06012013";
+        LocalDate ld = LocalDate.parse(dateToLookFor, DateTimeFormatter.ofPattern("MMddyyyy"));
         
+        List<Order> orderList = dao.getOrdersByDate(ld);
+        
+        Order order = dao.getOrder(orderList, 1);
+        
+        assertNotNull(order);
+        
+        dao.removeOrder(order);
+        
+        orderList = dao.getOrdersByDate(ld);
+        
+        assertEquals(0, orderList.size());
     }
     
 }

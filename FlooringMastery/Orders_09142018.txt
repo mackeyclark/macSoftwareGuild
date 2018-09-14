@@ -1,4 +1,2 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
 1,Gabriel,PA,6.75,Wood,300,5.15,4.75,1545.00,1425.00,200.48,3170.48
-2,Roland,MI,5.75,Carpet,90,2.25,2.10,202.50,189.00,22.51,414.01
-3,Wyatt,PA,6.75,Laminate,610,1.75,2.10,1067.50,1281.00,158.52,2507.02

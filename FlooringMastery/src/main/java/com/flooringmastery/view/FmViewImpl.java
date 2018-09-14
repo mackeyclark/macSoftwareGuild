@@ -41,8 +41,7 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayEditBanner() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        io.print("-~- edit Order -~-");
     }
 
     @Override
@@ -58,8 +57,7 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayRemoveSuccessBanner() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        io.readString("Order removed. Please press enter to continue.");
     }
 
     @Override

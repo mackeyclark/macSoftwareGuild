@@ -6,6 +6,8 @@
 package com.flooringmastery.dao;
 
 import com.flooringmastery.dto.Order;
+import com.flooringmastery.dto.Product;
+import com.flooringmastery.dto.TaxRate;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -21,6 +23,8 @@ public interface FmOrdersDao {
 
     public Order getOrder(List<Order> orderList, int orderNum);
 
-    public Order removeOrder(Order currentOrder);
+    public Order removeOrder(Order currentOrder) throws FmPersistenceException;
+
+    public Order editOrder(Order currentOrder, List<TaxRate> taxList, List<Product> productList);
     
 }

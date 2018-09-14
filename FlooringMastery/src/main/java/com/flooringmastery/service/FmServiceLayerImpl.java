@@ -57,8 +57,13 @@ public class FmServiceLayerImpl implements FmServiceLayer {
     }
 
     @Override
-    public Order removeOrder(Order currentOrder) {
+    public Order removeOrder(Order currentOrder) throws FmPersistenceException{
         return Odao.removeOrder(currentOrder);
+    }
+
+    @Override
+    public Order editOrder(Order currentOrder, List<TaxRate> taxList, List<Product> productList) {
+        return Odao.editOrder(currentOrder, taxList, productList);
     }
     
 }
