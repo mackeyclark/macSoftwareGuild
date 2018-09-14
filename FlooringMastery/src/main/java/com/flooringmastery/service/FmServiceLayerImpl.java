@@ -25,7 +25,7 @@ public class FmServiceLayerImpl implements FmServiceLayer {
     FmTaxesDao Tdao = null;
     FmProductsDao Pdao = null;
     
-    public FmServiceLayerImpl(FmOrdersDao dao, FmTaxesDao Tdao, FmProductsDao Pdao){
+    public FmServiceLayerImpl(FmOrdersDao Odao, FmTaxesDao Tdao, FmProductsDao Pdao){
         this.Odao = Odao;
         this.Tdao = Tdao;
         this.Pdao = Pdao;
@@ -37,8 +37,8 @@ public class FmServiceLayerImpl implements FmServiceLayer {
     }
 
     @Override
-    public void createOrder(Order currentOrder) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Order createOrder(Order currentOrder) throws FmPersistenceException {
+        return Odao.createOrder(currentOrder);
     }
 
     @Override

@@ -62,22 +62,22 @@ public class Order {
     }
     
     public BigDecimal getMaterialCost() {
-        return area.multiply(costSqFt).setScale(2, RoundingMode.HALF_UP);
+        return area.multiply(costSqFt);
     }
     
     public BigDecimal getLaborCost() {
-        return area.multiply(costLaborSqFt).setScale(2, RoundingMode.HALF_UP);
+        return area.multiply(costLaborSqFt);
     }
     
     public BigDecimal getTaxOnTotal() {
         BigDecimal total = getMaterialCost().add(getLaborCost());
         BigDecimal taxPerc = taxRate.divide(BigDecimal.valueOf(100));
-        BigDecimal tax = total.multiply(taxPerc).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal tax = total.multiply(taxPerc);
         return tax;
     }
     
     public BigDecimal getTotal() {
-        BigDecimal totalAndTax = getMaterialCost().add(getLaborCost()).add(getTaxOnTotal().setScale(2, RoundingMode.HALF_UP));
+        BigDecimal totalAndTax = getMaterialCost().add(getLaborCost()).add(getTaxOnTotal());
         return totalAndTax;
     }
 

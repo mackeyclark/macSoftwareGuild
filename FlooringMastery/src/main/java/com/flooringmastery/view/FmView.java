@@ -40,5 +40,7 @@ public interface FmView {
     public void displayErrorMessage(String message);
 
     public Order getNewOrderInfo(List<TaxRate> taxList, List<Product> productList);
-    
+
+    public boolean askToConfirmOrder(Order currentOrder);
+
 }

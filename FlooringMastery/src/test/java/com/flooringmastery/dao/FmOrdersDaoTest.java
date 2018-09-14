@@ -59,4 +59,13 @@ public class FmOrdersDaoTest {
         assertNotNull(dao.getOrdersByDate(ld));
     }
     
+    @Test
+    public void testCreateOrder() throws Exception {
+        String dateToLookFor = "06012013";
+        LocalDate ld = LocalDate.parse(dateToLookFor, DateTimeFormatter.ofPattern("MMddyyyy"));
+        Order order = new Order();
+        order.setDate(ld);
+        
+    }
+    
 }

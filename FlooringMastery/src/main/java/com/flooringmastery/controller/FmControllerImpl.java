@@ -25,7 +25,6 @@ public class FmControllerImpl implements FmController {
     FmView view = null;
     FmServiceLayer service = null;
 
-
     public FmControllerImpl(FmView view, FmServiceLayer service) {
         this.view = view;
         this.service = service;
@@ -87,12 +86,14 @@ public class FmControllerImpl implements FmController {
         //getting a list of all products and prices
         List<Product> productList = service.getAllMaterialCosts();
         //pass lists into view to check if states are valid and to provide
-        //prices for user desired object
+        //prices for user desired product
         Order currentOrder = view.getNewOrderInfo(taxList, productList);
-        //pass the new order into service to check if a new file needs to be 
-        //made or if the new order continues the existing file
-        service.createOrder(currentOrder);
-        view.displayCreateSuccessBanner();
+        //ask if user wants to commit order?
+        if (view.askToConfirmOrder(currentOrder) == true) {
+            //pass the new order into service with date to check against
+            service.createOrder(currentOrder);
+            view.displayCreateSuccessBanner();
+        }
     }
 
     //step 4. edit order

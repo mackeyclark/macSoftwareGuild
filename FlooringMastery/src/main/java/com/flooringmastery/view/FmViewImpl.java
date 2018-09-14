@@ -11,6 +11,7 @@ import com.flooringmastery.dto.TaxRate;
 import com.flooringmastery.ui.UserIO;
 import com.flooringmastery.ui.UserIOConsoleImpl;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.util.List;
@@ -35,8 +36,7 @@ public class FmViewImpl implements FmView {
 
     @Override
     public void displayCreateSuccessBanner() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        io.readString("Order added. Please press enter to continue");
     }
 
     @Override
@@ -87,15 +87,7 @@ public class FmViewImpl implements FmView {
             io.readString("No Orders found for date provided. Please press enter to continue");
         } else {
             for (Order currentOrder : orderList) {
-                BigDecimal taxRate = currentOrder.getTaxRate();
-                BigDecimal area = currentOrder.getArea();
-                BigDecimal costSqFt = currentOrder.getCostSqFt();
-                BigDecimal laborCostSqFt = currentOrder.getCostLaborSqFt();
-                BigDecimal materialCost = currentOrder.getMaterialCost();
-                BigDecimal laborCost = currentOrder.getLaborCost();
-                BigDecimal tax = currentOrder.getTaxOnTotal();
-                BigDecimal total = currentOrder.getTotal();
-                io.print(Integer.toString(currentOrder.getOrderNumber()) + " " + currentOrder.getCustomerName() + " " + currentOrder.getState() + " (" + taxRate + "%) " + currentOrder.getProductType() + " " + area + "ft²" + " $" + costSqFt + " $" + laborCostSqFt + " $" + materialCost + " $" + laborCost + " $" + tax + " $" + total);
+                displayOrder(currentOrder);
             }
         }
         io.readString("Please press enter to continue");
@@ -109,11 +101,13 @@ public class FmViewImpl implements FmView {
 
     @Override
     public Order getNewOrderInfo(List<TaxRate> taxList, List<Product> productList) {
+        LocalDate date = io.readLocalDate("Please enter date for order");
         String name = io.readString("Please enter customer name");
         TaxRate state = getTaxRate(taxList);
         Product prod = getProduct(productList);
         BigDecimal area = io.readBigDecimal("Please enter the total area of flooring requested");
         Order currentOrder = new Order();
+        currentOrder.setDate(date);
         currentOrder.setCustomerName(name);
         currentOrder.setState(state.getState());
         currentOrder.setTaxRate(state.getTaxRate());
@@ -121,10 +115,7 @@ public class FmViewImpl implements FmView {
         currentOrder.setCostSqFt(prod.getCostSqFt());
         currentOrder.setCostLaborSqFt(prod.getLaborCostSqFt());
         currentOrder.setArea(area);
-        currentOrder.getMaterialCost();
-        currentOrder.getLaborCost();
-        currentOrder.getTaxOnTotal();
-        currentOrder.getTotal();
+
         return currentOrder;
     }
 
@@ -146,7 +137,7 @@ public class FmViewImpl implements FmView {
     private Product getProduct(List<Product> productList) {
         Product toReturn = null;
         boolean isValid = false;
-        while (!isValid){
+        while (!isValid) {
             String userInput = io.readString("Please enter product requested");
             for (Product toCheck : productList) {
                 if (toCheck.getProduct().equalsIgnoreCase(userInput)) {
@@ -156,5 +147,24 @@ public class FmViewImpl implements FmView {
             }
         }
         return toReturn;
+    }
+
+    private void displayOrder(Order currentOrder) {
+        BigDecimal taxRate = currentOrder.getTaxRate().setScale(2, RoundingMode.HALF_UP);
+        BigDecimal area = currentOrder.getArea().setScale(2, RoundingMode.HALF_UP);
+        BigDecimal costSqFt = currentOrder.getCostSqFt().setScale(2, RoundingMode.HALF_UP);
+        BigDecimal laborCostSqFt = currentOrder.getCostLaborSqFt().setScale(2, RoundingMode.HALF_UP);
+        BigDecimal materialCost = currentOrder.getMaterialCost().setScale(2, RoundingMode.HALF_UP);
+        BigDecimal laborCost = currentOrder.getLaborCost().setScale(2, RoundingMode.HALF_UP);
+        BigDecimal tax = currentOrder.getTaxOnTotal().setScale(2, RoundingMode.HALF_UP);
+        BigDecimal total = currentOrder.getTotal().setScale(2, RoundingMode.HALF_UP);
+        io.print(Integer.toString(currentOrder.getOrderNumber()) + " " + currentOrder.getCustomerName() + " " + currentOrder.getState() + " (" + taxRate + "%) " + currentOrder.getProductType() + " " + area + "ft²" + " $" + costSqFt + " $" + laborCostSqFt + " $" + materialCost + " $" + laborCost + " $" + tax + " $" + total);
+    }
+
+    @Override
+    public boolean askToConfirmOrder(Order currentOrder) {
+        displayOrder(currentOrder);
+        String userChoice = io.readString("Would you like to save this order? (y/n)");
+        return !userChoice.equalsIgnoreCase("n");
     }
 }

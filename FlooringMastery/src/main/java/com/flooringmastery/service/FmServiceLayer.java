@@ -20,7 +20,7 @@ public interface FmServiceLayer {
     
     public List<Order> getOrdersByDate(LocalDate ld) throws FmPersistenceException;
 
-    public void createOrder(Order currentOrder);
+    public Order createOrder(Order currentOrder) throws FmPersistenceException;
 
     public List<TaxRate> getAllStateTaxRates() throws FmPersistenceException;
 
