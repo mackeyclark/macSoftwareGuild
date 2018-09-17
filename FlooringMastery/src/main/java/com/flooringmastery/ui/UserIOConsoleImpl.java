@@ -267,7 +267,9 @@ public class UserIOConsoleImpl implements UserIO {
         while (!validInput) {
             try {
                 String toCheck = reader.nextLine();
-                LocalDate ld = LocalDate.parse(toCheck, DateTimeFormatter.ofPattern("MMddyyyy"));
+                DateTimeFormatter format = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+                //how to convert a string of any input to proper local date?
+                LocalDate ld = LocalDate.parse(toCheck, format);
                 toReturn = ld;
 
                 validInput = true;

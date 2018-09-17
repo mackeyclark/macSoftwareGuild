@@ -1,0 +1,3 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+2,b,OH,6.25,Wood,1000,5.15,4.75,5150.00,4750.00,618.75,10518.75
+3,c,OH,6.25,Wood,998,5.15,4.75,5139.70,4740.50,617.51,10497.71
