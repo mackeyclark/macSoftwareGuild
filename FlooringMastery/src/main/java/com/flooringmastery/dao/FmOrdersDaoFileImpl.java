@@ -162,4 +162,15 @@ public class FmOrdersDaoFileImpl implements FmOrdersDao {
         //return object
         return toRemove;
     }
+
+    @Override
+    public Order editOrder(Order editOrder) throws FmPersistenceException {
+        LocalDate date = editOrder.getDate();
+        List<Order> daysOrders = getOrdersByDate(date);
+        //order coming in already has an order number, all this needs to do is
+        //put the order in the list and write it to the file
+        daysOrders.add(editOrder);
+        writeFile(daysOrders, date);
+        return editOrder;
+    }
 }

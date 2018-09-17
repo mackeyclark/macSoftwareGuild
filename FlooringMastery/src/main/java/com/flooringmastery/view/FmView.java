@@ -47,4 +47,6 @@ public interface FmView {
 
     public Order getEditOrderInfo(Order currentOrder, List<TaxRate> taxList, List<Product> productList);
 
+    public void displayExitMessage();
+
 }

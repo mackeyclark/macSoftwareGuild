@@ -30,4 +30,6 @@ public interface FmServiceLayer {
 
     public Order removeOrder(Order currentOrder) throws FmPersistenceException;
 
+    public Order editOrder(Order editOrder) throws FmPersistenceException;
+
 }

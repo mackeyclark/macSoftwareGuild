@@ -113,7 +113,7 @@ public class FmControllerImpl implements FmController {
             //old data or the new data the user just put in
             Order editOrder = view.getEditOrderInfo(currentOrder, taxList, productList);
             service.removeOrder(currentOrder);
-            service.createOrder(editOrder);
+            service.editOrder(editOrder);
             view.displayEditSuccessBanner();
         } else {
             view.displayErrorMessage("Could not retrive orders for date");
@@ -144,13 +144,11 @@ public class FmControllerImpl implements FmController {
     }
 
     private void unknownCommand() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        view.displayErrorMessage("Unknown command, please press enter to continue.");
     }
 
     //step 6. exit
     private void exitMessage() {
-        //TODO
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        view.displayExitMessage();
     }
 }

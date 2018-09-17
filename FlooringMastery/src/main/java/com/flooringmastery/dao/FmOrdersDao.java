@@ -14,7 +14,7 @@ import java.util.List;
  * @author macam
  */
 public interface FmOrdersDao {
-    
+
     List<Order> getOrdersByDate(LocalDate ld) throws FmPersistenceException;
 
     public Order createOrder(Order currentOrder) throws FmPersistenceException;
@@ -22,5 +22,7 @@ public interface FmOrdersDao {
     public Order getOrder(List<Order> orderList, int orderNum);
 
     public Order removeOrder(Order currentOrder) throws FmPersistenceException;
-    
+
+    public Order editOrder(Order editOrder) throws FmPersistenceException;
+
 }

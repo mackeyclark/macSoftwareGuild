@@ -1,2 +1,2 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-1,Gabriel,PA,6.75,Wood,300,5.15,4.75,1545.00,1425.00,200.48,3170.48
+1,Debbie,MI,5.75,Carpet,200,2.25,2.10,450.00,420.00,50.03,920.03
