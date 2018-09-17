@@ -45,4 +45,6 @@ public interface FmView {
 
     public int getOrderNumber(List<Order> orderList);
 
+    public Order getEditOrderInfo(Order currentOrder, List<TaxRate> taxList, List<Product> productList);
+
 }

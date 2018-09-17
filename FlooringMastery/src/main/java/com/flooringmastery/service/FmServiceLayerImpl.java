@@ -61,9 +61,4 @@ public class FmServiceLayerImpl implements FmServiceLayer {
         return Odao.removeOrder(currentOrder);
     }
 
-    @Override
-    public Order editOrder(Order currentOrder, List<TaxRate> taxList, List<Product> productList) {
-        return Odao.editOrder(currentOrder, taxList, productList);
-    }
-    
 }

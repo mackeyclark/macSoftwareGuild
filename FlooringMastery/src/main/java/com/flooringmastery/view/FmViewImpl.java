@@ -176,4 +176,26 @@ public class FmViewImpl implements FmView {
         }
         return toReturn;
     }
+
+    @Override
+    public Order getEditOrderInfo(Order currentOrder, List<TaxRate> taxList, List<Product> productList) {
+        //TODO
+        //make an edited order to return
+        Order editedOrder = new Order();
+        //set edited order's date and order number to the current order's order 
+        //number
+        LocalDate date = currentOrder.getDate();
+        int orderNum = currentOrder.getOrderNumber();
+        //if no user input edit order info = current order
+        //else edit order = user input
+        io.print(currentOrder.getCustomerName());
+        String name = io.readString("Please enter new name or press enter to skip");
+        if (name == null) {
+            editedOrder.setCustomerName(currentOrder.getCustomerName());
+        } else {
+            editedOrder.setCustomerName(name);
+        }
+        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

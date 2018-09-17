@@ -100,17 +100,20 @@ public class FmControllerImpl implements FmController {
         //ask user for date order occurs on
         LocalDate ld = view.enterDate();
         List<Order> orderList = service.getOrdersByDate(ld);
+        view.displayOrderList(orderList);
         if (!orderList.isEmpty()) {
-        //ask user for the order's number
+            //ask user for the order's number
             int orderNum = view.getOrderNumber(orderList);
-        //get specified order
+            //get specified order
             Order currentOrder = service.getOrder(orderList, orderNum);
+            List<TaxRate> taxList = service.getAllStateTaxRates();
+            List<Product> productList = service.getAllMaterialCosts();
             //show each piece of data to the user, prompt user to enter new data
             //user will be making a new order where the set values either equal the
             //old data or the new data the user just put in
-            List<TaxRate> taxList = service.getAllStateTaxRates();
-            List<Product> productList = service.getAllMaterialCosts();
-            service.editOrder(currentOrder, taxList, productList);
+            Order editOrder = view.getEditOrderInfo(currentOrder, taxList, productList);
+            service.removeOrder(currentOrder);
+            service.createOrder(editOrder);
             view.displayEditSuccessBanner();
         } else {
             view.displayErrorMessage("Could not retrive orders for date");

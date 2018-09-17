@@ -6,8 +6,6 @@
 package com.flooringmastery.dao;
 
 import com.flooringmastery.dto.Order;
-import com.flooringmastery.dto.Product;
-import com.flooringmastery.dto.TaxRate;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -163,10 +161,5 @@ public class FmOrdersDaoFileImpl implements FmOrdersDao {
         writeFile(filteredList, date);
         //return object
         return toRemove;
-    }
-
-    @Override
-    public Order editOrder(Order currentOrder, List<TaxRate> taxList, List<Product> productList) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
