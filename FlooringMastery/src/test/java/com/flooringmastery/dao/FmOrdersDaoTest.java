@@ -102,4 +102,21 @@ public class FmOrdersDaoTest {
         assertEquals(0, orderList.size());
     }
     
+    @Test
+    public void testEditOrder() throws Exception {
+        //get an order
+        //edit that order's name
+        //assert that order's name equals new name
+        //assert that the order number is the same
+        String dateToLookFor = "06012013";
+        LocalDate ld = LocalDate.parse(dateToLookFor, DateTimeFormatter.ofPattern("MMddyyyy"));
+        
+        List<Order> orderList = dao.getOrdersByDate(ld);
+        
+        Order order = dao.getOrder(orderList, 1);
+        
+        assertNotNull(order);
+        
+        
+    }
 }
