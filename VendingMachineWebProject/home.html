@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vending Machine</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Vending Machine</h1>
+        <hr />
+        <div class="column">
+            <div class="col-md-8">
+                <div id="vmButtonsDiv">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Total $ In</h2>
+                <form class="form-vertical" role="form" id="money-in">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="total-money-display" placeholder="$0.00" readonly />
+                        <div class="col-md-offset-3" id="add-money">
+                            <div class="row">
+                                <button type="button" class="btn btn-default" id="add-dollar">Add Dollar</button>
+                                <button type="button" class="btn btn-default" id="add-quarter">Add Quarter</button>
+                            </div>
+                            <div class="row">
+                                <button type="button" class="btn btn-default" id="add-dime">Add Dime</button>
+                                <button type="button" class="btn btn-default" id="add-nickel">Add Nickel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <hr />
+                <h2>Messages</h2>
+                <form class="form-vertical" role="form" id="messages">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="messages-display" readonly />
+                        <label for="item-display" class="col-md-2 control-label">
+                            <h4>Item:</h4>
+                        </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="item-display" readonly />
+                        </div>
+                        <button type="button" class="btn btn-default" id="make-purchase">Make Purchase</button>
+                    </div>
+                </form>
+                <hr />
+                <h2>Change</h2>
+                <form class="form-vertical" role="form" id="change">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="change-display" readonly />
+                        <button type="button" class="btn btn-default" id="cancel">Return Change</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
