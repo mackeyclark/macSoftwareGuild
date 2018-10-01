@@ -29,3 +29,419 @@
 28-Sep-2018 13:50:13.154 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
 28-Sep-2018 13:50:13.154 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.16
 28-Sep-2018 13:50:13.170 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\ContactListSpringMVC.xml]
+28-Sep-2018 13:50:16.368 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+28-Sep-2018 13:50:16.437 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 13:50:16.547 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 13:50:16 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:16.638 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 13:50:17.082 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 13:50:17.345 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 13:50:17.808 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayContactsPage],methods=[GET]}" onto public java.lang.String com.sg.contactlistspringmvc.controller.ContactController.displayContactsPage(org.springframework.ui.Model)
+28-Sep-2018 13:50:17.810 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayContactDetails],methods=[GET]}" onto public java.lang.String com.sg.contactlistspringmvc.controller.ContactController.displayContactDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+28-Sep-2018 13:50:17.811 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayEditContactForm],methods=[GET]}" onto public java.lang.String com.sg.contactlistspringmvc.controller.ContactController.displayEditContactForm(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+28-Sep-2018 13:50:17.811 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deleteContact],methods=[GET]}" onto public java.lang.String com.sg.contactlistspringmvc.controller.ContactController.deleteContact(javax.servlet.http.HttpServletRequest)
+28-Sep-2018 13:50:17.811 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/editContact],methods=[POST]}" onto public java.lang.String com.sg.contactlistspringmvc.controller.ContactController.editContact(com.sg.contactlistspringmvc.model.Contact,org.springframework.validation.BindingResult)
+28-Sep-2018 13:50:17.811 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createContact],methods=[POST]}" onto public java.lang.String com.sg.contactlistspringmvc.controller.ContactController.createContact(javax.servlet.http.HttpServletRequest)
+28-Sep-2018 13:50:17.818 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/contact/{id}],methods=[DELETE]}" onto public void com.sg.contactlistspringmvc.controller.RESTController.deleteContact(long)
+28-Sep-2018 13:50:17.819 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/contact],methods=[POST]}" onto public com.sg.contactlistspringmvc.model.Contact com.sg.contactlistspringmvc.controller.RESTController.createContact(com.sg.contactlistspringmvc.model.Contact)
+28-Sep-2018 13:50:17.821 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/contacts],methods=[GET]}" onto public java.util.List<com.sg.contactlistspringmvc.model.Contact> com.sg.contactlistspringmvc.controller.RESTController.getAllContacts()
+28-Sep-2018 13:50:17.821 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/contact/{id}],methods=[GET]}" onto public com.sg.contactlistspringmvc.model.Contact com.sg.contactlistspringmvc.controller.RESTController.getContact(long)
+28-Sep-2018 13:50:17.821 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/contact/{id}],methods=[PUT]}" onto public void com.sg.contactlistspringmvc.controller.RESTController.updateContact(long,com.sg.contactlistspringmvc.model.Contact) throws com.sg.contactlistspringmvc.controller.UpdateIntegrityException
+28-Sep-2018 13:50:17.823 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displaySearchPage],methods=[GET]}" onto public java.lang.String com.sg.contactlistspringmvc.controller.SearchController.displaySearchPage()
+28-Sep-2018 13:50:17.900 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 13:50:18.512 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:50:16 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:18.520 WARNING [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter': Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: ErrorMessage
+28-Sep-2018 13:50:18.522 SEVERE [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter': Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: ErrorMessage
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NoClassDefFoundError: ErrorMessage
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:613)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:524)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:68)
+	at org.springframework.core.MethodIntrospector.selectMethods(MethodIntrospector.java:95)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:543)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.afterPropertiesSet(RequestMappingHandlerAdapter.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: ErrorMessage
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1285)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1119)
+	... 36 more
+
+28-Sep-2018 13:50:18.531 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+28-Sep-2018 13:50:18.532 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/ContactListSpringMVC] startup failed due to previous errors
+28-Sep-2018 13:50:18.548 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\ContactListSpringMVC.xml] has finished in [5,377] ms
+28-Sep-2018 13:50:18.548 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml]
+28-Sep-2018 13:50:18.557 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/FactorizorJspServlet]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@6fbd36ee]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4992)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\macam\Desktop\macameron-clark-individual-work\New Folder\FactorizorJspServlet\target\FactorizorJspServlet-1.0-SNAPSHOT] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:733)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:691)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+28-Sep-2018 13:50:18.557 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/FactorizorJspServlet]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+28-Sep-2018 13:50:18.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml] has finished in [185] ms
+28-Sep-2018 13:50:18.734 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorSpringMVC.xml]
+28-Sep-2018 13:50:21.316 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 13:50:21.401 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 13:50:21 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:21.473 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 13:50:21.830 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 13:50:22.046 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 13:50:22.334 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/factorNumber],methods=[POST]}" onto public java.lang.String com.sg.factorizorspringmvc.FactorizorController.factorNumber(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:50:22.338 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.factorizorspringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:50:22.412 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 13:50:22.982 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:50:21 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:23.052 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:50:21 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:23.152 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1836 ms
+28-Sep-2018 13:50:23.170 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorSpringMVC.xml] has finished in [4,435] ms
+28-Sep-2018 13:50:23.170 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculator.xml]
+28-Sep-2018 13:50:23.350 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculator.xml] has finished in [180] ms
+28-Sep-2018 13:50:23.351 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculatorSpringMVC.xml]
+28-Sep-2018 13:50:25.816 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 13:50:25.899 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 13:50:25 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:25.960 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 13:50:26.201 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 13:50:26.423 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 13:50:26.698 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/calculateFloor],methods=[POST]}" onto public java.lang.String com.sg.flooringcalculatorspringmvc.FloooringCalculatorSpringMvc.returnValues(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:50:26.700 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.flooringcalculatorspringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:50:26.771 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 13:50:27.265 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:50:25 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:27.328 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:50:25 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:27.427 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1610 ms
+28-Sep-2018 13:50:27.428 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculatorSpringMVC.xml] has finished in [4,077] ms
+28-Sep-2018 13:50:27.428 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml]
+28-Sep-2018 13:50:27.439 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HangmanSpringMVC]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@2c1a3fe2]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4992)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\macam\Desktop\macameron-clark-individual-work\HangmanSpringMVC\target\spring-mvc-webapp] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:733)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:691)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+28-Sep-2018 13:50:27.440 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HangmanSpringMVC]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+28-Sep-2018 13:50:27.441 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml] has finished in [13] ms
+28-Sep-2018 13:50:27.476 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\docs]
+28-Sep-2018 13:50:27.517 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\docs] has finished in [41] ms
+28-Sep-2018 13:50:27.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\examples]
+28-Sep-2018 13:50:29.198 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\examples] has finished in [1,680] ms
+28-Sep-2018 13:50:29.198 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\host-manager]
+28-Sep-2018 13:50:29.241 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\host-manager] has finished in [43] ms
+28-Sep-2018 13:50:29.241 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\manager]
+28-Sep-2018 13:50:29.269 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\manager] has finished in [28] ms
+28-Sep-2018 13:50:29.269 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\ROOT]
+28-Sep-2018 13:50:29.291 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\ROOT] has finished in [22] ms
+28-Sep-2018 13:50:29.295 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+28-Sep-2018 13:50:29.303 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+28-Sep-2018 13:50:29.306 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 16200 ms
+28-Sep-2018 13:50:30.248 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml]
+28-Sep-2018 13:50:31.423 INFO [http-nio-8080-exec-2] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 13:50:31.499 INFO [http-nio-8080-exec-2] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 13:50:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:31.560 INFO [http-nio-8080-exec-2] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 13:50:31.774 INFO [http-nio-8080-exec-2] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 13:50:31.950 INFO [http-nio-8080-exec-2] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 13:50:32.218 INFO [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:50:32.276 INFO [http-nio-8080-exec-2] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 13:50:32.730 INFO [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:50:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:32.796 INFO [http-nio-8080-exec-2] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:50:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:50:32.914 INFO [http-nio-8080-exec-2] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1491 ms
+28-Sep-2018 13:50:32.919 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml] has finished in [2,670] ms
+28-Sep-2018 13:50:32.924 INFO [http-nio-8080-exec-6] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VendingMachineSpringMVC]] after start() had already been called. The second call will be ignored.
+28-Sep-2018 13:51:58.650 INFO [http-nio-8080-exec-3] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 13:50:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:51:59.185 INFO [http-nio-8080-exec-3] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/VendingMachineSpringMVC]
+28-Sep-2018 13:51:59.243 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml]
+28-Sep-2018 13:52:00.402 INFO [http-nio-8080-exec-10] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 13:52:00.486 INFO [http-nio-8080-exec-10] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 13:52:00 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:52:00.555 INFO [http-nio-8080-exec-10] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 13:52:00.811 INFO [http-nio-8080-exec-10] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 13:52:01.000 INFO [http-nio-8080-exec-10] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 13:52:01.276 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:52:01.351 INFO [http-nio-8080-exec-10] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 13:52:01.843 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:52:00 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:52:01.923 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:52:00 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:52:02.045 INFO [http-nio-8080-exec-10] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1643 ms
+28-Sep-2018 13:52:02.051 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml] has finished in [2,808] ms
+28-Sep-2018 13:52:02.056 INFO [http-nio-8080-exec-2] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VendingMachineSpringMVC]] after start() had already been called. The second call will be ignored.
+28-Sep-2018 13:52:36.552 INFO [http-nio-8080-exec-14] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 13:52:00 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:52:37.085 INFO [http-nio-8080-exec-14] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/VendingMachineSpringMVC]
+28-Sep-2018 13:52:37.149 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml]
+28-Sep-2018 13:52:38.268 INFO [http-nio-8080-exec-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 13:52:38.336 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 13:52:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:52:38.401 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 13:52:38.635 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 13:52:38.802 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 13:52:39.108 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:52:39.171 INFO [http-nio-8080-exec-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 13:52:39.627 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:52:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:52:39.690 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:52:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:52:39.783 INFO [http-nio-8080-exec-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1515 ms
+28-Sep-2018 13:52:39.792 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml] has finished in [2,643] ms
+28-Sep-2018 13:52:39.798 INFO [http-nio-8080-exec-13] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VendingMachineSpringMVC]] after start() had already been called. The second call will be ignored.
+28-Sep-2018 13:55:36.701 INFO [http-nio-8080-exec-24] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 13:52:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:55:37.222 INFO [http-nio-8080-exec-24] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/VendingMachineSpringMVC]
+28-Sep-2018 13:55:37.283 INFO [http-nio-8080-exec-26] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml]
+28-Sep-2018 13:55:38.408 INFO [http-nio-8080-exec-26] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 13:55:38.490 INFO [http-nio-8080-exec-26] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 13:55:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:55:38.540 INFO [http-nio-8080-exec-26] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 13:55:38.784 INFO [http-nio-8080-exec-26] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 13:55:38.943 INFO [http-nio-8080-exec-26] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 13:55:39.223 INFO [http-nio-8080-exec-26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 13:55:39.301 INFO [http-nio-8080-exec-26] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 13:55:39.761 INFO [http-nio-8080-exec-26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:55:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:55:39.831 INFO [http-nio-8080-exec-26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 13:55:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 13:55:39.936 INFO [http-nio-8080-exec-26] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1528 ms
+28-Sep-2018 13:55:39.945 INFO [http-nio-8080-exec-26] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml] has finished in [2,662] ms
+28-Sep-2018 13:55:39.950 INFO [http-nio-8080-exec-22] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VendingMachineSpringMVC]] after start() had already been called. The second call will be ignored.
+28-Sep-2018 14:10:46.709 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:10:46.722 INFO [http-nio-8080-exec-36] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 13:55:38 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:10:47.915 INFO [http-nio-8080-exec-36] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:10:47.997 INFO [http-nio-8080-exec-36] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:10:47 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:10:48.060 INFO [http-nio-8080-exec-36] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:10:48.308 INFO [http-nio-8080-exec-36] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:10:48.500 INFO [http-nio-8080-exec-36] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:10:48.798 INFO [http-nio-8080-exec-36] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:10:48.859 INFO [http-nio-8080-exec-36] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:10:49.361 INFO [http-nio-8080-exec-36] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:10:47 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:10:49.428 INFO [http-nio-8080-exec-36] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:10:47 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:10:49.541 INFO [http-nio-8080-exec-36] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1626 ms
+28-Sep-2018 14:10:49.553 INFO [http-nio-8080-exec-36] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:11:11.435 INFO [http-nio-8080-exec-35] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:11:11.442 INFO [http-nio-8080-exec-35] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:10:47 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:11:12.691 INFO [http-nio-8080-exec-35] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:11:12.770 INFO [http-nio-8080-exec-35] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:11:12 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:11:12.835 INFO [http-nio-8080-exec-35] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:11:13.047 INFO [http-nio-8080-exec-35] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:11:13.269 INFO [http-nio-8080-exec-35] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:11:13.577 INFO [http-nio-8080-exec-35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:11:13.638 INFO [http-nio-8080-exec-35] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:11:14.105 INFO [http-nio-8080-exec-35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:11:12 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:11:14.173 INFO [http-nio-8080-exec-35] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:11:12 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:11:14.309 INFO [http-nio-8080-exec-35] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1618 ms
+28-Sep-2018 14:11:14.313 INFO [http-nio-8080-exec-35] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:17:29.780 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:17:29.789 INFO [http-nio-8080-exec-39] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:11:12 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:17:31.123 INFO [http-nio-8080-exec-39] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:17:31.200 INFO [http-nio-8080-exec-39] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:17:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:17:31.269 INFO [http-nio-8080-exec-39] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:17:31.567 INFO [http-nio-8080-exec-39] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:17:31.740 INFO [http-nio-8080-exec-39] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:17:32.033 INFO [http-nio-8080-exec-39] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:17:32.096 INFO [http-nio-8080-exec-39] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:17:32.550 INFO [http-nio-8080-exec-39] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:17:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:17:32.613 INFO [http-nio-8080-exec-39] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:17:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:17:32.706 INFO [http-nio-8080-exec-39] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1583 ms
+28-Sep-2018 14:17:32.709 INFO [http-nio-8080-exec-39] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:18:04.616 INFO [http-nio-8080-exec-50] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:18:04.621 INFO [http-nio-8080-exec-50] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:17:31 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:05.820 INFO [http-nio-8080-exec-50] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:18:05.895 INFO [http-nio-8080-exec-50] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:18:05 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:05.953 INFO [http-nio-8080-exec-50] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:18:06.164 INFO [http-nio-8080-exec-50] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:18:06.323 INFO [http-nio-8080-exec-50] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:18:06.595 INFO [http-nio-8080-exec-50] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:18:06.663 INFO [http-nio-8080-exec-50] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:18:07.119 INFO [http-nio-8080-exec-50] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:18:05 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:07.182 INFO [http-nio-8080-exec-50] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:18:05 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:07.284 INFO [http-nio-8080-exec-50] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1463 ms
+28-Sep-2018 14:18:07.289 INFO [http-nio-8080-exec-50] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:18:07.368 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:18:07.375 INFO [http-nio-8080-exec-43] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:18:05 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:08.411 INFO [http-nio-8080-exec-43] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:18:08.493 INFO [http-nio-8080-exec-43] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:18:08 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:08.562 INFO [http-nio-8080-exec-43] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:18:08.793 INFO [http-nio-8080-exec-43] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:18:08.958 INFO [http-nio-8080-exec-43] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:18:09.236 INFO [http-nio-8080-exec-43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:18:09.332 INFO [http-nio-8080-exec-43] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:18:09.785 INFO [http-nio-8080-exec-43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:18:08 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:09.849 INFO [http-nio-8080-exec-43] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:18:08 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:18:09.948 INFO [http-nio-8080-exec-43] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1535 ms
+28-Sep-2018 14:18:09.950 INFO [http-nio-8080-exec-43] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:19:34.181 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:19:34.189 INFO [http-nio-8080-exec-52] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:18:08 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:35.303 INFO [http-nio-8080-exec-52] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:19:35.375 INFO [http-nio-8080-exec-52] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:19:35 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:35.438 INFO [http-nio-8080-exec-52] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:19:35.644 INFO [http-nio-8080-exec-52] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:19:35.805 INFO [http-nio-8080-exec-52] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:19:36.080 INFO [http-nio-8080-exec-52] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:19:36.138 INFO [http-nio-8080-exec-52] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:19:36.595 INFO [http-nio-8080-exec-52] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:19:35 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:36.660 INFO [http-nio-8080-exec-52] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:19:35 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:36.785 INFO [http-nio-8080-exec-52] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1482 ms
+28-Sep-2018 14:19:36.791 INFO [http-nio-8080-exec-52] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:19:54.845 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:19:54.849 INFO [http-nio-8080-exec-57] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:19:35 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:55.998 INFO [http-nio-8080-exec-57] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:19:56.086 INFO [http-nio-8080-exec-57] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:19:56 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:56.156 INFO [http-nio-8080-exec-57] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:19:56.370 INFO [http-nio-8080-exec-57] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:19:56.544 INFO [http-nio-8080-exec-57] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:19:56.975 INFO [http-nio-8080-exec-57] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:19:57.036 INFO [http-nio-8080-exec-57] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:19:57.581 INFO [http-nio-8080-exec-57] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:19:56 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:57.673 INFO [http-nio-8080-exec-57] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:19:56 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:57.777 INFO [http-nio-8080-exec-57] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1779 ms
+28-Sep-2018 14:19:57.781 INFO [http-nio-8080-exec-57] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:19:57.894 INFO [http-nio-8080-exec-53] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:19:57.902 INFO [http-nio-8080-exec-53] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:19:56 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:59.009 INFO [http-nio-8080-exec-53] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:19:59.108 INFO [http-nio-8080-exec-53] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:19:59 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:19:59.204 INFO [http-nio-8080-exec-53] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:19:59.445 INFO [http-nio-8080-exec-53] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:19:59.606 INFO [http-nio-8080-exec-53] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:19:59.893 INFO [http-nio-8080-exec-53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:19:59.955 INFO [http-nio-8080-exec-53] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:20:00.416 INFO [http-nio-8080-exec-53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:19:59 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:20:00.477 INFO [http-nio-8080-exec-53] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:19:59 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:20:00.571 INFO [http-nio-8080-exec-53] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1560 ms
+28-Sep-2018 14:20:00.576 INFO [http-nio-8080-exec-53] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:24:24.845 INFO [http-nio-8080-exec-59] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:24:24.849 INFO [http-nio-8080-exec-59] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:19:59 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:26.040 INFO [http-nio-8080-exec-59] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:24:26.118 INFO [http-nio-8080-exec-59] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:24:26 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:26.182 INFO [http-nio-8080-exec-59] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:24:26.389 INFO [http-nio-8080-exec-59] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:24:26.555 INFO [http-nio-8080-exec-59] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:24:26.849 INFO [http-nio-8080-exec-59] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:24:26.910 INFO [http-nio-8080-exec-59] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:24:27.590 INFO [http-nio-8080-exec-59] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:24:26 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:27.674 INFO [http-nio-8080-exec-59] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:24:26 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:27.861 INFO [http-nio-8080-exec-59] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1821 ms
+28-Sep-2018 14:24:27.864 INFO [http-nio-8080-exec-59] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:24:28.471 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:24:28.476 INFO [http-nio-8080-exec-60] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:24:26 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:29.562 INFO [http-nio-8080-exec-60] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:24:29.642 INFO [http-nio-8080-exec-60] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:24:29 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:29.703 INFO [http-nio-8080-exec-60] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:24:29.929 INFO [http-nio-8080-exec-60] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:24:30.095 INFO [http-nio-8080-exec-60] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:24:30.388 INFO [http-nio-8080-exec-60] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:24:30.457 INFO [http-nio-8080-exec-60] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:24:30.982 INFO [http-nio-8080-exec-60] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:24:29 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:31.048 INFO [http-nio-8080-exec-60] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:24:29 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:31.145 INFO [http-nio-8080-exec-60] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1581 ms
+28-Sep-2018 14:24:31.149 INFO [http-nio-8080-exec-60] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:24:31.259 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:24:31.264 INFO [http-nio-8080-exec-63] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:24:29 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:32.287 INFO [http-nio-8080-exec-63] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:24:32.364 INFO [http-nio-8080-exec-63] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:24:32 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:32.424 INFO [http-nio-8080-exec-63] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:24:32.639 INFO [http-nio-8080-exec-63] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:24:32.802 INFO [http-nio-8080-exec-63] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:24:33.116 INFO [http-nio-8080-exec-63] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:24:33.178 INFO [http-nio-8080-exec-63] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:24:33.635 INFO [http-nio-8080-exec-63] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:24:32 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:33.698 INFO [http-nio-8080-exec-63] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:24:32 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:24:33.788 INFO [http-nio-8080-exec-63] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1501 ms
+28-Sep-2018 14:24:33.794 INFO [http-nio-8080-exec-63] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 14:27:33.448 INFO [http-nio-8080-exec-70] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] has started
+28-Sep-2018 14:27:33.457 INFO [http-nio-8080-exec-70] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:24:32 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:27:34.525 INFO [http-nio-8080-exec-70] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+28-Sep-2018 14:27:34.598 INFO [http-nio-8080-exec-70] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Sep 28 14:27:34 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:27:34.661 INFO [http-nio-8080-exec-70] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+28-Sep-2018 14:27:34.862 INFO [http-nio-8080-exec-70] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+28-Sep-2018 14:27:35.062 INFO [http-nio-8080-exec-70] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+28-Sep-2018 14:27:35.339 INFO [http-nio-8080-exec-70] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+28-Sep-2018 14:27:35.402 INFO [http-nio-8080-exec-70] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+28-Sep-2018 14:27:35.846 INFO [http-nio-8080-exec-70] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:27:34 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:27:35.909 INFO [http-nio-8080-exec-70] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Sep 28 14:27:34 CDT 2018]; root of context hierarchy
+28-Sep-2018 14:27:36.010 INFO [http-nio-8080-exec-70] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1485 ms
+28-Sep-2018 14:27:36.015 INFO [http-nio-8080-exec-70] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVC] is completed
+28-Sep-2018 15:59:26.000 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+28-Sep-2018 15:59:26.000 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+28-Sep-2018 15:59:26.112 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+28-Sep-2018 15:59:26.222 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+28-Sep-2018 15:59:26.238 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 13:50:21 CDT 2018]; root of context hierarchy
+28-Sep-2018 15:59:26.238 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 14:27:34 CDT 2018]; root of context hierarchy
+28-Sep-2018 15:59:26.253 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Sep 28 13:50:25 CDT 2018]; root of context hierarchy
+28-Sep-2018 15:59:26.269 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+28-Sep-2018 15:59:26.269 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+28-Sep-2018 15:59:26.269 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+28-Sep-2018 15:59:26.269 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
