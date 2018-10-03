@@ -18,11 +18,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.regex.Pattern;
+import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author macam
  */
+@Repository
 public class VmDaoInMemImpl implements VmDao {
 
     public static final String VM_FILE = "vm.txt";

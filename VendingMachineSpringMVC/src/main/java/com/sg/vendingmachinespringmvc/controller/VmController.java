@@ -40,7 +40,8 @@ public class VmController {
         
         model.addAttribute("itemList", itemList);
         
-        return "items";
+        return "index";
+        //do I have to build a button for each item here?
     }
     
     @RequestMapping(value="/", method=RequestMethod.POST)
@@ -52,6 +53,6 @@ public class VmController {
         int money = Integer.parseInt(change);
         Change returnChange = service.vend(money ,item);
         
-        return "redirect:VendingMachineSpringMVC/";
+        return "index";
     }
 }

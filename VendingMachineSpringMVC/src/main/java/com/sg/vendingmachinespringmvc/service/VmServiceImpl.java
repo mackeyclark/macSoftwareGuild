@@ -12,11 +12,13 @@ import com.sg.vendingmachinespringmvc.dao.VmPersistenceException;
 import com.sg.vendingmachinespringmvc.model.Change;
 import com.sg.vendingmachinespringmvc.model.Item;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author macam
  */
+@Service
 public class VmServiceImpl implements VmService {
 
     VmDao dao = null;

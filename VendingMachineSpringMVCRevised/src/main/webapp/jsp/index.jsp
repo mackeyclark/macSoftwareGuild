@@ -5,13 +5,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vending Machine</title>
+        <title>Index Page</title>
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">        
     </head>
     <body>
         <div class="container">
-            <h1 class="text-center">Vending Machine</h1>
+            <h1 class="center-block">Vending Machine</h1>
             <hr/>
             <div class="col-md-8">
                 <div id="buttonDiv">
