@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
  *
  * @author macam
  */
-@Repository
+
 public class VmDaoInMemImpl implements VmDao {
     
     private Map<String, Item> items = new HashMap<>();

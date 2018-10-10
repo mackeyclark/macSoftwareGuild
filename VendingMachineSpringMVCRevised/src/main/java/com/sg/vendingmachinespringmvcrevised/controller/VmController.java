@@ -35,6 +35,6 @@ public class VmController {
         
         model.addAttribute("itemList", itemList);
         
-        return "redirect:/jsp/index.jsp";
+        return "index";
     }
 }
