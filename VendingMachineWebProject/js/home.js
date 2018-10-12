@@ -31,25 +31,36 @@ $('document').ready(function () {
         addMoney(0.05);
     });
 
-    $('#make-purachse').click(function () { //should I use this function to check what I get back?
+    $('#make-purchase').click(function () { //should I use this function to check what I get back?
         //validate item chosen
         //validate change
+        var money = $('#total-money-display').val();
+        var item = $('#item-display').val();
         clearMessages();
         $.ajax({
             type: ('GET'),
-            url: 'http://localhost:8080/money/' + $('#change-display').val() + '/item/' + $('#item-display').val(),
-            success: function (data, status) {
-                var returnChange;
+            url: 'http://localhost:8080/money/' + money + '/item/' + item,
+            success: function (change) {
+                var quarters = change.quarters;
+                var dimes = change.dimes;
+                var nickels = change.nickels;
+                var pennies = change.pennies;
 
-                returnChange += data.quarters
-                             += data.dimes
-                             += data.nickles
-                             += data.pennies;
+                var returnChange = quarters + ' q ' +
+                    + dimes + ' d ' +
+                    + nickels + ' n ' +
+                    + pennies + ' p ';
 
                 $('#change-display').val(returnChange);
+                $('#item-display').val('');
+                $('#total-money-display').val('');
+                totalInserted = 0;
+                $('#messages-display').val('Thank You');
+                $('#vmButtonsDiv').empty();
+                loadItems();
             },
             error: function (jsXHR, statusMessage, causeThrown) {
-                $('#messages-display').val(statusMessage);
+                $('#messages-display').val(jsXHR.responseJSON.message);
             }
         });
     });
@@ -97,23 +108,4 @@ function saveItem(itemId) {
 
 function clearMessages() {
     $('#messages-display').val('');
-}
-
-function returnChange() {
-    //if an iten was selected, convert return change JSON into money
-    clearMessages();
-    $.ajax({
-        type: 'GET',
-        url: 'http://localhost:8080/money/' + $('#change-display').val() + '/item/' + $('#item-display').val(),
-        success: function () {
-
-        },
-        error: function (jsXHR, statusMessage, causeThrown) {
-            $('#messages-display').val('Error calling web service. Please try again later.');
-        }
-    });
-}
-
-function checkAndDisplayValidationMessages() {
-    //if the user inputs something invalid take the message json and display it
 }
