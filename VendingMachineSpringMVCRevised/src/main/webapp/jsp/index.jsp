@@ -16,7 +16,7 @@
             <div class="col-md-8">
                 <div id="buttonDiv">
                     <c:forEach var="currentItem" items="${itemList}">
-                        <button type="button" class="btn btn-block" id="item" value="${currentItem.itemId}, ${currentItem.name}, ${currentItem.price}, ${currentItem.inventory}"><c:out value="${currentItem.itemId}"/><c:out value="${currentItem.name}"/><c:out value="${currentItem.price}"/><c:out value="${currentItem.inventory}"/></button>
+                        <c:out value="<button type='button' class='btn btn-block' id='item' onClick='itemSelect('${itemList.getId}')'>1</button>"/>
                     </c:forEach>
                 </div>
             </div>
