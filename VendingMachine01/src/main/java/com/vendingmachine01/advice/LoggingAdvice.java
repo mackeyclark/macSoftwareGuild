@@ -7,8 +7,6 @@ package com.vendingmachine01.advice;
 
 import com.vendingmachine01.dao.VmAuditDao;
 import com.vendingmachine01.dao.VmPersistenceException;
-import com.vendingmachine01.service.InsufficentFundsException;
-import com.vendingmachine01.service.NoItemInventoryException;
 import org.aspectj.lang.JoinPoint;
 
 /**

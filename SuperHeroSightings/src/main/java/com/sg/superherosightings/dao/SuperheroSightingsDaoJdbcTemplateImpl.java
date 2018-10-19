@@ -5,7 +5,17 @@
  */
 package com.sg.superherosightings.dao;
 
+import com.sg.superherosightings.model.Location;
+import com.sg.superherosightings.model.Organization;
+import com.sg.superherosightings.model.Power;
+import com.sg.superherosightings.model.Sighting;
+import com.sg.superherosightings.model.Superhuman;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.List;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 /**
  *
@@ -136,4 +146,225 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     
     private static final String SQL_SELECT_ALL_LOCATIONS
             = "select * from locations";
+
+    @Override
+    public void addSuperhuman(Superhuman superhuman) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void deleteSuperhuman(int heroId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void updateSuperhuman(Superhuman superhuman) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Superhuman getSuperhumanWithId(int heroId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Superhuman> getAllSuperhumans() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Superhuman> getAllSuperhumansInOrganization(int organizationId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void addSighting(Sighting sighting, LocalDate date, int locationId, int heroId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void deleteSighting(int sightingId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void updateSighting(Sighting sighting) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Sighting getSightingWithId(int sightingId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Sighting> getAllSightings() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Sighting> getAllSightingsOfLocation(int locationId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Sighting> getAllSightingsOnDate(LocalDate date) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void addPower(Power power) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void deletePower(int powerId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void updatePower(Power power) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Power getPowerWithId(int powerId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Power> getAllPowers() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void addOrganization(Organization organization) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void deleteOrganization(int organizationId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void updateOrganization(Organization organization) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Organization getOrganizationWithId(int organizationId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Organization> getAllOrganizations() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Organization> getOrganizationsOfSuperhuman(int heroId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void addLocation(Location location) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void deleteLocation(int locationId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void updateLocation(Location location) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Location getLocationWithId(int locationId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Location> getAllLocations() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public List<Location> getLocationsOfSuperhuman(int heroId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    private static final class SuperhumanMapper implements RowMapper<Superhuman> {
+
+        @Override
+        public Superhuman mapRow(ResultSet rs, int i) throws SQLException {
+            Superhuman sh = new Superhuman();
+            sh.setName(rs.getString("name"));
+            sh.setDescription(rs.getString("description"));
+            sh.setHeroId(rs.getInt("heroId"));
+            return sh;
+        }
+        
+    }
+    
+    private static final class SightingMapper implements RowMapper<Sighting> {
+
+        @Override
+        public Sighting mapRow(ResultSet rs, int i) throws SQLException {
+            Sighting s = new Sighting();
+            s.setDate(rs.getTimestamp("date").toLocalDateTime().toLocalDate());
+            s.setSightingId(rs.getInt("sightingId"));
+            return s;
+        }
+        
+    }
+    
+    private static final class PowerMapper implements RowMapper<Power> {
+
+        @Override
+        public Power mapRow(ResultSet rs, int i) throws SQLException {
+            Power p = new Power();
+            p.setName(rs.getString("name"));
+            p.setDescription(rs.getString("description"));
+            p.setPowerId(rs.getInt("powerId"));
+            return p;
+        }
+        
+    }
+    
+    private static final class OrganizationMapper implements RowMapper<Organization> {
+
+        @Override
+        public Organization mapRow(ResultSet rs, int i) throws SQLException {
+            Organization o = new Organization();
+            o.setName(rs.getString("name"));
+            o.setDescription(rs.getString("description"));
+            o.setAddress(rs.getString("address"));
+            o.setPhone(rs.getString("phone"));
+            o.setEmail(rs.getString("email"));
+            o.setOrganizationId(rs.getInt("organizationId"));
+            return o;
+        }
+        
+    }
+    
+    private static final class LocationMapper implements RowMapper<Location> {
+
+        @Override
+        public Location mapRow(ResultSet rs, int i) throws SQLException {
+            Location l = new Location();
+            l.setName(rs.getString("name"));
+            l.setDescription(rs.getString("description"));
+            l.setAddress(rs.getString("address"));
+            l.setLatitude(rs.getBigDecimal("latitude"));
+            l.setLongitude(rs.getBigDecimal("longitude"));
+            l.setLocationId(rs.getInt("locationId"));
+            return l;
+        }
+        
+    }
+    
 }

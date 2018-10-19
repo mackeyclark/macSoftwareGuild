@@ -1,0 +1,68 @@
+<%-- 
+    Document   : home
+    Created on : Oct 15, 2018, 9:30:19 PM
+    Author     : macam
+--%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@page contentType="text/html" pageEncoding="windows-1252"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Security: Home</title>
+        <!--Bootstrap core CSS-->
+        <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hello Security</h1>
+            <hr/>
+            <div class="navbar">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                        <a href="${pageContext.request.contextPath}/home">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="${pageContext.request.contextPath}/content">
+                            Content (must have the user role)
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="${pageContext.request.contextPath}/admin">Admin (must have the admin role)</a>
+                    </li>
+                </ul>
+            </div>
+            <h2>Home Page</h2>
+            <sec:authorize access="isAuthenticated()">
+                <form class="form-inline" 
+                      method="POST" 
+                      action="${pageContext.request.contextPath}/logout">
+                    <input type="hidden" 
+                           name="${_csrf.parameterName}" 
+                           value="${_csrf.token}"/>
+                    <label for="submit">
+                        Hello : ${pageContext.request.userPrincipal.name}&nbsp;&nbsp;&nbsp;|
+                    </label>
+                    <button class="btn btn-link" 
+                            id="submit" 
+                            type="submit">Logout</button>
+                </form>
+            </sec:authorize>
+            <p>
+                The landing page of our application - anyone can get here, including anonymous users.
+            </p>
+            <sec:authorize access="isAuthenticated()">
+                <p>
+                    This is only visible to users who are logged in.
+                </p>
+            </sec:authorize>
+        </div>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

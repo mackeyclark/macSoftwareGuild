@@ -1,0 +1,364 @@
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.16
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 21 2017 17:01:09 UTC
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.16.0
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\logging.properties
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|LAPTOP-1960114R
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\temp
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.12] using APR version [1.5.2].
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+19-Oct-2018 08:30:16.456 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+19-Oct-2018 08:30:17.003 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2k  26 Jan 2017]
+19-Oct-2018 08:30:17.128 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Oct-2018 08:30:17.253 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+19-Oct-2018 08:30:17.253 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+19-Oct-2018 08:30:17.253 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+19-Oct-2018 08:30:17.253 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1187 ms
+19-Oct-2018 08:30:17.284 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Oct-2018 08:30:17.284 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.16
+19-Oct-2018 08:30:17.300 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml]
+19-Oct-2018 08:30:17.346 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/FactorizorJspServlet]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@12d6b9e8]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4992)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\macam\Desktop\macameron-clark-individual-work\New Folder\FactorizorJspServlet\target\FactorizorJspServlet-1.0-SNAPSHOT] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:733)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:691)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+19-Oct-2018 08:30:17.346 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/FactorizorJspServlet]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+19-Oct-2018 08:30:17.346 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml] has finished in [46] ms
+19-Oct-2018 08:30:17.346 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorSpringMVC.xml]
+19-Oct-2018 08:30:19.516 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 08:30:19.595 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 08:30:19.735 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 08:30:19 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:19.813 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:20.157 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 08:30:20.344 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:20.688 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/factorNumber],methods=[POST]}" onto public java.lang.String com.sg.factorizorspringmvc.FactorizorController.factorNumber(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+19-Oct-2018 08:30:20.704 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.factorizorspringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+19-Oct-2018 08:30:20.782 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 08:30:21.329 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:19 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:21.391 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:19 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:21.516 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1921 ms
+19-Oct-2018 08:30:21.532 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorSpringMVC.xml] has finished in [4,186] ms
+19-Oct-2018 08:30:21.532 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculator.xml]
+19-Oct-2018 08:30:21.688 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculator.xml] has finished in [156] ms
+19-Oct-2018 08:30:21.688 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculatorSpringMVC.xml]
+19-Oct-2018 08:30:23.469 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 08:30:23.516 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 08:30:23.594 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 08:30:23 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:23.656 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:23.875 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 08:30:24.031 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:24.265 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/calculateFloor],methods=[POST]}" onto public java.lang.String com.sg.flooringcalculatorspringmvc.FloooringCalculatorSpringMvc.returnValues(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+19-Oct-2018 08:30:24.265 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.flooringcalculatorspringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+19-Oct-2018 08:30:24.328 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 08:30:24.812 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:23 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:24.890 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:23 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:25.015 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1499 ms
+19-Oct-2018 08:30:25.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculatorSpringMVC.xml] has finished in [3,327] ms
+19-Oct-2018 08:30:25.015 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\GarageSale.xml]
+19-Oct-2018 08:30:26.927 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 08:30:26.959 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 08:30:27.037 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 08:30:27 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:27.084 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:27.302 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 08:30:27.443 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:27.677 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String com.sg.garagesale.controller.HomeController.displayHomePage()
+19-Oct-2018 08:30:27.677 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home/register],methods=[GET]}" onto public java.lang.String com.sg.garagesale.controller.HomeController.displayRegisterPage()
+19-Oct-2018 08:30:27.740 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 08:30:28.161 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:27 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:28.224 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:27 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:28.318 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1359 ms
+19-Oct-2018 08:30:28.318 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\GarageSale.xml] has finished in [3,303] ms
+19-Oct-2018 08:30:28.318 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml]
+19-Oct-2018 08:30:28.333 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HangmanSpringMVC]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@24b0bb9d]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4992)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\macam\Desktop\macameron-clark-individual-work\HangmanSpringMVC\target\spring-mvc-webapp] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:733)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:691)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+19-Oct-2018 08:30:28.333 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HangmanSpringMVC]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+19-Oct-2018 08:30:28.333 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml] has finished in [15] ms
+19-Oct-2018 08:30:28.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HelloSecurity.xml]
+19-Oct-2018 08:30:30.514 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 08:30:30.577 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 08:30:30.624 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 08:30:30 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:30.671 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:30.889 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 08:30:31.249 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:31.483 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.sg.hellosecurity.controller.AdminController.displayAdminPage(org.springframework.ui.Model)
+19-Oct-2018 08:30:31.483 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/editUser],methods=[GET]}" onto public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer)
+19-Oct-2018 08:30:31.483 WARNING [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer) mapped.
+19-Oct-2018 08:30:31.483 SEVERE [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 25 more
+
+19-Oct-2018 08:30:31.530 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+19-Oct-2018 08:30:31.530 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/HelloSecurity] startup failed due to previous errors
+19-Oct-2018 08:30:31.561 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HelloSecurity.xml] has finished in [3,181] ms
+19-Oct-2018 08:30:31.561 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml]
+19-Oct-2018 08:30:33.279 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 08:30:33.311 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 08:30:33.389 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 08:30:33 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:33.436 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:33.654 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 08:30:33.811 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:34.053 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+19-Oct-2018 08:30:34.116 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 08:30:34.662 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:33 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:34.725 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:33 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:34.803 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1492 ms
+19-Oct-2018 08:30:34.803 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml] has finished in [3,242] ms
+19-Oct-2018 08:30:34.803 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml]
+19-Oct-2018 08:30:36.412 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 08:30:36.443 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 08:30:36.506 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 08:30:36 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:36.568 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:36.771 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 08:30:36.912 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:37.146 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 08:30:37.209 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 08:30:37.630 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:36 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:37.693 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:36 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:37.771 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1328 ms
+19-Oct-2018 08:30:37.771 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml] has finished in [2,968] ms
+19-Oct-2018 08:30:37.787 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\docs]
+19-Oct-2018 08:30:37.802 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\docs] has finished in [31] ms
+19-Oct-2018 08:30:37.802 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\examples]
+19-Oct-2018 08:30:38.661 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\examples] has finished in [859] ms
+19-Oct-2018 08:30:38.661 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\host-manager]
+19-Oct-2018 08:30:38.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\host-manager] has finished in [32] ms
+19-Oct-2018 08:30:38.693 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\manager]
+19-Oct-2018 08:30:38.708 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\manager] has finished in [15] ms
+19-Oct-2018 08:30:38.708 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\ROOT]
+19-Oct-2018 08:30:38.739 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\ROOT] has finished in [31] ms
+19-Oct-2018 08:30:38.739 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Oct-2018 08:30:38.739 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+19-Oct-2018 08:30:38.739 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 21487 ms
+19-Oct-2018 08:30:49.869 INFO [http-nio-8080-exec-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 08:30:36 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:50.416 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/VendingMachineSpringMVCRevised]
+19-Oct-2018 08:30:50.447 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml]
+19-Oct-2018 08:30:51.431 INFO [http-nio-8080-exec-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 08:30:51.462 INFO [http-nio-8080-exec-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 08:30:51.540 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 08:30:51 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:51.587 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:51.774 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 08:30:51.931 INFO [http-nio-8080-exec-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:52.165 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 08:30:52.227 INFO [http-nio-8080-exec-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 08:30:52.634 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:51 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:52.680 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 08:30:51 CDT 2018]; root of context hierarchy
+19-Oct-2018 08:30:52.774 INFO [http-nio-8080-exec-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1312 ms
+19-Oct-2018 08:30:52.774 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml] has finished in [2,327] ms
+19-Oct-2018 08:30:52.774 INFO [http-nio-8080-exec-4] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VendingMachineSpringMVCRevised]] after start() had already been called. The second call will be ignored.
+19-Oct-2018 08:30:53.259 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization started
+19-Oct-2018 08:30:53.269 INFO [http-nio-8080-exec-5] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 08:30:53 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 08:30:53.270 INFO [http-nio-8080-exec-5] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 08:30:53.331 INFO [http-nio-8080-exec-5] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 08:30:53.399 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 08:30:53.470 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 08:30:53 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 08:30:53.483 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 08:30:53 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 08:30:53.602 INFO [http-nio-8080-exec-5] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization completed in 343 ms
+19-Oct-2018 09:18:02.908 INFO [http-nio-8080-exec-14] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 08:30:53 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:18:02.911 INFO [http-nio-8080-exec-14] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 08:30:51 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:18:03.427 INFO [http-nio-8080-exec-14] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/VendingMachineSpringMVCRevised]
+19-Oct-2018 09:18:45.492 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml]
+19-Oct-2018 09:18:46.570 INFO [http-nio-8080-exec-11] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 09:18:46.617 INFO [http-nio-8080-exec-11] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 09:18:46.679 INFO [http-nio-8080-exec-11] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 09:18:46 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:18:46.742 INFO [http-nio-8080-exec-11] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 09:18:46.929 INFO [http-nio-8080-exec-11] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 09:18:47.070 INFO [http-nio-8080-exec-11] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 09:18:47.320 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 09:18:47.398 INFO [http-nio-8080-exec-11] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 09:18:47.851 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 09:18:46 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:18:47.898 INFO [http-nio-8080-exec-11] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 09:18:46 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:18:48.007 INFO [http-nio-8080-exec-11] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1390 ms
+19-Oct-2018 09:18:48.007 INFO [http-nio-8080-exec-11] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml] has finished in [2,515] ms
+19-Oct-2018 09:18:48.007 INFO [http-nio-8080-exec-15] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VendingMachineSpringMVCRevised]] after start() had already been called. The second call will be ignored.
+19-Oct-2018 09:18:48.149 INFO [http-nio-8080-exec-21] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization started
+19-Oct-2018 09:18:48.156 INFO [http-nio-8080-exec-21] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:18:48 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:18:48.156 INFO [http-nio-8080-exec-21] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 09:18:48.177 INFO [http-nio-8080-exec-21] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 09:18:48.227 INFO [http-nio-8080-exec-21] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 09:18:48.276 INFO [http-nio-8080-exec-21] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:18:48 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:18:48.295 INFO [http-nio-8080-exec-21] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:18:48 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:18:48.379 INFO [http-nio-8080-exec-21] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization completed in 230 ms
+19-Oct-2018 09:18:56.561 WARNING [http-nio-8080-exec-19] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:20:03.995 INFO [http-nio-8080-exec-28] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:18:48 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:20:04.011 INFO [http-nio-8080-exec-28] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 09:18:46 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:20:04.526 INFO [http-nio-8080-exec-28] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/VendingMachineSpringMVCRevised]
+19-Oct-2018 09:20:04.541 INFO [http-nio-8080-exec-26] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml]
+19-Oct-2018 09:20:05.693 INFO [http-nio-8080-exec-26] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 09:20:05.725 INFO [http-nio-8080-exec-26] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 09:20:05.803 INFO [http-nio-8080-exec-26] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 09:20:05 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:20:05.850 INFO [http-nio-8080-exec-26] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 09:20:06.053 INFO [http-nio-8080-exec-26] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 09:20:06.193 INFO [http-nio-8080-exec-26] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 09:20:06.459 INFO [http-nio-8080-exec-26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 09:20:06.521 INFO [http-nio-8080-exec-26] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 09:20:07.021 INFO [http-nio-8080-exec-26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 09:20:05 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:20:07.099 INFO [http-nio-8080-exec-26] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 09:20:05 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:20:07.209 INFO [http-nio-8080-exec-26] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1484 ms
+19-Oct-2018 09:20:07.224 INFO [http-nio-8080-exec-26] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml] has finished in [2,668] ms
+19-Oct-2018 09:20:07.224 INFO [http-nio-8080-exec-22] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/VendingMachineSpringMVCRevised]] after start() had already been called. The second call will be ignored.
+19-Oct-2018 09:20:07.369 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization started
+19-Oct-2018 09:20:07.377 INFO [http-nio-8080-exec-27] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:20:07 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:20:07.377 INFO [http-nio-8080-exec-27] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 09:20:07.425 INFO [http-nio-8080-exec-27] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 09:20:07.504 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 09:20:07.560 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:20:07 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:20:07.577 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:20:07 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:20:07.662 INFO [http-nio-8080-exec-27] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization completed in 293 ms
+19-Oct-2018 09:20:51.108 WARNING [http-nio-8080-exec-23] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:21:35.115 WARNING [http-nio-8080-exec-38] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:22:52.305 WARNING [http-nio-8080-exec-35] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:26:26.416 WARNING [http-nio-8080-exec-36] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:31:09.058 WARNING [http-nio-8080-exec-33] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:32:10.851 WARNING [http-nio-8080-exec-34] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:35:45.603 WARNING [http-nio-8080-exec-39] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:36:44.141 WARNING [http-nio-8080-exec-38] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 09:40:55.287 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVCRevised] has started
+19-Oct-2018 09:40:55.289 INFO [http-nio-8080-exec-37] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:20:07 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:40:55.296 INFO [http-nio-8080-exec-37] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 09:20:05 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:40:56.375 INFO [http-nio-8080-exec-37] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Oct-2018 09:40:56.406 INFO [http-nio-8080-exec-37] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+19-Oct-2018 09:40:56.473 INFO [http-nio-8080-exec-37] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Fri Oct 19 09:40:56 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:40:56.526 INFO [http-nio-8080-exec-37] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 09:40:56.741 INFO [http-nio-8080-exec-37] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+19-Oct-2018 09:40:56.934 INFO [http-nio-8080-exec-37] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 09:40:57.252 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 09:40:57.349 INFO [http-nio-8080-exec-37] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+19-Oct-2018 09:40:57.841 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 09:40:56 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:40:57.899 INFO [http-nio-8080-exec-37] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Oct 19 09:40:56 CDT 2018]; root of context hierarchy
+19-Oct-2018 09:40:57.994 INFO [http-nio-8080-exec-37] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1588 ms
+19-Oct-2018 09:40:58.001 INFO [http-nio-8080-exec-37] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/VendingMachineSpringMVCRevised] is completed
+19-Oct-2018 09:41:03.046 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization started
+19-Oct-2018 09:41:03.050 INFO [http-nio-8080-exec-31] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:41:03 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:41:03.051 INFO [http-nio-8080-exec-31] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+19-Oct-2018 09:41:03.076 INFO [http-nio-8080-exec-31] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19-Oct-2018 09:41:03.109 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+19-Oct-2018 09:41:03.150 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:41:03 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:41:03.161 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:41:03 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 09:41:03.229 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization completed in 183 ms
+19-Oct-2018 09:41:03.394 WARNING [http-nio-8080-exec-38] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 10:09:22.671 WARNING [http-nio-8080-exec-46] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 10:14:09.187 WARNING [http-nio-8080-exec-49] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
