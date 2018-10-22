@@ -4,40 +4,8 @@
  * and open the template in the editor.
  */
 
-function clearMessages() {
-    $('#messages-display').val('');
+function addMoney() {
+    var totalInserted = 0;
+    totalInserted += $('').val();
+    $('#total-inserted-display').val(totalInserted);
 }
-
-$('document').ready(function () {
-
-    totalInserted = 0;
-    function addMoney(toAdd) {
-        totalInserted += toAdd;
-        $('total-inserted-display').val(totalInserted);
-    }
-
-    $('#add-dollar').click(function () {
-        $('#change-display').val('');
-        clearMessages();
-        addMoney(1);
-    });
-
-    $('#add-quarter').click(function () {
-        $('#change-display').val('');
-        clearMessages();
-        addMoney(0.25);
-    });
-
-    $('#add-dime').click(function () {
-        $('#change-display').val('');
-        clearMessages();
-        addMoney(0.1);
-    });
-
-    $('#add-nickel').click(function () {
-        $('#change-display').val('');
-        clearMessages();
-        addMoney(0.05);
-    });
-
-});

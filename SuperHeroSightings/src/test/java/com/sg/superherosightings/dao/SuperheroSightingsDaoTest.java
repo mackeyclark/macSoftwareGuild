@@ -5,11 +5,16 @@
  */
 package com.sg.superherosightings.dao;
 
+import com.sg.superherosightings.model.Superhuman;
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -17,7 +22,10 @@ import org.junit.Test;
  */
 public class SuperheroSightingsDaoTest {
     
-    public SuperheroSightingsDaoTest() {
+    SuperheroSightingsDao dao;
+    
+    public SuperheroSightingsDaoTest(SuperheroSightingsDao dao) {
+        this.dao = dao;
     }
     
     @BeforeClass
@@ -30,17 +38,22 @@ public class SuperheroSightingsDaoTest {
     
     @Before
     public void setUp() {
+        
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("test-applicationcontext.xml");
+        
+        dao = ctx.getBean("superheroSightingsDao", SuperheroSightingsDao.class);
+        
+        //get all the things!
+        List<Superhuman> superhumans = dao.getAllSuperhumans();
+//        List<Organization> organizations = dao.getAllOrganizations();
+//        List<Power> powers = dao.getAllPowers();
+//        List<Location> locations = dao.getAllLocations();
+//        List<Sighting> sightings = dao.getAllSightings();
+        
     }
     
     @After
     public void tearDown() {
-    }
-
-    /**
-     * Test of addSuperhuman method, of class SuperheroSightingsDao.
-     */
-    @Test
-    public void testAddSuperhuman() {
     }
 
     /**
@@ -61,7 +74,8 @@ public class SuperheroSightingsDaoTest {
      * Test of getSuperhumanWithId method, of class SuperheroSightingsDao.
      */
     @Test
-    public void testGetSuperhumanWithId() {
+    public void testAddGetSuperhumanWithId() {
+        
     }
 
     /**

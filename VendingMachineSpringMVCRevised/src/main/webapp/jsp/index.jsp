@@ -29,7 +29,7 @@
                         <input type="text" class="form-control" id="total-inserted-display" placeholder="$0.00" readonly/>
                         <div class="col-md-offset-3" id="add-money">
                             <div class="row">
-                                <button type="button" class="btn btn-default" id="add-dollar" value="1" onclick="$('#total-inserted-display').val()">Add Dollar</button>
+                                <button type="button" class="btn btn-default" id="add-dollar" value="1" onclick="addMoney()">Add Dollar</button>
                                 <button type="button" class="btn btn-default" id="add-quarter" value="0.25">Add Quarter</button>
                             </div>
                             <div class="row">
@@ -50,7 +50,10 @@
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="item-display" readonly />
                         </div>
-                        <button type="button" class="btn btn-default" id="make-purchase">Make Purchase</button>
+                        <form class="form-group" name="makePurchase" method="post" action="vendItem">
+                            <input type="hidden" class="form-control" value="${}"
+                            <button type="button" class="btn btn-default" id="make-purchase">Make Purchase</button>
+                        </form>
                     </div>
                 </form>
                 <hr />

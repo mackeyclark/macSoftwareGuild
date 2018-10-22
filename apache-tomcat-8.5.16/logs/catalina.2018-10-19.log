@@ -362,3 +362,19 @@ public java.lang.String com.sg.hellosecurity.controller.AdminController.editUser
 19-Oct-2018 09:41:03.394 WARNING [http-nio-8080-exec-38] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
 19-Oct-2018 10:09:22.671 WARNING [http-nio-8080-exec-46] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
 19-Oct-2018 10:14:09.187 WARNING [http-nio-8080-exec-49] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 10:40:41.372 WARNING [http-nio-8080-exec-45] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 10:46:56.461 WARNING [http-nio-8080-exec-43] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/VendingMachineSpringMVCRevised/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+19-Oct-2018 15:52:42.900 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+19-Oct-2018 15:52:42.905 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Oct-2018 15:52:43.026 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+19-Oct-2018 15:52:43.157 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Oct-2018 15:52:43.225 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 08:30:33 CDT 2018]; root of context hierarchy
+19-Oct-2018 15:52:44.208 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 08:30:23 CDT 2018]; root of context hierarchy
+19-Oct-2018 15:52:44.238 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 08:30:19 CDT 2018]; root of context hierarchy
+19-Oct-2018 15:52:45.433 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 08:30:27 CDT 2018]; root of context hierarchy
+19-Oct-2018 15:52:46.730 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Fri Oct 19 09:41:03 CDT 2018]; parent: Root WebApplicationContext
+19-Oct-2018 15:52:46.748 INFO [localhost-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Fri Oct 19 09:40:56 CDT 2018]; root of context hierarchy
+19-Oct-2018 15:52:47.891 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Oct-2018 15:52:47.899 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+19-Oct-2018 15:52:47.903 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Oct-2018 15:52:47.905 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

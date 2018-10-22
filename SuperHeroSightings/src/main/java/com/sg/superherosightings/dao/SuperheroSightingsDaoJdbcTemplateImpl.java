@@ -14,8 +14,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
@@ -146,35 +149,49 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     
     private static final String SQL_SELECT_ALL_LOCATIONS
             = "select * from locations";
-
+    
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addSuperhuman(Superhuman superhuman) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_INSERT_SUPERHUMAN,
+                superhuman.getName(),
+                superhuman.getDescription());
+        
+        int heroId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+        
+        superhuman.setHeroId(heroId);
     }
 
     @Override
     public void deleteSuperhuman(int heroId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_DELETE_SUPERHUMAN, heroId);
     }
 
     @Override
     public void updateSuperhuman(Superhuman superhuman) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_UPDATE_SUPERHUMAN,
+                superhuman.getName(),
+                superhuman.getDescription(),
+                superhuman.getHeroId());
     }
 
     @Override
     public Superhuman getSuperhumanWithId(int heroId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try{
+            return jdbcTemplate.queryForObject(SQL_SELECT_SUPERHUMAN, new SuperhumanMapper(), heroId);            
+        }catch(EmptyResultDataAccessException ex) {
+            return null;            
+        }        
     }
 
     @Override
     public List<Superhuman> getAllSuperhumans() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return jdbcTemplate.query(SQL_SELECT_ALL_SUPERHUMANS, new SuperhumanMapper());
     }
 
     @Override
     public List<Superhuman> getAllSuperhumansInOrganization(int organizationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return jdbcTemplate.query(SQL_SELECT_SUPERHUMANS_BY_ORGANIZATION_ID, new SuperhumanMapper());
     }
 
     @Override
@@ -239,22 +256,41 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public void addOrganization(Organization organization) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_INSERT_ORGANIZATION,
+                organization.getName(),
+                organization.getDescription(),
+                organization.getAddress(),
+                organization.getEmail(),
+                organization.getPhone());
+        
+        int organizationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+        
+        organization.setOrganizationId(organizationId);
     }
 
     @Override
     public void deleteOrganization(int organizationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_DELETE_ORGANIZATION, organizationId);
     }
 
     @Override
     public void updateOrganization(Organization organization) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_UPDATE_ORGANIZATION,
+                organization.getName(),
+                organization.getDescription(),
+                organization.getAddress(),
+                organization.getEmail(),
+                organization.getPhone(),
+                organization.getOrganizationId());
     }
 
     @Override
     public Organization getOrganizationWithId(int organizationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            return jdbcTemplate.queryForObject(SQL_SELECT_ORGANIZATION, new OrganizationMapper(), organizationId);
+        }catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     @Override
