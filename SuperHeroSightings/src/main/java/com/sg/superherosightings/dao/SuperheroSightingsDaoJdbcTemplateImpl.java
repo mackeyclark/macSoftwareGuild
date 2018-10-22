@@ -126,6 +126,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     private static final String SQL_SELECT_ALL_ORGANIZATIONS
             = "select * from organizations";
     
+    private static final String SQL_SELECT_ORGANIZATIONS_BY_HERO_ID
+            = "select"
+    
     private static final String SQL_INSERT_LOCATION
             = "insert into locations(name, description, address, "
             + "latitude, longitude) values (?, ?, ?, ?, ?)";
@@ -191,7 +194,7 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public List<Superhuman> getAllSuperhumansInOrganization(int organizationId) {
-        return jdbcTemplate.query(SQL_SELECT_SUPERHUMANS_BY_ORGANIZATION_ID, new SuperhumanMapper());
+        return jdbcTemplate.query(SQL_SELECT_SUPERHUMANS_BY_ORGANIZATION_ID, new SuperhumanMapper(), organizationId);
     }
 
     @Override
@@ -295,11 +298,12 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public List<Organization> getAllOrganizations() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return jdbcTemplate.query(SQL_SELECT_ALL_ORGANIZATIONS, new OrganizationMapper());
     }
 
     @Override
     public List<Organization> getOrganizationsOfSuperhuman(int heroId) {
+        return jdbcTemplate.query(SQL_SELECT_ORGANIZATIONS_BY_HERO_ID, new OrganizationMapper(), args)
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
