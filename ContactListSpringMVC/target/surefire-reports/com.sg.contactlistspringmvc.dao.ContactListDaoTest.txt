@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.sg.contactlistspringmvc.dao.ContactListDaoTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.241 sec <<< FAILURE!
-getAllContacts(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0.182 sec  <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.204 sec <<< FAILURE!
+getAllContacts(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0.141 sec  <<< ERROR!
 org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix "tx" for element "tx:annotation-driven" is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
@@ -73,7 +73,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The p
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
 	... 46 more
-addUpdateContact(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0.002 sec  <<< ERROR!
+addUpdateContact(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0 sec  <<< ERROR!
 org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix "tx" for element "tx:annotation-driven" is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
@@ -144,7 +144,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The p
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
 	... 46 more
-addGetDeleteContact(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0.005 sec  <<< ERROR!
+addGetDeleteContact(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0 sec  <<< ERROR!
 org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix "tx" for element "tx:annotation-driven" is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
@@ -215,7 +215,7 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The p
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
 	... 46 more
-searchContacts(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0.005 sec  <<< ERROR!
+searchContacts(com.sg.contactlistspringmvc.dao.ContactListDaoTest)  Time elapsed: 0 sec  <<< ERROR!
 org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix "tx" for element "tx:annotation-driven" is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)

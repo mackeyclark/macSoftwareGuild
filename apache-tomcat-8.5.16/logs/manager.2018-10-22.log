@@ -60,3 +60,168 @@
 22-Oct-2018 10:48:39.280 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
 22-Oct-2018 10:48:49.856 INFO [http-nio-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
 22-Oct-2018 10:53:45.324 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:53:59.433 INFO [http-nio-8080-exec-52] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:54:27.256 INFO [http-nio-8080-exec-53] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:54:45.253 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:55:07.908 INFO [http-nio-8080-exec-53] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:55:50.805 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:55:50.819 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 10:55:51.344 INFO [http-nio-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:55:51.440 INFO [http-nio-8080-exec-48] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 10:56:03.454 INFO [http-nio-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:56:03.459 INFO [http-nio-8080-exec-48] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 10:56:03.487 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context6735195235623235682.xml'
+22-Oct-2018 10:56:06.286 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/GarageSale'
+22-Oct-2018 11:27:51.686 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 11:27:51.692 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 11:27:51.706 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 11:27:52.285 INFO [http-nio-8080-exec-62] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context4704888322446304441.xml'
+22-Oct-2018 11:27:55.303 INFO [http-nio-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/GarageSale'
+22-Oct-2018 11:27:55.329 INFO [http-nio-8080-exec-59] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 11:27:55.390 INFO [http-nio-8080-exec-63] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 11:29:33.013 INFO [http-nio-8080-exec-66] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 11:29:33.197 INFO [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 11:29:33.198 SEVERE [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: ManagerServlet.reload[/GarageSale]
+ java.lang.IllegalStateException: Context with name [/GarageSale] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3782)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:346)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+22-Oct-2018 12:42:27.871 INFO [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:42:27.879 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:42:27.898 INFO [http-nio-8080-exec-73] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 12:42:28.421 INFO [http-nio-8080-exec-72] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context2134088017685429449.xml'
+22-Oct-2018 12:43:26.775 INFO [http-nio-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:43:26.782 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:43:26.802 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 12:43:27.353 INFO [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context4181273486097190306.xml'
+22-Oct-2018 12:44:22.351 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:44:22.355 INFO [http-nio-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:44:22.371 INFO [http-nio-8080-exec-76] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 12:44:22.923 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context2570526401003935816.xml'
+22-Oct-2018 12:44:39.511 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:44:39.517 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:44:39.531 INFO [http-nio-8080-exec-75] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 12:44:40.070 INFO [http-nio-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context1639837295407972064.xml'
+22-Oct-2018 12:47:06.177 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:47:06.183 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:47:06.205 INFO [http-nio-8080-exec-73] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 12:47:06.745 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context434809532386189121.xml'
+22-Oct-2018 12:49:47.798 INFO [http-nio-8080-exec-77] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:49:47.806 INFO [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:49:47.822 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 12:49:48.372 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context8780132343322336031.xml'
+22-Oct-2018 12:49:55.351 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/GarageSale'
+22-Oct-2018 12:49:55.964 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 12:49:56.545 INFO [http-nio-8080-exec-73] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 13:00:06.366 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:00:06.567 INFO [http-nio-8080-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 13:00:06.567 SEVERE [http-nio-8080-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: ManagerServlet.reload[/GarageSale]
+ java.lang.IllegalStateException: Context with name [/GarageSale] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3782)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:346)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+22-Oct-2018 13:00:54.726 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:00:54.737 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 13:00:55.263 INFO [http-nio-8080-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:00:55.267 INFO [http-nio-8080-exec-82] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:00:55.295 INFO [http-nio-8080-exec-83] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context15289672187241042.xml'
+22-Oct-2018 13:01:28.864 INFO [http-nio-8080-exec-79] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:01:28.875 INFO [http-nio-8080-exec-82] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 13:01:29.387 INFO [http-nio-8080-exec-84] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:01:29.395 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:01:29.420 INFO [http-nio-8080-exec-81] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context7150902722214955909.xml'
+22-Oct-2018 13:01:31.014 INFO [http-nio-8080-exec-79] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/GarageSale'
+22-Oct-2018 13:03:33.620 INFO [http-nio-8080-exec-88] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:03:33.697 INFO [http-nio-8080-exec-89] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 13:57:58.401 INFO [http-nio-8080-exec-99] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:57:58.437 INFO [http-nio-8080-exec-90] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 13:59:12.650 INFO [http-nio-8080-exec-96] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 13:59:12.686 INFO [http-nio-8080-exec-100] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 14:28:55.484 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:28:55.531 INFO [http-nio-8080-exec-104] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 14:28:56.704 INFO [http-nio-8080-exec-114] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:28:56.751 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/GarageSale'
+22-Oct-2018 14:34:25.977 INFO [http-nio-8080-exec-117] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:34:25.988 INFO [http-nio-8080-exec-116] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/GarageSale'
+22-Oct-2018 14:34:49.258 INFO [http-nio-8080-exec-125] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:35:09.034 INFO [http-nio-8080-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:35:16.466 INFO [http-nio-8080-exec-119] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:36:39.574 INFO [http-nio-8080-exec-129] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:38:07.436 INFO [http-nio-8080-exec-129] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:44:51.097 INFO [http-nio-8080-exec-133] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:44:51.706 INFO [http-nio-8080-exec-130] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:44:52.867 INFO [http-nio-8080-exec-128] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 14:44:53.596 INFO [http-nio-8080-exec-132] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:03:08.333 INFO [http-nio-8080-exec-127] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:03:12.223 INFO [http-nio-8080-exec-129] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:42:48.953 INFO [http-nio-8080-exec-132] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:42:50.135 INFO [http-nio-8080-exec-130] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:43:40.687 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:43:41.221 INFO [http-nio-8080-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:45:09.029 INFO [http-nio-8080-exec-128] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:52:04.632 INFO [http-nio-8080-exec-127] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:53:55.596 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 15:53:56.082 INFO [http-nio-8080-exec-126] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 16:01:47.534 INFO [http-nio-8080-exec-128] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 16:02:15.566 INFO [http-nio-8080-exec-127] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+22-Oct-2018 16:02:33.797 INFO [http-nio-8080-exec-124] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'

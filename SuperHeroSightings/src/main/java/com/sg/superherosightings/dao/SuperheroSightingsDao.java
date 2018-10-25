@@ -31,7 +31,7 @@ public interface SuperheroSightingsDao {
     
     public List<Superhuman> getAllSuperhumansInOrganization(int organizationId);
     
-    public void addSighting(Sighting sighting, LocalDate date, int locationId, int heroId);
+    public void addSighting(Sighting sighting);
     
     public void deleteSighting(int sightingId);
     

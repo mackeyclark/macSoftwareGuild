@@ -25,27 +25,27 @@ import org.springframework.transaction.annotation.Transactional;
  * @author macam
  */
 public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightingsDao {
-    
+
     private JdbcTemplate jdbcTemplate;
-    
+
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
-    
+
     private static final String SQL_INSERT_SUPERHUMAN
             = "insert into superhumans(name, description) "
             + "values (?, ?)";
-    
+
     private static final String SQL_DELETE_SUPERHUMAN
             = "delete from superhumans where heroId = ?";
-    
+
     private static final String SQL_UPDATE_SUPERHUMAN
             = "update superhumans set name = ?, description = ? "
             + "where heroId = ?";
-    
+
     private static final String SQL_SELECT_SUPERHUMAN
             = "select * from superhumans where heroId = ?";
-    
+
     private static final String SQL_SELECT_SUPERHUMANS_BY_LOCATION_ID
             = "select sh.heroId, sh.name, sh.description "
             + "from superhumans sh "
@@ -57,120 +57,125 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             + "from superhumans sh "
             + "join SuperhumansOrganizations so on o.heroId = so.heroId "
             + "where so.organizationId = ?";
-        
+
     private static final String SQL_SELECT_ALL_SUPERHUMANS
             = "select * from superhmans";
 
     private static final String SQL_DELETE_SUPERHUMANS_POWERS
             = "delete from SuperhumansPowers where heroId = ?";
-    
+
     private static final String SQL_INSERT_SIGHTING
             = "insert into sightings(date, heroId, locationId) "
             + "values (?, ?, ?)";
-    
+
     private static final String SQL_DELETE_SIGHTING
             = "delete from sightings where sightingId = ?";
-    
+
     private static final String SQL_UPDATE_SIGHTING
             = "update sightings set date = ?, heroId = ?, locationId = ? "
             + "where sightingId = ?";
-    
+
     private static final String SQL_SELECT_SIGHTING
             = "select * from sightings where sightingId = ?";
-    
+
     private static final String SQL_SELECT_SIGHTINGS_BY_LOCATION_ID
             = "select * from sightings where locationId = ?";
-    
+
     private static final String SQL_SELECT_SIGHTINGS_BY_DATE
             = "select * from sightings where date = ?";
-    
+
     private static final String SQL_SELECT_ALL_SIGHTINGS
             = "select * from sightings";
-    
+
     private static final String SQL_INSERT_POWER
             = "insert into powers(description) "
             + "values (?)";
-    
+
     private static final String SQL_INSERT_SUPERHUMANS_POWERS
             = "inset into SuperhumansPowers(heroId, powrId) "
             + "values (?, ?)";
-    
+
     private static final String SQL_DELETE_POWER
             = "delete from powers where powerId = ?";
 
     private static final String SQL_UPDATE_POWER
             = "update powers set description = ? "
             + "where powerId = ?";
-    
+
     private static final String SQL_SELECT_POWER
             = "select * from powers where powerId = ?";
-    
+
     private static final String SQL_SELECT_ALL_POWERS
             = "select * from powers";
-    
+
     private static final String SQL_INSERT_ORGANIZATION
             = "insert into organizations(name, description, address, "
             + "phone, email) values (?, ?, ?, ?, ?)";
-    
+
     private static final String SQL_DELETE_ORGANIZATION
             = "delete from organizations where organizationId = ?";
-    
+
     private static final String SQL_UPDATE_ORGANIZATION
             = "update organizations set name = ?, description = ?, "
             + "address = ?, phone = ?, email = ? "
             + "where organizationId = ?";
-    
+
     private static final String SQL_SELECT_ORGANIZATION
             = "select * from organizations where organizationId = ?";
-    
+
     private static final String SQL_SELECT_ALL_ORGANIZATIONS
             = "select * from organizations";
-    
+
     private static final String SQL_SELECT_ORGANIZATIONS_BY_HERO_ID
-            = "select"
-    
+            = "select o.name, o.description, o.address, o. phone, "
+            + "o.email from organizations o "
+            + "join superhumansorganizations so on o.organizationId = so.organizationId "
+            + "where so.heroId = ?";
+
     private static final String SQL_INSERT_LOCATION
             = "insert into locations(name, description, address, "
             + "latitude, longitude) values (?, ?, ?, ?, ?)";
-    
+
     private static final String SQL_DELETE_LOCATION
             = "delete from locations where locationId = ?";
-    
+
     private static final String SQL_UPDATE_LOCATION
             = "update locations set name = ?, description = ?, "
             + "address = ?, latitude = ?, longitude = ? "
             + "where locationId = ?";
-    
+
     private static final String SQL_SELECT_LOCATION
             = "select * from locations where locationId = ?";
-    
+
     private static final String SQL_SELECT_LOCATIONS_BY_HERO_ID
             = "select l.name, l.description, l.address, l.latitude, "
             + "l.longitude from locations l "
             + "join sightings s on l.locationId = s.locationId "
             + "where s.heroId = ?";
-    
+
     private static final String SQL_SELECT_ALL_LOCATIONS
             = "select * from locations";
-    
+
     @Override
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addSuperhuman(Superhuman superhuman) {
         jdbcTemplate.update(SQL_INSERT_SUPERHUMAN,
                 superhuman.getName(),
                 superhuman.getDescription());
-        
+
         int heroId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
-        
+
         superhuman.setHeroId(heroId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deleteSuperhuman(int heroId) {
         jdbcTemplate.update(SQL_DELETE_SUPERHUMAN, heroId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updateSuperhuman(Superhuman superhuman) {
         jdbcTemplate.update(SQL_UPDATE_SUPERHUMAN,
                 superhuman.getName(),
@@ -180,11 +185,11 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public Superhuman getSuperhumanWithId(int heroId) {
-        try{
-            return jdbcTemplate.queryForObject(SQL_SELECT_SUPERHUMAN, new SuperhumanMapper(), heroId);            
-        }catch(EmptyResultDataAccessException ex) {
-            return null;            
-        }        
+        try {
+            return jdbcTemplate.queryForObject(SQL_SELECT_SUPERHUMAN, new SuperhumanMapper(), heroId);
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     @Override
@@ -198,63 +203,109 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     }
 
     @Override
-    public void addSighting(Sighting sighting, LocalDate date, int locationId, int heroId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
+    public void addSighting(Sighting sighting) {
+        jdbcTemplate.update(SQL_INSERT_SIGHTING,
+                sighting.getDate().toString(),
+                sighting.getSuperhuman().getHeroId(),
+                sighting.getLocation().getLocationId());
+
+        int sightingId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+
+        sighting.setSightingId(sightingId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deleteSighting(int sightingId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_DELETE_SIGHTING, sightingId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updateSighting(Sighting sighting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_UPDATE_SIGHTING,
+                sighting.getDate().toString(),
+                sighting.getSuperhuman().getHeroId(),
+                sighting.getLocation().getLocationId(),
+                sighting.getSightingId());
+
     }
 
     @Override
     public Sighting getSightingWithId(int sightingId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            return jdbcTemplate.queryForObject(SQL_SELECT_SIGHTING, new SightingMapper(), sightingId);
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
+
     }
 
     @Override
     public List<Sighting> getAllSightings() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return jdbcTemplate.query(SQL_SELECT_ALL_SIGHTINGS, new SightingMapper());
     }
 
     @Override
     public List<Sighting> getAllSightingsOfLocation(int locationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            return jdbcTemplate.query(SQL_SELECT_SIGHTINGS_BY_LOCATION_ID, new SightingMapper(), locationId);
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     @Override
     public List<Sighting> getAllSightingsOnDate(LocalDate date) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            return jdbcTemplate.query(SQL_SELECT_SIGHTINGS_BY_DATE, new SightingMapper(), date);
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addPower(Power power) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_INSERT_POWER,
+                power.getName(),
+                power.getDescription());
+        
+        int powerId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+        
+        power.setPowerId(powerId);
+        
+        insertSuperhumansPowers(power);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deletePower(int powerId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_DELETE_POWER, powerId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updatePower(Power power) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_UPDATE_POWER,
+                power.getName(),
+                power.getDescription(),
+                power.getPowerId());
     }
 
     @Override
     public Power getPowerWithId(int powerId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            return jdbcTemplate.queryForObject(SQL_SELECT_POWER, new PowerMapper(), powerId);
+        }catch(EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     @Override
     public List<Power> getAllPowers() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return jdbcTemplate.query(SQL_SELECT_ALL_POWERS, new PowerMapper());
     }
 
     @Override
@@ -265,9 +316,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
                 organization.getAddress(),
                 organization.getEmail(),
                 organization.getPhone());
-        
+
         int organizationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
-        
+
         organization.setOrganizationId(organizationId);
     }
 
@@ -291,7 +342,7 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     public Organization getOrganizationWithId(int organizationId) {
         try {
             return jdbcTemplate.queryForObject(SQL_SELECT_ORGANIZATION, new OrganizationMapper(), organizationId);
-        }catch (EmptyResultDataAccessException ex) {
+        } catch (EmptyResultDataAccessException ex) {
             return null;
         }
     }
@@ -303,8 +354,7 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public List<Organization> getOrganizationsOfSuperhuman(int heroId) {
-        return jdbcTemplate.query(SQL_SELECT_ORGANIZATIONS_BY_HERO_ID, new OrganizationMapper(), args)
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return jdbcTemplate.query(SQL_SELECT_ORGANIZATIONS_BY_HERO_ID, new OrganizationMapper(), heroId);
     }
 
     @Override
@@ -336,7 +386,17 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     public List<Location> getLocationsOfSuperhuman(int heroId) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    //Helper methods
+    private void insertSuperhumansPowers(Power power) {
+        final int powerId = power.getPowerId();
+        final Superhuman superhuman = power.getSuperhuman();
+        
+        jdbcTemplate.update(SQL_INSERT_SUPERHUMANS_POWERS, powerId, superhuman.getHeroId());
+    }
     
+    
+    //Mappers
     private static final class SuperhumanMapper implements RowMapper<Superhuman> {
 
         @Override
@@ -347,9 +407,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             sh.setHeroId(rs.getInt("heroId"));
             return sh;
         }
-        
+
     }
-    
+
     private static final class SightingMapper implements RowMapper<Sighting> {
 
         @Override
@@ -359,9 +419,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             s.setSightingId(rs.getInt("sightingId"));
             return s;
         }
-        
+
     }
-    
+
     private static final class PowerMapper implements RowMapper<Power> {
 
         @Override
@@ -372,9 +432,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             p.setPowerId(rs.getInt("powerId"));
             return p;
         }
-        
+
     }
-    
+
     private static final class OrganizationMapper implements RowMapper<Organization> {
 
         @Override
@@ -388,9 +448,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             o.setOrganizationId(rs.getInt("organizationId"));
             return o;
         }
-        
+
     }
-    
+
     private static final class LocationMapper implements RowMapper<Location> {
 
         @Override
@@ -404,7 +464,7 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             l.setLocationId(rs.getInt("locationId"));
             return l;
         }
-        
+
     }
-    
+
 }

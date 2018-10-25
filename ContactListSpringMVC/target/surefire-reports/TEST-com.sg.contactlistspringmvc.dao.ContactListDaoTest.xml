@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.sg.contactlistspringmvc.dao.ContactListDaoTest" time="0.249" errors="4" skipped="0">
+<testsuite tests="4" failures="0" name="com.sg.contactlistspringmvc.dao.ContactListDaoTest" time="0.219" errors="4" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -14,6 +14,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="com.sg.contactlistspringmvc.dao.ContactListDaoTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\macam\Desktop\macameron-clark-individual-work\ContactListSpringMVC"/>
     <property name="java.runtime.version" value="1.8.0_181-b13"/>
@@ -44,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=com.sg.contactlistspringmvc.dao.ContactListDaoTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="getAllContacts" time="0.182">
+  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="getAllContacts" time="0.141">
     <error message="Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound." type="org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException">org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
@@ -133,13 +134,13 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The p
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
 	... 46 more
 </error>
-    <system-err>Oct 09, 2018 9:11:50 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28864e92: startup date [Tue Oct 09 09:11:50 CDT 2018]; root of context hierarchy
-Oct 09, 2018 9:11:50 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>Oct 22, 2018 2:24:16 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28864e92: startup date [Mon Oct 22 14:24:16 CDT 2018]; root of context hierarchy
+Oct 22, 2018 2:24:16 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [test-applicationContext.xml]
 </system-err>
   </testcase>
-  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="addUpdateContact" time="0.002">
+  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="addUpdateContact" time="0">
     <error message="Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound." type="org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException">org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
@@ -211,13 +212,13 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The p
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
 	... 46 more
 </error>
-    <system-err>Oct 09, 2018 9:11:50 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c3bd550: startup date [Tue Oct 09 09:11:50 CDT 2018]; root of context hierarchy
-Oct 09, 2018 9:11:50 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>Oct 22, 2018 2:24:16 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5c3bd550: startup date [Mon Oct 22 14:24:16 CDT 2018]; root of context hierarchy
+Oct 22, 2018 2:24:16 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [test-applicationContext.xml]
 </system-err>
   </testcase>
-  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="addGetDeleteContact" time="0.005">
+  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="addGetDeleteContact" time="0">
     <error message="Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound." type="org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException">org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
@@ -289,13 +290,13 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The p
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
 	... 46 more
 </error>
-    <system-err>Oct 09, 2018 9:11:50 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6a41eaa2: startup date [Tue Oct 09 09:11:50 CDT 2018]; root of context hierarchy
-Oct 09, 2018 9:11:50 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>Oct 22, 2018 2:24:16 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6a41eaa2: startup date [Mon Oct 22 14:24:16 CDT 2018]; root of context hierarchy
+Oct 22, 2018 2:24:16 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [test-applicationContext.xml]
 </system-err>
   </testcase>
-  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="searchContacts" time="0.005">
+  <testcase classname="com.sg.contactlistspringmvc.dao.ContactListDaoTest" name="searchContacts" time="0">
     <error message="Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound." type="org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException">org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 2 in XML document from class path resource [test-applicationContext.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The prefix &quot;tx&quot; for element &quot;tx:annotation-driven&quot; is not bound.
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:399)
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
@@ -367,9 +368,9 @@ Caused by: org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 25; The p
 	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
 	... 46 more
 </error>
-    <system-err>Oct 09, 2018 9:11:50 AM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4883b407: startup date [Tue Oct 09 09:11:50 CDT 2018]; root of context hierarchy
-Oct 09, 2018 9:11:50 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+    <system-err>Oct 22, 2018 2:24:16 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4883b407: startup date [Mon Oct 22 14:24:16 CDT 2018]; root of context hierarchy
+Oct 22, 2018 2:24:16 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [test-applicationContext.xml]
 </system-err>
   </testcase>

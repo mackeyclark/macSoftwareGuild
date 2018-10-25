@@ -39,17 +39,15 @@ public class SuperheroSightingsDaoTest {
     @Before
     public void setUp() {
         
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("test-applicationcontext.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("test-applicationContext.xml");
         
         dao = ctx.getBean("superheroSightingsDao", SuperheroSightingsDao.class);
         
-        //get all the things!
+        //get all and delete superhumans
         List<Superhuman> superhumans = dao.getAllSuperhumans();
-//        List<Organization> organizations = dao.getAllOrganizations();
-//        List<Power> powers = dao.getAllPowers();
-//        List<Location> locations = dao.getAllLocations();
-//        List<Sighting> sightings = dao.getAllSightings();
-        
+        for (Superhuman currentSuperhuman : superhumans) {
+            dao.deleteSuperhuman(currentSuperhuman.getHeroId());
+        }
     }
     
     @After
@@ -74,7 +72,7 @@ public class SuperheroSightingsDaoTest {
      * Test of getSuperhumanWithId method, of class SuperheroSightingsDao.
      */
     @Test
-    public void testAddGetSuperhumanWithId() {
+    public void testAddGetSuperhuman() {
         
     }
 

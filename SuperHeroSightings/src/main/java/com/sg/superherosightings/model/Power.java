@@ -16,6 +16,7 @@ public class Power {
     private int powerId;
     private String name;
     private String description;
+    private Superhuman superhuman;
 
     public int getPowerId() {
         return powerId;
@@ -41,12 +42,21 @@ public class Power {
         this.description = description;
     }
 
+    public Superhuman getSuperhuman() {
+        return superhuman;
+    }
+
+    public void setSuperhuman(Superhuman superhuman) {
+        this.superhuman = superhuman;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 19 * hash + this.powerId;
-        hash = 19 * hash + Objects.hashCode(this.name);
-        hash = 19 * hash + Objects.hashCode(this.description);
+        hash = 11 * hash + this.powerId;
+        hash = 11 * hash + Objects.hashCode(this.name);
+        hash = 11 * hash + Objects.hashCode(this.description);
+        hash = 11 * hash + Objects.hashCode(this.superhuman);
         return hash;
     }
 
@@ -71,7 +81,11 @@ public class Power {
         if (!Objects.equals(this.description, other.description)) {
             return false;
         }
+        if (!Objects.equals(this.superhuman, other.superhuman)) {
+            return false;
+        }
         return true;
     }
-    
+
+
 }
