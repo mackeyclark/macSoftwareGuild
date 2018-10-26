@@ -9,12 +9,12 @@ import com.sg.superherosightings.model.Superhuman;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
-import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  *
@@ -22,10 +22,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class SuperheroSightingsDaoTest {
     
-    SuperheroSightingsDao dao;
+    SuperheroSightingsDaoJdbcTemplateImpl dao;
     
-    public SuperheroSightingsDaoTest(SuperheroSightingsDao dao) {
-        this.dao = dao;
+    public SuperheroSightingsDaoTest() {
     }
     
     @BeforeClass
@@ -40,8 +39,10 @@ public class SuperheroSightingsDaoTest {
     public void setUp() {
         
         ApplicationContext ctx = new ClassPathXmlApplicationContext("test-applicationContext.xml");
+        JdbcTemplate jdbc = ctx.getBean("jdbcTemplate", JdbcTemplate.class);
         
-        dao = ctx.getBean("superheroSightingsDao", SuperheroSightingsDao.class);
+        dao = new SuperheroSightingsDaoJdbcTemplateImpl();
+        dao.setJdbcTemplate(jdbc);
         
         //get all and delete superhumans
         List<Superhuman> superhumans = dao.getAllSuperhumans();

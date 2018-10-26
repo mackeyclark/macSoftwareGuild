@@ -23,26 +23,43 @@
                     <li role="presentation" class="active">
                         <a href="${pageContext.request.contextPath}/home.jsp"><glyph class="glyphicon glyphicon-home"/>Home</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" style=" background-color: #28a4c9;">
                         <a href="${pageContext.request.contextPath}/manageSuperhumans">Superhuman</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" style=" background-color: #28a4c9;">
                         <a href="${pageContext.request.contextPath}/manageSuperpowers">Superpower</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" style=" background-color: #28a4c9;">
                         <a href="${pageContext.request.contextPath}/manageLocations">Location</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" style=" background-color: #28a4c9;">
                         <a href="${pageContext.request.contextPath}/manageOrganizations">Organizations</a>
                     </li>
-                    <li role="presentation">
+                    <li role="presentation" style=" background-color: #28a4c9;">
                         <a href="${pageContext.request.contextPath}/manageSightings">Sightings</a>
                     </li>
                 </ul>
             </div>
-                    
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Latest Sightings</h2>
+                    <table id="sightingsTable" class="table table-striped">
+                        <tr>
+                            <th width="34%">Superhuman</th>
+                            <th width="33%">Where</th>
+                            <th width="33%">When</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        When people first started to manifest quirks the world was taken by storm as a flurry of heros, and unfortunately villains, suddenly appeared.
+                        Our site's goal is to keep a ledger of where all our wonderful licensed heros have been  
+                    </p>
+                </div>
+            </div>
         </div>
-        
+
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>

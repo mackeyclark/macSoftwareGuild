@@ -14,9 +14,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,10 +26,12 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @author macam
  */
+@Repository
 public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightingsDao {
 
-    private JdbcTemplate jdbcTemplate;
+    JdbcTemplate jdbcTemplate;
 
+    @Autowired
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
@@ -59,7 +63,7 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             + "where so.organizationId = ?";
 
     private static final String SQL_SELECT_ALL_SUPERHUMANS
-            = "select * from superhmans";
+            = "select * from superhumans";
 
     private static final String SQL_DELETE_SUPERHUMANS_POWERS
             = "delete from SuperhumansPowers where heroId = ?";

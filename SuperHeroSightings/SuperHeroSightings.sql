@@ -1,4 +1,4 @@
-create database SuperHeroSightings;
+create database if not exists SuperHeroSightings;
 
 use SuperHeroSightings;
 
