@@ -19,6 +19,7 @@ public class Organization {
     private String address;
     private String phone;
     private String email;
+    private Superhuman superhuman;
 
     public int getOrganizationId() {
         return OrganizationId;
@@ -68,15 +69,24 @@ public class Organization {
         this.email = email;
     }
 
+    public Superhuman getSuperhuman() {
+        return superhuman;
+    }
+
+    public void setSuperhuman(Superhuman superhuman) {
+        this.superhuman = superhuman;
+    }
+
     @Override
     public int hashCode() {
-        int hash = 7;
+        int hash = 5;
         hash = 97 * hash + this.OrganizationId;
         hash = 97 * hash + Objects.hashCode(this.name);
         hash = 97 * hash + Objects.hashCode(this.description);
         hash = 97 * hash + Objects.hashCode(this.address);
         hash = 97 * hash + Objects.hashCode(this.phone);
         hash = 97 * hash + Objects.hashCode(this.email);
+        hash = 97 * hash + Objects.hashCode(this.superhuman);
         return hash;
     }
 
@@ -110,7 +120,10 @@ public class Organization {
         if (!Objects.equals(this.email, other.email)) {
             return false;
         }
+        if (!Objects.equals(this.superhuman, other.superhuman)) {
+            return false;
+        }
         return true;
     }
-    
+
 }

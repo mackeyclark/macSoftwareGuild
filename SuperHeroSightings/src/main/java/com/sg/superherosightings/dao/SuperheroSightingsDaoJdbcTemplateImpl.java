@@ -131,6 +131,13 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             + "o.email from organizations o "
             + "join superhumansorganizations so on o.organizationId = so.organizationId "
             + "where so.heroId = ?";
+    
+    private static final String SQL_INSERT_SUPERHUMANS_ORGANIZATIONS
+            = "insert into superhumansorganizations(heroId, organizationId) "
+            + "values (?, ?)";
+    
+    private static final String SQL_DELETE_SUPERHUMANS_ORGANIZATIONS
+            = "delete from superhumansorganizations where organizationId = ?";
 
     private static final String SQL_INSERT_LOCATION
             = "insert into locations(name, description, address, "
@@ -271,17 +278,19 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
         jdbcTemplate.update(SQL_INSERT_POWER,
                 power.getName(),
                 power.getDescription());
-        
+
         int powerId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
-        
+
         power.setPowerId(powerId);
-        
+
         insertSuperhumansPowers(power);
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deletePower(int powerId) {
+        jdbcTemplate.update(SQL_DELETE_SUPERHUMANS_POWERS, powerId);
+
         jdbcTemplate.update(SQL_DELETE_POWER, powerId);
     }
 
@@ -292,13 +301,17 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
                 power.getName(),
                 power.getDescription(),
                 power.getPowerId());
+
+        jdbcTemplate.update(SQL_DELETE_SUPERHUMANS_POWERS, power.getPowerId());
+        insertSuperhumansPowers(power);
+
     }
 
     @Override
     public Power getPowerWithId(int powerId) {
         try {
             return jdbcTemplate.queryForObject(SQL_SELECT_POWER, new PowerMapper(), powerId);
-        }catch(EmptyResultDataAccessException ex) {
+        } catch (EmptyResultDataAccessException ex) {
             return null;
         }
     }
@@ -320,10 +333,14 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
         int organizationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
 
         organization.setOrganizationId(organizationId);
+        
+        insertSuperhumansOrganizations(organization);
     }
 
     @Override
     public void deleteOrganization(int organizationId) {
+        jdbcTemplate.update(SQL_DELETE_SUPERHUMANS_ORGANIZATIONS, organizationId);
+        
         jdbcTemplate.update(SQL_DELETE_ORGANIZATION, organizationId);
     }
 
@@ -336,6 +353,10 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
                 organization.getEmail(),
                 organization.getPhone(),
                 organization.getOrganizationId());
+        
+        jdbcTemplate.update(SQL_DELETE_SUPERHUMANS_ORGANIZATIONS, organization.getOrganizationId());
+
+        insertSuperhumansOrganizations(organization);
     }
 
     @Override
@@ -359,43 +380,72 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public void addLocation(Location location) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_INSERT_LOCATION,
+                location.getName(),
+                location.getDescription(),
+                location.getAddress(),
+                location.getLatitude(),
+                location.getLongitude());
+        
+        int locationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+        
+        location.setLocationId(locationId);
     }
 
     @Override
     public void deleteLocation(int locationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_DELETE_LOCATION, locationId);
     }
 
     @Override
     public void updateLocation(Location location) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        jdbcTemplate.update(SQL_UPDATE_LOCATION,
+                location.getName(),
+                location.getDescription(),
+                location.getAddress(),
+                location.getLatitude(),
+                location.getLongitude(),
+                location.getLocationId());
     }
 
     @Override
     public Location getLocationWithId(int locationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try{
+            return jdbcTemplate.queryForObject(SQL_SELECT_LOCATION, new LocationMapper(), locationId);
+        }catch(EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     @Override
     public List<Location> getAllLocations() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return jdbcTemplate.query(SQL_SELECT_ALL_LOCATIONS, new LocationMapper());
     }
 
     @Override
     public List<Location> getLocationsOfSuperhuman(int heroId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try{
+            return jdbcTemplate.query(SQL_SELECT_LOCATIONS_BY_HERO_ID, new LocationMapper(), heroId);
+        }catch(EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     //Helper methods
     private void insertSuperhumansPowers(Power power) {
         final int powerId = power.getPowerId();
         final Superhuman superhuman = power.getSuperhuman();
-        
+
         jdbcTemplate.update(SQL_INSERT_SUPERHUMANS_POWERS, powerId, superhuman.getHeroId());
     }
     
-    
+    private void insertSuperhumansOrganizations(Organization organization) {
+        final int organizationId = organization.getOrganizationId();
+        final Superhuman superhuman = organization.getSuperhuman();
+        
+        jdbcTemplate.update(SQL_INSERT_SUPERHUMANS_ORGANIZATIONS, organizationId, superhuman.getHeroId());
+    }
+
     //Mappers
     private static final class SuperhumanMapper implements RowMapper<Superhuman> {
 
