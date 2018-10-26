@@ -5,6 +5,7 @@
  */
 package com.sg.superherosightings.model;
 
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -16,6 +17,8 @@ public class Superhuman {
     private int heroId;
     private String name;
     private String description;
+    private List<Integer> organizations;
+    private List<Integer> powers;
 
     public int getHeroId() {
         return heroId;
@@ -41,12 +44,30 @@ public class Superhuman {
         this.description = description;
     }
 
+    public List<Integer> getOrganizations() {
+        return organizations;
+    }
+
+    public void setOrganizations(List<Integer> organizations) {
+        this.organizations = organizations;
+    }
+
+    public List<Integer> getPowers() {
+        return powers;
+    }
+
+    public void setPowers(List<Integer> powers) {
+        this.powers = powers;
+    }
+
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 41 * hash + this.heroId;
-        hash = 41 * hash + Objects.hashCode(this.name);
-        hash = 41 * hash + Objects.hashCode(this.description);
+        int hash = 7;
+        hash = 17 * hash + this.heroId;
+        hash = 17 * hash + Objects.hashCode(this.name);
+        hash = 17 * hash + Objects.hashCode(this.description);
+        hash = 17 * hash + Objects.hashCode(this.organizations);
+        hash = 17 * hash + Objects.hashCode(this.powers);
         return hash;
     }
 
@@ -71,7 +92,13 @@ public class Superhuman {
         if (!Objects.equals(this.description, other.description)) {
             return false;
         }
+        if (!Objects.equals(this.organizations, other.organizations)) {
+            return false;
+        }
+        if (!Objects.equals(this.powers, other.powers)) {
+            return false;
+        }
         return true;
     }
-    
+
 }

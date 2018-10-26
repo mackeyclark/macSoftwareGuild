@@ -135,11 +135,7 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             + "o.email from organizations o "
             + "join superhumansorganizations so on o.organizationId = so.organizationId "
             + "where so.heroId = ?";
-    
-    private static final String SQL_INSERT_SUPERHUMANS_ORGANIZATIONS
-            = "insert into superhumansorganizations(heroId, organizationId) "
-            + "values (?, ?)";
-    
+
     private static final String SQL_DELETE_SUPERHUMANS_ORGANIZATIONS
             = "delete from superhumansorganizations where organizationId = ?";
 
@@ -337,14 +333,14 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
         int organizationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
 
         organization.setOrganizationId(organizationId);
-        
+
         insertSuperhumansOrganizations(organization);
     }
 
     @Override
     public void deleteOrganization(int organizationId) {
         jdbcTemplate.update(SQL_DELETE_SUPERHUMANS_ORGANIZATIONS, organizationId);
-        
+
         jdbcTemplate.update(SQL_DELETE_ORGANIZATION, organizationId);
     }
 
@@ -357,7 +353,7 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
                 organization.getEmail(),
                 organization.getPhone(),
                 organization.getOrganizationId());
-        
+
         jdbcTemplate.update(SQL_DELETE_SUPERHUMANS_ORGANIZATIONS, organization.getOrganizationId());
 
         insertSuperhumansOrganizations(organization);
@@ -390,9 +386,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
                 location.getAddress(),
                 location.getLatitude(),
                 location.getLongitude());
-        
+
         int locationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
-        
+
         location.setLocationId(locationId);
     }
 
@@ -414,9 +410,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public Location getLocationWithId(int locationId) {
-        try{
+        try {
             return jdbcTemplate.queryForObject(SQL_SELECT_LOCATION, new LocationMapper(), locationId);
-        }catch(EmptyResultDataAccessException ex) {
+        } catch (EmptyResultDataAccessException ex) {
             return null;
         }
     }
@@ -428,9 +424,9 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
     @Override
     public List<Location> getLocationsOfSuperhuman(int heroId) {
-        try{
+        try {
             return jdbcTemplate.query(SQL_SELECT_LOCATIONS_BY_HERO_ID, new LocationMapper(), heroId);
-        }catch(EmptyResultDataAccessException ex) {
+        } catch (EmptyResultDataAccessException ex) {
             return null;
         }
     }
@@ -442,12 +438,20 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
 
         jdbcTemplate.update(SQL_INSERT_SUPERHUMANS_POWERS, powerId, superhuman.getHeroId());
     }
-    
+
+    private static final String SQL_INSERT_SUPERHUMANS_ORGANIZATIONS
+            = "insert into superhumansorganizations(heroId, organizationId) "
+            + "values (?, ?)";
+
     private void insertSuperhumansOrganizations(Organization organization) {
         final int organizationId = organization.getOrganizationId();
         final Superhuman superhuman = organization.getSuperhuman();
-        
+
         jdbcTemplate.update(SQL_INSERT_SUPERHUMANS_ORGANIZATIONS, organizationId, superhuman.getHeroId());
+    }
+
+    private List<Organization> findOrganizationsForSuperhuman(Superhuman superhuman) {
+        return jdbcTemplate.query(SQL_SELECT_ORGANIZATIONS_BY_HERO_ID, new OrganizationMapper(), superhuman.getHeroId());
     }
 
     //Mappers
