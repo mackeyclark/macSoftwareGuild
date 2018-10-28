@@ -1,6 +1,6 @@
 <%-- 
-    Document   : createSuperhuman
-    Created on : Oct 26, 2018, 2:12:06 PM
+    Document   : createlocation
+    Created on : Oct 28, 2018, 1:04:54 PM
     Author     : macam
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -20,34 +20,32 @@
 
         </div>
         <div class="col-md-8" style=" margin-top: 10%;">
-            <form class="form-horizontal" role="form" method="POST" action="addSuperhuman">
+            <form class="form-horizontal" role="form" method="POST" action="addLocation">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Name of Hero"/>
+                    <input type="text" class="form-control" name="name" placeholder="Name"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="description" placeholder="Quick description of Hero"/>
+                    <input type="text" class="form-control" name="description" placeholder="Quick description of location"/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="address" placeholder="Closest address of location"/>
                 </div>
                 <div class="form-group">
                     <div class="col-md-6">
-                        <input list="Powers" class="form-control" name="power" placeholder="Select Power"/>
-                        <datalist id="Powers">
-                            <option value="1"/>
-                        </datalist>
+                        <input type="number" class="form-control" name="latitude" placeholder="Latitude"/>
                     </div>
-                    <div class="col-md-6">
-                        <input list="Organizations" class="form-control" name="organization" placeholder="Select Organization" style=" float: right;"/>
-                        <datalist id="Organizations">
-                            <option value="1"/>
-                        </datalist>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" name="longitude" placeholder="Longitude" style=" float: right;"/>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">                    
-                    <a href="${pageContext.request.contextPath}/roguesgallery" class="btn btn-default">Cancel</a>
-                    <input type="submit" class="btn btn-default" style=" float: right" value="Create Hero"/>
+                <div class="form-group">                   
+                    <a href="${pageContext.request.contextPath}/locations" class="btn btn-default">Cancel</a>
+                    <input type="submit" class="btn btn-default" style=" float: right" value="Create Location"/>
                 </div>
             </form>
         </div>
-
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>

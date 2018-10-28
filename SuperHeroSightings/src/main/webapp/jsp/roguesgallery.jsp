@@ -26,16 +26,16 @@
                         <a href="${pageContext.request.contextPath}/roguesgallery">Superhuman</a>
                     </li>
                     <li role="presentation" style=" color: #9acfea;">
-                        <a href="${pageContext.request.contextPath}/manageSuperpowers">Superpower</a>
+                        <a href="${pageContext.request.contextPath}/powerlist">Superpower</a>
                     </li>
                     <li role="presentation" style="  color: #9acfea;">
-                        <a href="${pageContext.request.contextPath}/manageLocations">Location</a>
+                        <a href="${pageContext.request.contextPath}/locations">Location</a>
                     </li>
                     <li role="presentation" style="  color: #9acfea;">
-                        <a href="${pageContext.request.contextPath}/manageOrganizations">Organizations</a>
+                        <a href="${pageContext.request.contextPath}/organizations">Organizations</a>
                     </li>
                     <li role="presentation" style="  color: #9acfea;">
-                        <a href="${pageContext.request.contextPath}/manageSightings">Sightings</a>
+                        <a href="${pageContext.request.contextPath}/sightings">Sightings</a>
                     </li>
                 </ul>
             </div>
@@ -44,10 +44,12 @@
                     <h2>Our Rogues' Gallery <a href="${pageContext.request.contextPath}/createsuperhuman" class="btn btn-default" style=" vertical-align: middle; float: right">Add New Superhuman</a></h2>
                     <table id="superhumanTable" class="table table-striped">
                         <tr>
-                            <th width="20%">Hero</th>
-                            <th width="30%">Description</th>
-                            <th width="20%">Power</th>
-                            <th width="30%">Associates with</th>
+                            <th width="15%">Hero</th>
+                            <th width="25%">Description</th>
+                            <th width="15%">Power</th>
+                            <th width="25%">Associates with</th>
+                            <th width="10%"></th>
+                            <th width="10%"></th>
                         </tr>
                     </table>
                 </div>

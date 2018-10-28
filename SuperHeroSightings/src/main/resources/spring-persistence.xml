@@ -34,9 +34,5 @@
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <constructor-arg name="dataSource" ref="dataSource"/>
     </bean>
-    
-    <bean id="superheroSightingsDao" class="com.sg.superherosightings.dao.SuperheroSightingsDaoJdbcTemplateImpl">
-        <property name="jdbcTemplate" ref="jdbcTemplate"/>
-    </bean>
-    
+        
 </beans>

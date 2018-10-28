@@ -52,11 +52,11 @@ public class Power {
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 11 * hash + this.powerId;
-        hash = 11 * hash + Objects.hashCode(this.name);
-        hash = 11 * hash + Objects.hashCode(this.description);
-        hash = 11 * hash + Objects.hashCode(this.superhuman);
+        int hash = 5;
+        hash = 97 * hash + this.powerId;
+        hash = 97 * hash + Objects.hashCode(this.name);
+        hash = 97 * hash + Objects.hashCode(this.description);
+        hash = 97 * hash + Objects.hashCode(this.superhuman);
         return hash;
     }
 
@@ -86,6 +86,5 @@ public class Power {
         }
         return true;
     }
-
 
 }
