@@ -1,6 +1,6 @@
 <%-- 
-    Document   : createlocation
-    Created on : Oct 28, 2018, 1:04:54 PM
+    Document   : createorganization
+    Created on : Oct 28, 2018, 2:55:12 PM
     Author     : macam
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -20,29 +20,25 @@
 
         </div>
         <div class="col-md-8" style=" margin-top: 10%;">
-            <form class="form-horizontal" role="form" method="POST" action="addLocation">
+            <form class="form-horizontal" role="form" method="POST" action="addOrganization">
                 <div class="form-group">
                     <input type="text" class="form-control" name="name" placeholder="Name"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="description" placeholder="Quick description of location"/>
+                    <input type="text" class="form-control" name="description" placeholder="Quick description of the organization"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="address" placeholder="Closest address of location"/>
+                    <input type="text" class="form-control" name="name" placeholder="Address of organization"/>
                 </div>
                 <div class="form-group">
-                    <div class="col-md-6">
-                        <input type="number" class="form-control" name="latitude" placeholder="Latitude"/>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <input type="number" class="form-control" name="longitude" placeholder="Longitude" style=" float: right;"/>
-                        </div>
-                    </div>
+                    <input type="tel" class="form-control" name="name" placeholder="555-555-5555"/>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="name" placeholder="organization@host.org"/>
                 </div>
                 <div class="form-group">                   
-                    <a href="${pageContext.request.contextPath}/locations" class="btn btn-default">Cancel</a>
-                    <input type="submit" class="btn btn-default" style=" float: right;" value="Create Location"/>
+                    <a href="${pageContext.request.contextPath}/organizations" class="btn btn-default">Cancel</a>
+                    <input type="submit" class="btn btn-default" style=" float: right;" value="Create organization"/>
                 </div>
             </form>
         </div>

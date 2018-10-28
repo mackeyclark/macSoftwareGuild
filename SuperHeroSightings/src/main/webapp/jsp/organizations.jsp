@@ -1,6 +1,6 @@
 <%-- 
     Document   : locations
-    Created on : Oct 28, 2018, 11:52:06 AM
+    Created on : Oct 28, 2018, 14:34:24 AM
     Author     : macam
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Location List</title>
+        <title>Organization List</title>
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
     </head>
@@ -28,10 +28,10 @@
                     <li role="presentation" style="  color: #9acfea;">
                         <a href="${pageContext.request.contextPath}/powerlist">Superpower</a>
                     </li>
-                    <li role="presentation" class="active">
+                    <li role="presentation" style="  color: #9acfea;">
                         <a href="${pageContext.request.contextPath}/locations">Location</a>
                     </li>
-                    <li role="presentation" style="  color: #9acfea;">
+                    <li role="presentation" class="active">
                         <a href="${pageContext.request.contextPath}/organizations">Organizations</a>
                     </li>
                     <li role="presentation" style="  color: #9acfea;">
@@ -42,14 +42,14 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2>Locations <a href="${pageContext.request.contextPath}/createlocation" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new location</a></h2>
-                <table id="locationTable" class="table table-striped">
+                <h2>Organizations <a href="${pageContext.request.contextPath}/createorganization" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new Organization</a></h2>
+                <table id="organizationTable" class="table table-striped">
                     <tr>
-                        <th width="10%">Name</th>
-                        <th width="25%">Description</th>
-                        <th width="25%">Address</th>
-                        <th width="10%">Latitude</th>
-                        <th width="10%">Longitude</th>
+                        <th width="16%">Name</th>
+                        <th width="16%">Description</th>
+                        <th width="16%">Address</th>
+                        <th width="16%">Phone</th>
+                        <th width="16%">Email</th>
                         <th width="10%"></th>
                         <th width="10%"></th>
                     </tr>

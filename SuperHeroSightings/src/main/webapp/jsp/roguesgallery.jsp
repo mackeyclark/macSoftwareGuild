@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Our Rogues' Gallery <a href="${pageContext.request.contextPath}/createsuperhuman" class="btn btn-default" style=" vertical-align: middle; float: right">Add New Superhuman</a></h2>
+                    <h2>Our Rogues' Gallery <a href="${pageContext.request.contextPath}/createsuperhuman" class="btn btn-default" style=" vertical-align: middle; float: right">Create New Superhuman</a></h2>
                     <table id="superhumanTable" class="table table-striped">
                         <tr>
                             <th width="15%">Hero</th>

@@ -102,3 +102,125 @@ public java.lang.String com.sg.hellosecurity.controller.AdminController.editUser
 28-Oct-2018 13:35:57.618 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
 28-Oct-2018 13:35:57.624 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
 28-Oct-2018 13:35:57.633 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:33:22.097 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:33:22.137 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:33:26.471 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:33:26.497 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:33:31.263 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+28-Oct-2018 14:33:31.316 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:33:32.410 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 25 more
+
+28-Oct-2018 14:33:32.412 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:33:35.164 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:33:35.183 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:33:39.052 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:33:39.065 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:33:43.549 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:33:43.559 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:33:46.108 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+28-Oct-2018 14:33:46.108 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+28-Oct-2018 14:33:57.817 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:33:59.637 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:33:59.659 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:34:03.557 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 14:34:31.371 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 14:34:31.381 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:34:32.976 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:34:33.030 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:34:38.560 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:34:40.011 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:34:40.050 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:38:52.471 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:38:53.861 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:38:53.874 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:39:53.486 INFO [http-nio-8080-exec-30] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:39:54.727 INFO [http-nio-8080-exec-30] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:39:54.751 INFO [http-nio-8080-exec-30] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:52:10.713 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 14:52:40.556 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 14:52:40.579 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 14:52:42.956 INFO [http-nio-8080-exec-43] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 15:17:38.300 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 15:17:38.311 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 15:17:39.556 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 15:17:39.585 INFO [http-nio-8080-exec-51] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 15:17:45.444 INFO [http-nio-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 15:18:07.805 INFO [http-nio-8080-exec-55] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 15:18:07.832 INFO [http-nio-8080-exec-55] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 15:18:09.827 INFO [http-nio-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 15:27:12.309 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 15:27:12.319 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 15:27:13.658 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 15:27:13.675 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 15:31:09.931 INFO [http-nio-8080-exec-66] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 15:31:11.219 INFO [http-nio-8080-exec-66] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 15:31:11.234 INFO [http-nio-8080-exec-66] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 15:52:51.826 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 15:53:17.714 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 15:53:17.730 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 15:53:19.751 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 16:12:35.181 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 16:12:35.193 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 16:12:36.544 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 16:12:36.576 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 16:12:38.427 INFO [http-nio-8080-exec-91] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 16:14:22.570 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 16:14:22.603 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 16:14:24.559 INFO [http-nio-8080-exec-93] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 16:21:40.300 INFO [http-nio-8080-exec-103] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 16:21:40.312 INFO [http-nio-8080-exec-103] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 16:22:09.606 INFO [http-nio-8080-exec-105] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+28-Oct-2018 16:22:09.626 INFO [http-nio-8080-exec-105] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+28-Oct-2018 16:22:11.521 INFO [http-nio-8080-exec-108] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 17:11:53.493 INFO [http-nio-8080-exec-114] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+28-Oct-2018 17:11:53.508 INFO [http-nio-8080-exec-114] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 17:12:21.858 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 17:12:21.896 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 17:12:21.938 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+28-Oct-2018 17:12:21.938 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+28-Oct-2018 17:12:21.946 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+28-Oct-2018 17:12:21.987 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

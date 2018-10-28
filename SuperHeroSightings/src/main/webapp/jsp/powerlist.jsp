@@ -42,7 +42,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2>Power List<a href="${pageContext.request.contextPath}/createpower" class="btn btn-default" style="float: right;">Add New Power</a></h2>
+                <h2>Power List <a href="${pageContext.request.contextPath}/createpower" class="btn btn-default" style=" vertical-align: middle; float: right;">Add New Power</a></h2>
                 <table id="powerTable" class="table table-striped">
                     <tr>
                         <th width="30%">Name</th>

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : createSuperhuman
-    Created on : Oct 26, 2018, 2:12:06 PM
+    Document   : createsighting
+    Created on : Oct 28, 2018, 3:57:02 PM
     Author     : macam
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Create a New Hero Page</title>
+        <title>Create a New Sighting Page</title>
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
     </head>
@@ -20,32 +20,28 @@
 
         </div>
         <div class="col-md-8" style=" margin-top: 10%;">
-            <form class="form-horizontal" role="form" method="POST" action="addSuperhuman">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Name of Hero"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="description" placeholder="Quick description of Hero"/>
-                </div>
+            <form class="form-horizontal" role="form" method="POST" action="addSighting">
                 <div class="form-group">
                     <div class="col-md-6">
-                        <select id="powerList" class="form-control" name="powerList" multiple="multiple">
-                            <option disabled="true">Select their Power</option>
+                        <select id="superhumanList" class="form-control" name="superhumanList" multiple="multiple">
+                            <option disabled="true">Select Superhuman</option>
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <select id="organizationList" class="form-control" name="organizationList" multiple="multiple" style=" float: right;">
-                            <option disabled="true">Select an Organization</option>
+                        <select id="locationList" class="form-control" name="locationList" multiple="multiple" style=" float: right;">
+                            <option disabled="true">Select Location</option>
                         </select>
                     </div>
                 </div>
-                <div class="form-group">                    
-                    <a href="${pageContext.request.contextPath}/roguesgallery" class="btn btn-default">Cancel</a>
-                    <input type="submit" class="btn btn-default" style=" float: right" value="Create Hero"/>
+                <div class="form-group">
+                    <input type="date" class="form-control" name="date" placeholder="Date sighted"/>
+                </div>
+                <div class="form-group">                   
+                    <a href="${pageContext.request.contextPath}/sightings" class="btn btn-default">Cancel</a>
+                    <input type="submit" class="btn btn-default" style=" float: right;" value="Create sighting"/>
                 </div>
             </form>
         </div>
-
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
