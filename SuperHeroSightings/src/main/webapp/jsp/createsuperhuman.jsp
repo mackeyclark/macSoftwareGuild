@@ -20,7 +20,7 @@
 
         </div>
         <div class="col-md-8" style=" margin-top: 10%;">
-            <form class="form-horizontal" role="form" method="POST" action="addSuperhuman">
+            <form class="form-horizontal" role="form" method="POST" action="addsuperhuman">
                 <div class="form-group">
                     <input type="text" class="form-control" name="name" placeholder="Name of Hero"/>
                 </div>
@@ -29,13 +29,23 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-6">
-                        <select id="powerList" class="form-control" name="powerList" multiple="multiple">
+                        <select id="powerIdList" class="form-control" name="powerIdList" multiple="multiple">
                             <option disabled="true">Select their Power</option>
+                            <c:forEach items="${powers}" var="currentPower">
+                                <option value="${currentPower.powerId}">
+                                    <c:out value="${currentPower.name}"/>
+                                </option>
+                            </c:forEach>
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <select id="organizationList" class="form-control" name="organizationList" multiple="multiple" style=" float: right;">
+                        <select id="organizationIdList" class="form-control" name="organizationIdList" multiple="multiple" style=" float: right;">
                             <option disabled="true">Select an Organization</option>
+                            <c:forEach items="${organizations}" var="currentOrganization">
+                                <option value="${currentOrganization.organizationId}">
+                                    <c:out value="${currentOrganization.name}"/>
+                                </option>
+                            </c:forEach>
                         </select>
                     </div>
                 </div>

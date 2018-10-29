@@ -35,7 +35,7 @@ public class OrganizationController {
         return "createorganization";
     }
     
-    @RequestMapping(value = "/createorganization", method = RequestMethod.POST)
+    @RequestMapping(value = "/addorganization", method = RequestMethod.POST)
     public String addOrganization(HttpServletRequest request) {
         Organization organization = new Organization();
         organization.setName(request.getParameter("name"));

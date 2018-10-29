@@ -20,7 +20,7 @@
 
         </div>
         <div class="col-md-8" style=" margin-top: 10%;">
-            <form class="form-horizontal" role="form" method="POST" action="addOrganization">
+            <form class="form-horizontal" role="form" method="POST" action="addorganization">
                 <div class="form-group">
                     <input type="text" class="form-control" name="name" placeholder="Name"/>
                 </div>

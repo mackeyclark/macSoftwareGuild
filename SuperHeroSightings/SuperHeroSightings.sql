@@ -28,7 +28,8 @@ foreign key (`OrganizationId`) references `Organizations` (`OrganizationId`)
 
 create table if not exists `Powers` (
 `PowerId` int(11) not null auto_increment,
-`Description` varchar(20) not null,
+`name` varchar(20) not null,
+`Description` varchar(100) not null,
 primary key (`PowerId`)
 ) engine=InnoDB default charset=latin1 auto_increment=1;
 

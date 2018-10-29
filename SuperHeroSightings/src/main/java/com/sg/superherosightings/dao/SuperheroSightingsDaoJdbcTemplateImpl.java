@@ -26,7 +26,7 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * @author macam
  */
-@Repository
+//@Repository
 public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightingsDao {
 
     JdbcTemplate jdbcTemplate;
@@ -92,8 +92,8 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             = "select * from sightings";
 
     private static final String SQL_INSERT_POWER
-            = "insert into powers(description) "
-            + "values (?)";
+            = "insert into powers(name, description) "
+            + "values (?, ?)";
 
     private static final String SQL_INSERT_SUPERHUMANS_POWERS
             = "inset into SuperhumansPowers(heroId, powrId) "
@@ -437,6 +437,11 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
         final Superhuman superhuman = power.getSuperhuman();
 
         jdbcTemplate.update(SQL_INSERT_SUPERHUMANS_POWERS, powerId, superhuman.getHeroId());
+
+//        final int heroId = superhuman.getHeroId();
+//        final List<Power> power = superhuman.getPowers();
+//
+//        jdbcTemplate.update(SQL_INSERT_SUPERHUMANS_POWERS, heroId, superhuman.getPowers());
     }
 
     private static final String SQL_INSERT_SUPERHUMANS_ORGANIZATIONS
