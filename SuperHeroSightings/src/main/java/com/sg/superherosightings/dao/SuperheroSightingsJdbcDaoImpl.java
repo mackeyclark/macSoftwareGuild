@@ -19,6 +19,8 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
@@ -35,6 +37,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addSuperhuman(Superhuman superhuman) {
         final String INSERT_SUPERHUMAN = "insert into superhumans (name, description) values (?, ?)";
         jdbcTemplate.update(INSERT_SUPERHUMAN,
@@ -60,30 +63,38 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deleteSuperhuman(int heroId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String DELETE_SUPERHUMANS_POWERS = "delete from superhumanspowers where heroId = ?";
+        final String DELETE_SUPERHUMANS_ORGANIZATIONS = "delete from superhumansorganizations where heroId = ?";
+        final String DELETE_SUPERHUMAN = "delete from superhumans where heroId = ?";
+
+        jdbcTemplate.update(DELETE_SUPERHUMANS_POWERS, heroId);
+        jdbcTemplate.update(DELETE_SUPERHUMANS_ORGANIZATIONS, heroId);
+        jdbcTemplate.update(DELETE_SUPERHUMAN, heroId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updateSuperhuman(Superhuman superhuman) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public Superhuman getSuperhumanWithId(int heroId) {
-        
+
         final String SELECT_SUPERHUMAN = "select * from superhumans where heroId = ?";
         final String SELECT_POWERS_BY_HERO_ID = "select powerId from superhumanspowers where heroId = ?";
         final String SELECT_ORGANIZATIONS_BY_HERO_ID = "select organizationId from superhumansorganizations where heroId = ?";
 
         try {
-            
+
             Superhuman superhuman = jdbcTemplate.queryForObject(SELECT_SUPERHUMAN, new SuperhumanMapper(), heroId);
             superhuman.setPowers(jdbcTemplate.queryForList(SELECT_POWERS_BY_HERO_ID, Integer.class, heroId));
             superhuman.setOrganizations(jdbcTemplate.queryForList(SELECT_ORGANIZATIONS_BY_HERO_ID, Integer.class, heroId));
-            
+
             return superhuman;
-            
+
         } catch (EmptyResultDataAccessException ex) {
             return null;
         }
@@ -136,6 +147,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addPower(Power power) {
         final String SQL_INSERT_POWER = "insert into powers(name, description) values (?, ?)";
         jdbcTemplate.update(SQL_INSERT_POWER,
@@ -148,11 +160,13 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deletePower(int powerId) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updatePower(Power power) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -170,6 +184,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addOrganization(Organization organization) {
         final String SQL_INSERT_ORGANIZATION = "insert into organizations(name, description, address, "
                 + "phone, email) values (?, ?, ?, ?, ?)";
@@ -187,11 +202,13 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deleteOrganization(int organizationId) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updateOrganization(Organization organization) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

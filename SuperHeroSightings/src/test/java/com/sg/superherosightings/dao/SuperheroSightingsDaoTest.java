@@ -13,6 +13,7 @@ import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -98,6 +99,41 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testDeleteSuperhuman() {
+        Power power = new Power();
+        power.setName("All-for-One");
+        power.setDescription("A Quirk that stockpiles power");
+        
+        dao.addPower(power);
+        
+        List<Integer> powerList = new ArrayList<>();
+        powerList.add(power.getPowerId());
+        
+        Organization organization = new Organization();
+        organization.setName("U.A. High School");
+        organization.setDescription("academy where students learn and train to become heroes");
+        organization.setAddress("31 Tenzu Street Musutafu, Japan");
+        organization.setPhone("1234567890");
+        organization.setEmail("plusUltra@Comcast.net");
+        
+        dao.addOrganization(organization);
+        
+        List<Integer> organizationList = new ArrayList<>();
+        organizationList.add(organization.getOrganizationId());
+        
+        Superhuman superhuman = new Superhuman();
+        superhuman.setName("All Might");
+        superhuman.setDescription("#1 Hero");
+        superhuman.setPowers(powerList);
+        superhuman.setOrganizations(organizationList);
+        
+        dao.addSuperhuman(superhuman);
+        
+        Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
+        assertEquals(fromDao, superhuman);
+
+        dao.deleteSuperhuman(superhuman.getHeroId());
+        fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
+        assertNull(fromDao);
     }
 
     /**
