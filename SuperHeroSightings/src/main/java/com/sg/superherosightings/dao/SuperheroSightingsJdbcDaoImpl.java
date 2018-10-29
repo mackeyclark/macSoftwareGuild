@@ -15,6 +15,7 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
@@ -51,7 +52,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
         }
 
         for (int organizationId : superhuman.getOrganizations()) {
-            final String INSERT_SUPERHUMANSORGANIZATIONS = "insert into superhumansorganizations (heroId, organizationId) valuse (?, ?)";
+            final String INSERT_SUPERHUMANSORGANIZATIONS = "insert into superhumansorganizations (heroId, organizationId) values (?, ?)";
 
             jdbcTemplate.update(INSERT_SUPERHUMANSORGANIZATIONS, superhuman.getHeroId(), organizationId);
         }
@@ -70,7 +71,23 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public Superhuman getSuperhumanWithId(int heroId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        final String SELECT_SUPERHUMAN = "select * from superhumans where heroId = ?";
+        final String SELECT_POWERS_BY_HERO_ID = "select powerId from superhumanspowers where heroId = ?";
+        final String SELECT_ORGANIZATIONS_BY_HERO_ID = "select organizationId from superhumansorganizations where heroId = ?";
+
+        try {
+            
+            Superhuman superhuman = jdbcTemplate.queryForObject(SELECT_SUPERHUMAN, new SuperhumanMapper(), heroId);
+            superhuman.setPowers(jdbcTemplate.queryForList(SELECT_POWERS_BY_HERO_ID, Integer.class, heroId));
+            superhuman.setOrganizations(jdbcTemplate.queryForList(SELECT_ORGANIZATIONS_BY_HERO_ID, Integer.class, heroId));
+            
+            return superhuman;
+            
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
+
     }
 
     @Override
@@ -161,8 +178,8 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
                 organization.getName(),
                 organization.getDescription(),
                 organization.getAddress(),
-                organization.getEmail(),
-                organization.getPhone());
+                organization.getPhone(),
+                organization.getEmail());
 
         int organizationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
 
@@ -187,7 +204,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     @Override
     public List<Organization> getAllOrganizations() {
         final String SELECT_ALL_ORGANIZATIONS = "select * from organizations";
-        
+
         return jdbcTemplate.query(SELECT_ALL_ORGANIZATIONS, new OrganizationMapper());
     }
 

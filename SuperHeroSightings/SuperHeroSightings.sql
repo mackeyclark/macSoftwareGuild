@@ -1,3 +1,6 @@
+drop database if exists superherosightings;
+
+
 create database if not exists SuperHeroSightings;
 
 use SuperHeroSightings;
@@ -5,17 +8,17 @@ use SuperHeroSightings;
 create table if not exists `Superhumans` (
 `HeroId` int(11) not null auto_increment,
 `Name` varchar(50) not null,
-`Description` varchar(50),
+`Description` varchar(100),
 primary key (`HeroId`)
 ) engine=InnoDB default charset=latin1 auto_increment=1;
 
 create table if not exists `Organizations` (
 `OrganizationId` int(11) not null auto_increment,
 `Name` varchar(35) not null,
-`Description` varchar(50),
+`Description` varchar(100),
 `Address` varchar(50),
 `Phone` varchar(10),
-`Email` varchar(20),
+`Email` varchar(50),
 primary key (`OrganizationId`)
 ) engine=InnoDB default charset=latin1 auto_increment=1;
 
@@ -43,7 +46,7 @@ foreign key (`PowerId`) references `Powers` (`PowerId`)
 create table if not exists `Locations` (
 `LocationId` int(11) not null auto_increment,
 `Name` varchar(30) not null,
-`Description` varchar(50),
+`Description` varchar(100),
 `Address` varchar(50),
 `Latitude` decimal(2,2) not null,
 `Longitude` decimal(3,2) not null,

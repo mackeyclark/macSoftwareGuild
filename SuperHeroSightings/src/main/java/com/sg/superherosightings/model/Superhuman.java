@@ -92,12 +92,12 @@ public class Superhuman {
         if (!Objects.equals(this.description, other.description)) {
             return false;
         }
-        if (!Objects.equals(this.organizations, other.organizations)) {
-            return false;
-        }
-        if (!Objects.equals(this.powers, other.powers)) {
-            return false;
-        }
+//        if (!Objects.equals(this.organizations, other.organizations)) {
+//            return false;
+//        }
+//        if (!Objects.equals(this.powers, other.powers)) {
+//            return false;
+//        }
         return true;
     }
 

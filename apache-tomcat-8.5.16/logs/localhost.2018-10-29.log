@@ -710,3 +710,22 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
+29-Oct-2018 13:05:57.635 INFO [http-nio-8080-exec-196] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+29-Oct-2018 13:05:57.651 INFO [http-nio-8080-exec-196] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+29-Oct-2018 13:05:58.854 INFO [http-nio-8080-exec-196] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+29-Oct-2018 13:05:58.885 INFO [http-nio-8080-exec-196] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+29-Oct-2018 13:06:00.539 INFO [http-nio-8080-exec-199] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+29-Oct-2018 13:12:41.848 INFO [http-nio-8080-exec-205] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+29-Oct-2018 13:12:41.879 INFO [http-nio-8080-exec-205] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+29-Oct-2018 13:12:43.648 INFO [http-nio-8080-exec-209] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'spring-dispatcher'
+29-Oct-2018 13:31:23.563 INFO [http-nio-8080-exec-213] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'spring-dispatcher'
+29-Oct-2018 13:31:23.570 INFO [http-nio-8080-exec-213] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+29-Oct-2018 13:31:24.786 INFO [http-nio-8080-exec-213] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+29-Oct-2018 13:31:24.812 INFO [http-nio-8080-exec-213] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+29-Oct-2018 13:34:43.308 INFO [http-nio-8080-exec-219] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+29-Oct-2018 15:11:17.812 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+29-Oct-2018 15:11:18.901 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+29-Oct-2018 15:11:20.111 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+29-Oct-2018 15:11:20.111 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+29-Oct-2018 15:11:20.116 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+29-Oct-2018 15:11:21.277 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

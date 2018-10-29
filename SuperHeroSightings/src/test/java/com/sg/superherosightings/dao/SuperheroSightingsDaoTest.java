@@ -5,16 +5,14 @@
  */
 package com.sg.superherosightings.dao;
 
-import com.sg.superherosightings.model.Location;
 import com.sg.superherosightings.model.Organization;
 import com.sg.superherosightings.model.Power;
-import com.sg.superherosightings.model.Sighting;
 import com.sg.superherosightings.model.Superhuman;
+import java.util.ArrayList;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -28,7 +26,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
  */
 public class SuperheroSightingsDaoTest {
 
-    SuperheroSightingsDaoJdbcTemplateImpl dao;
+    SuperheroSightingsJdbcDaoImpl dao;
 
     public SuperheroSightingsDaoTest() {
     }
@@ -47,38 +45,10 @@ public class SuperheroSightingsDaoTest {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("test-applicationContext.xml");
         JdbcTemplate jdbc = ctx.getBean("jdbcTemplate", JdbcTemplate.class);
 
-        dao = new SuperheroSightingsDaoJdbcTemplateImpl();
+        dao = new SuperheroSightingsJdbcDaoImpl();
         dao.setJdbcTemplate(jdbc);
 
         //get and delete all superhumans
-        List<Superhuman> superhumans = dao.getAllSuperhumans();
-        for (Superhuman currentSuperhuman : superhumans) {
-            dao.deleteSuperhuman(currentSuperhuman.getHeroId());
-        }
-
-        //get and delete all powers
-        List<Power> powers = dao.getAllPowers();
-        for (Power currentPower : powers) {
-            dao.deletePower(currentPower.getPowerId());
-        }
-
-        //get and delete all organizations
-        List<Organization> organizations = dao.getAllOrganizations();
-        for (Organization currentOrganization : organizations) {
-            dao.deleteOrganization(currentOrganization.getOrganizationId());
-        }
-
-        //get and delete all locations
-        List<Location> locations = dao.getAllLocations();
-        for (Location currentLocation : locations) {
-            dao.deleteLocation(currentLocation.getLocationId());
-        }
-
-        //get and delete all sightings
-        List<Sighting> sightings = dao.getAllSightings();
-        for (Sighting currentSighting : sightings) {
-            dao.deleteSighting(currentSighting.getSightingId());
-        }
     }
 
     @After
@@ -90,15 +60,37 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testAddGetSuperhuman() {
+        Power power = new Power();
+        power.setName("All-for-One");
+        power.setDescription("A Quirk that stockpiles power");
+        
+        dao.addPower(power);
+        
+        List<Integer> powerList = new ArrayList<>();
+        powerList.add(power.getPowerId());
+        
+        Organization organization = new Organization();
+        organization.setName("U.A. High School");
+        organization.setDescription("academy where students learn and train to become heroes");
+        organization.setAddress("31 Tenzu Street Musutafu, Japan");
+        organization.setPhone("1234567890");
+        organization.setEmail("plusUltra@Comcast.net");
+        
+        dao.addOrganization(organization);
+        
+        List<Integer> organizationList = new ArrayList<>();
+        organizationList.add(organization.getOrganizationId());
+        
         Superhuman superhuman = new Superhuman();
         superhuman.setName("All Might");
         superhuman.setDescription("#1 Hero");
-
+        superhuman.setPowers(powerList);
+        superhuman.setOrganizations(organizationList);
+        
         dao.addSuperhuman(superhuman);
-
+        
         Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
         assertEquals(fromDao, superhuman);
-
     }
 
     /**
@@ -106,16 +98,6 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testDeleteSuperhuman() {
-        Superhuman superhuman = new Superhuman();
-        superhuman.setName("All Might");
-        superhuman.setDescription("#1 Hero");
-
-        dao.addSuperhuman(superhuman);
-
-        Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
-        assertEquals(fromDao, superhuman);
-        dao.deleteSuperhuman(superhuman.getHeroId());
-        assertNull(dao.getSuperhumanWithId(superhuman.getHeroId()));
     }
 
     /**
@@ -123,22 +105,6 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testUpdateSuperhuman() {
-        Superhuman superhuman = new Superhuman();
-        superhuman.setName("All Might");
-        superhuman.setDescription("#1 Hero");
-
-        dao.addSuperhuman(superhuman);
-
-        Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
-        assertEquals(fromDao, superhuman);
-
-        superhuman.setName("Endeavor");
-
-        dao.updateSuperhuman(superhuman);
-
-        Superhuman newFromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
-        assertEquals(newFromDao, superhuman);
-
     }
 
     /**
@@ -146,20 +112,6 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testGetAllSuperhumans() {
-        Superhuman proHero = new Superhuman();
-        proHero.setName("All Might");
-        proHero.setDescription("#1 Hero");
-        
-        dao.addSuperhuman(proHero);
-        
-        Superhuman uaStudent = new Superhuman();
-        uaStudent.setName("Deku");
-        uaStudent.setDescription("Training to become the #1 Hero");
-        
-        dao.addSuperhuman(uaStudent);
-        
-        List<Superhuman> getList = dao.getAllSuperhumans();
-        assertEquals(getList.size(), 2);
     }
 
     /**
