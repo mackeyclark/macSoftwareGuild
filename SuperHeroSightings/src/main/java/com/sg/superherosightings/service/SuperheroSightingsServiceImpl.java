@@ -11,11 +11,13 @@ import com.sg.superherosightings.model.Power;
 import com.sg.superherosightings.model.Superhuman;
 import java.util.List;
 import javax.inject.Inject;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author macam
  */
+@Service
 public class SuperheroSightingsServiceImpl implements SuperheroSightingsService {
     
     SuperheroSightingsDao dao;
@@ -25,10 +27,9 @@ public class SuperheroSightingsServiceImpl implements SuperheroSightingsService 
         this.dao = dao;
     }
 
-
     @Override
     public void addSuperhuman(Superhuman superhuman) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        dao.addSuperhuman(superhuman);
     }
 
     @Override

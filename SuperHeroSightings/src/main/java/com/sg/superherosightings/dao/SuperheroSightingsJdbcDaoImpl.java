@@ -285,6 +285,31 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    void clearAllData() {
+        
+        final String DELETE_ALL_FROM_SUPERHUMANSPOWERS = "delete from superhumanspowers";
+        jdbcTemplate.update(DELETE_ALL_FROM_SUPERHUMANSPOWERS);
+
+        final String DELETE_ALL_FROM_SUPERHUMANSORGANIZATIONS = "delete from superhumansorganizations";
+        jdbcTemplate.update(DELETE_ALL_FROM_SUPERHUMANSORGANIZATIONS);
+
+        final String DELETE_ALL_FROM_SUPERHUMANS = "delete from superhumans";
+        jdbcTemplate.update(DELETE_ALL_FROM_SUPERHUMANS);
+
+        final String DELETE_ALL_FROM_POWERS = "delete from powers";
+        jdbcTemplate.update(DELETE_ALL_FROM_POWERS);
+
+        final String DELETE_ALL_FROM_ORGANIZATIONS = "delete from organizations";
+        jdbcTemplate.update(DELETE_ALL_FROM_ORGANIZATIONS);
+
+        final String DELETE_ALL_FROM_LOCATIONS = "delete from locations";
+        jdbcTemplate.update(DELETE_ALL_FROM_LOCATIONS);
+
+        final String DELETE_ALL_FROM_SIGHTINGS = "delete from sightings";
+        jdbcTemplate.update(DELETE_ALL_FROM_SIGHTINGS);
+
+    }
+
     //Mappers
     private static final class SuperhumanMapper implements RowMapper<Superhuman> {
 

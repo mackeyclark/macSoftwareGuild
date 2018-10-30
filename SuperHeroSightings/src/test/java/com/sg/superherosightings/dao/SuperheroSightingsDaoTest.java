@@ -55,6 +55,7 @@ public class SuperheroSightingsDaoTest {
 
     @After
     public void tearDown() {
+        dao.clearAllData();
     }
 
     /**
