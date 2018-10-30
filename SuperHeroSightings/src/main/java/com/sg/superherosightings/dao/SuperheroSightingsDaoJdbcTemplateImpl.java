@@ -459,6 +459,11 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
         return jdbcTemplate.query(SQL_SELECT_ORGANIZATIONS_BY_HERO_ID, new OrganizationMapper(), superhuman.getHeroId());
     }
 
+    @Override
+    public List<Power> getPowersOfHero(int heroId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     //Mappers
     private static final class SuperhumanMapper implements RowMapper<Superhuman> {
 

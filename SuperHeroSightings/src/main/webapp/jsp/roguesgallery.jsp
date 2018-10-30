@@ -44,12 +44,10 @@
                     <h2>Our Rogues' Gallery <a href="${pageContext.request.contextPath}/createsuperhuman" class="btn btn-default" style=" vertical-align: middle; float: right">Create New Superhuman</a></h2>
                     <table id="superhumanTable" class="table table-striped">
                         <tr>
-                            <th width="15%">Hero</th>
-                            <th width="25%">Description</th>
-                            <th width="15%">Power</th>
-                            <th width="25%">Associates with</th>
+                            <th width="70%">Hero</th>
                             <th width="10%"></th>
-                            <th width="10%"></th>
+                            <th width="10%"></th>                            
+                            <th></th>
                         </tr>
                         <c:forEach var="currentSuperhuman" items="${superhumanList}">
                             <tr>
@@ -57,19 +55,13 @@
                                     <c:out value="${currentSuperhuman.name}"/>
                                 </td>
                                 <td>
-                                    <c:out value="${currentSuperhuman.description}"/>
-                                </td>
-                                <td>
-                                    <c:out value="${currentSuperhuman.powers}"/>
-                                </td>
-                                <td>
-                                    <c:out value="S{currentSuperhuman.organizations}"/>
+                                    <a href="displayherodetails?heroId=${currentSuperhuman.heroId}">Details</a>
                                 </td>
                                 <td>
                                     Edit
                                 </td>
                                 <td>
-                                    Delete
+                                    <a href="deletehero?heroId=${currentSuperhuman.heroId}">Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>

@@ -7,6 +7,8 @@ package com.sg.superherosightings.controller;
 
 import com.sg.superherosightings.dao.SuperheroSightingsDao;
 import com.sg.superherosightings.model.Organization;
+import com.sg.superherosightings.service.SuperheroSightingsService;
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,10 +21,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class OrganizationController {
     
-    SuperheroSightingsDao dao;
+    SuperheroSightingsService service;
     
-    public OrganizationController(SuperheroSightingsDao dao) {
-        this.dao = dao;
+    @Inject
+    public OrganizationController(SuperheroSightingsService service) {
+        this.service = service;
     }
     
     @RequestMapping(value = "/organizations", method = RequestMethod.GET)
@@ -44,7 +47,7 @@ public class OrganizationController {
         organization.setPhone(request.getParameter("phone"));
         organization.setEmail(request.getParameter("email"));
         
-        dao.addOrganization(organization);
+        service.addOrganization(organization);
         
         return "organizations";
     }

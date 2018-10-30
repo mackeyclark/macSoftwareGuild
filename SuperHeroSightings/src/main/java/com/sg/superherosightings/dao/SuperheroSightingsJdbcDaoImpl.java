@@ -252,7 +252,11 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public List<Organization> getOrganizationsOfSuperhuman(int heroId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String SELECT_ORGANIZATIONS_BY_HERO_ID = "select o.name, o.description, o.address, o. phone, "
+                + "o.email from organizations o join superhumansorganizations so on o.organizationId = so.organizationId "
+                + "where so.heroId = ?";
+
+        return jdbcTemplate.query(SELECT_ORGANIZATIONS_BY_HERO_ID, new OrganizationMapper(), heroId);
     }
 
     @Override
@@ -286,7 +290,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     void clearAllData() {
-        
+
         final String DELETE_ALL_FROM_SUPERHUMANSPOWERS = "delete from superhumanspowers";
         jdbcTemplate.update(DELETE_ALL_FROM_SUPERHUMANSPOWERS);
 
@@ -308,6 +312,14 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
         final String DELETE_ALL_FROM_SIGHTINGS = "delete from sightings";
         jdbcTemplate.update(DELETE_ALL_FROM_SIGHTINGS);
 
+    }
+
+    @Override
+    public List<Power> getPowersOfHero(int heroId) {
+        final String SELECT_POWERS_BY_HERO_ID = "select p.powerId, p.name, p.description from powers p "
+                + "join superhumanspowers sp on p.powerId = sp.powerId where sp.heroId = ?";
+
+        return jdbcTemplate.query(SELECT_POWERS_BY_HERO_ID, new PowerMapper(), heroId);
     }
 
     //Mappers

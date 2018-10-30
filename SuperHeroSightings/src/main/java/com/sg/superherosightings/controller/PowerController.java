@@ -7,6 +7,7 @@ package com.sg.superherosightings.controller;
 
 import com.sg.superherosightings.dao.SuperheroSightingsDao;
 import com.sg.superherosightings.model.Power;
+import com.sg.superherosightings.service.SuperheroSightingsService;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
@@ -20,11 +21,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class PowerController {
 
-    SuperheroSightingsDao dao;
-
+    SuperheroSightingsService service;
+    
     @Inject
-    public PowerController(SuperheroSightingsDao dao) {
-        this.dao = dao;
+    public PowerController(SuperheroSightingsService service) {
+        this.service = service;
     }
 
     @RequestMapping(value = "/powerlist", method = RequestMethod.GET)
@@ -43,7 +44,7 @@ public class PowerController {
         power.setName(request.getParameter("name"));
         power.setDescription(request.getParameter("description"));
         
-        dao.addPower(power);
+        service.addPower(power);
         
         return "powerlist";
     }

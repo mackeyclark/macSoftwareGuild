@@ -18,10 +18,22 @@ public interface SuperheroSightingsService {
     
     public void addSuperhuman(Superhuman superhuman);
     
+    public void addPower(Power power);
+    
     public List<Power> getAllPowers();
     
     public List<Organization> getAllOrganizations();
     
     public List<Superhuman> getAllSuperhumans();
+
+    public void addOrganization(Organization organization);
+
+    public Superhuman getSuperhumanWihId(int heroId);
+
+    public void deleteSuperhuman(int heroId);
+
+    public List<Power> getPowersOfHero(int heroId);
+
+    public List<Organization> getOrganizationsOfHero(int heroId);
     
 }

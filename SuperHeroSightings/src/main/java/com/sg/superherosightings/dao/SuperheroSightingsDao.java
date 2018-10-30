@@ -78,5 +78,7 @@ public interface SuperheroSightingsDao {
     public List<Location> getAllLocations();
     
     public List<Location> getLocationsOfSuperhuman(int heroId);
+
+    public List<Power> getPowersOfHero(int heroId);
     
 }

@@ -55,7 +55,9 @@ public class SuperheroSightingsDaoTest {
 
     @After
     public void tearDown() {
+        
         dao.clearAllData();
+        
     }
 
     /**
@@ -276,7 +278,6 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testGetAllSuperhumansInOrganization() {
-
     }
 
     /**
@@ -333,6 +334,7 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testAddPower() {
+        
     }
 
     /**

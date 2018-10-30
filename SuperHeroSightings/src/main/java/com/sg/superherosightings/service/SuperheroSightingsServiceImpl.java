@@ -46,5 +46,35 @@ public class SuperheroSightingsServiceImpl implements SuperheroSightingsService 
     public List<Superhuman> getAllSuperhumans() {
         return dao.getAllSuperhumans();
     }
+
+    @Override
+    public void addPower(Power power) {
+        dao.addPower(power);
+    }
+
+    @Override
+    public void addOrganization(Organization organization) {
+        dao.addOrganization(organization);
+    }
+
+    @Override
+    public Superhuman getSuperhumanWihId(int heroId) {
+        return dao.getSuperhumanWithId(heroId);
+    }
+
+    @Override
+    public void deleteSuperhuman(int heroId) {
+        dao.deleteSuperhuman(heroId);
+    }
+
+    @Override
+    public List<Power> getPowersOfHero(int heroId) {
+        return dao.getPowersOfHero(heroId);
+    }
+
+    @Override
+    public List<Organization> getOrganizationsOfHero(int heroId) {
+        return dao.getOrganizationsOfSuperhuman(heroId);
+    }
     
 }
