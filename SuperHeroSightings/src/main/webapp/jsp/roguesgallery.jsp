@@ -51,6 +51,28 @@
                             <th width="10%"></th>
                             <th width="10%"></th>
                         </tr>
+                        <c:forEach var="currentSuperhuman" items="${superhumanList}">
+                            <tr>
+                                <td>
+                                    <c:out value="${currentSuperhuman.name}"/>
+                                </td>
+                                <td>
+                                    <c:out value="${currentSuperhuman.description}"/>
+                                </td>
+                                <td>
+                                    <c:out value="${currentSuperhuman.powers}"/>
+                                </td>
+                                <td>
+                                    <c:out value="S{currentSuperhuman.organizations}"/>
+                                </td>
+                                <td>
+                                    Edit
+                                </td>
+                                <td>
+                                    Delete
+                                </td>
+                            </tr>
+                        </c:forEach>
                     </table>
                 </div>
             </div>

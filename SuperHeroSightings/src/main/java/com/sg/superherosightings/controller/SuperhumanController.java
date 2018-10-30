@@ -5,10 +5,10 @@
  */
 package com.sg.superherosightings.controller;
 
-import com.sg.superherosightings.dao.SuperheroSightingsDao;
 import com.sg.superherosightings.model.Organization;
 import com.sg.superherosightings.model.Power;
 import com.sg.superherosightings.model.Superhuman;
+import com.sg.superherosightings.service.SuperheroSightingsService;
 import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
@@ -25,22 +25,27 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class SuperhumanController {
     
-    SuperheroSightingsDao dao;
+    SuperheroSightingsService service;
     
     @Inject
-    public SuperhumanController(SuperheroSightingsDao dao) {
-        this.dao = dao;
+    public SuperhumanController(SuperheroSightingsService service) {
+        this.service = service;
     }
     
     @RequestMapping(value="/roguesgallery", method=RequestMethod.GET)
-    public String displayRoguesGallery() {
+    public String displayRoguesGallery(Model model) {
+        
+        List<Superhuman> superhumanList = service.getAllSuperhumans();
+        
+        model.addAttribute("superhumanList", superhumanList);
+        
         return "roguesgallery";
     }
     
     @RequestMapping(value="/createsuperhuman", method=RequestMethod.GET)
     public String displayCreateSuperhumanPage(Model model) {
-        List<Power> powerList = dao.getAllPowers();
-        List<Organization> organizationList = dao.getAllOrganizations();
+        List<Power> powerList = service.getAllPowers();
+        List<Organization> organizationList = service.getAllOrganizations();
         
         model.addAttribute("powers", powerList);
         model.addAttribute("organizations", organizationList);
@@ -67,7 +72,7 @@ public class SuperhumanController {
         
         superhuman.setOrganizations(organizationList);
         
-        dao.addSuperhuman(superhuman);
+        service.addSuperhuman(superhuman);
         
         return "roguesgallery";
     }

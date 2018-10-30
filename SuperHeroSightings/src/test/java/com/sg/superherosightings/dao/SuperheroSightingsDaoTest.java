@@ -27,6 +27,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
  */
 public class SuperheroSightingsDaoTest {
 
+    JdbcTemplate jdbc;
+    
     SuperheroSightingsJdbcDaoImpl dao;
 
     public SuperheroSightingsDaoTest() {
@@ -49,7 +51,6 @@ public class SuperheroSightingsDaoTest {
         dao = new SuperheroSightingsJdbcDaoImpl();
         dao.setJdbcTemplate(jdbc);
 
-        //get and delete all superhumans
     }
 
     @After
@@ -62,34 +63,34 @@ public class SuperheroSightingsDaoTest {
     @Test
     public void testAddGetSuperhuman() {
         Power power = new Power();
-        power.setName("All-for-One");
+        power.setName("One-for-All");
         power.setDescription("A Quirk that stockpiles power");
-        
+
         dao.addPower(power);
-        
+
         List<Integer> powerList = new ArrayList<>();
         powerList.add(power.getPowerId());
-        
+
         Organization organization = new Organization();
         organization.setName("U.A. High School");
         organization.setDescription("academy where students learn and train to become heroes");
         organization.setAddress("31 Tenzu Street Musutafu, Japan");
         organization.setPhone("1234567890");
         organization.setEmail("plusUltra@Comcast.net");
-        
+
         dao.addOrganization(organization);
-        
+
         List<Integer> organizationList = new ArrayList<>();
         organizationList.add(organization.getOrganizationId());
-        
+
         Superhuman superhuman = new Superhuman();
         superhuman.setName("All Might");
         superhuman.setDescription("#1 Hero");
         superhuman.setPowers(powerList);
         superhuman.setOrganizations(organizationList);
-        
+
         dao.addSuperhuman(superhuman);
-        
+
         Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
         assertEquals(fromDao, superhuman);
     }
@@ -100,34 +101,34 @@ public class SuperheroSightingsDaoTest {
     @Test
     public void testDeleteSuperhuman() {
         Power power = new Power();
-        power.setName("All-for-One");
+        power.setName("One-for-All");
         power.setDescription("A Quirk that stockpiles power");
-        
+
         dao.addPower(power);
-        
+
         List<Integer> powerList = new ArrayList<>();
         powerList.add(power.getPowerId());
-        
+
         Organization organization = new Organization();
         organization.setName("U.A. High School");
         organization.setDescription("academy where students learn and train to become heroes");
         organization.setAddress("31 Tenzu Street Musutafu, Japan");
         organization.setPhone("1234567890");
         organization.setEmail("plusUltra@Comcast.net");
-        
+
         dao.addOrganization(organization);
-        
+
         List<Integer> organizationList = new ArrayList<>();
         organizationList.add(organization.getOrganizationId());
-        
+
         Superhuman superhuman = new Superhuman();
         superhuman.setName("All Might");
         superhuman.setDescription("#1 Hero");
         superhuman.setPowers(powerList);
         superhuman.setOrganizations(organizationList);
-        
+
         dao.addSuperhuman(superhuman);
-        
+
         Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
         assertEquals(fromDao, superhuman);
 
@@ -141,6 +142,63 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testUpdateSuperhuman() {
+        Power power = new Power();
+        power.setName("One-for-All");
+        power.setDescription("A Quirk that stockpiles power");
+
+        dao.addPower(power);
+
+        List<Integer> powerList = new ArrayList<>();
+        powerList.add(power.getPowerId());
+
+        Organization organization = new Organization();
+        organization.setName("U.A. High School");
+        organization.setDescription("academy where students learn and train to become heroes");
+        organization.setAddress("31 Tenzu Street Musutafu, Japan");
+        organization.setPhone("1234567890");
+        organization.setEmail("plusUltra@Comcast.net");
+
+        dao.addOrganization(organization);
+
+        List<Integer> organizationList = new ArrayList<>();
+        organizationList.add(organization.getOrganizationId());
+
+        Superhuman superhuman = new Superhuman();
+        superhuman.setName("All Might");
+        superhuman.setDescription("#1 Hero");
+        superhuman.setPowers(powerList);
+        superhuman.setOrganizations(organizationList);
+
+        dao.addSuperhuman(superhuman);
+
+        Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
+        assertEquals(fromDao, superhuman);
+
+        Power powerTwo = new Power();
+        powerTwo.setName("All-for-One");
+        powerTwo.setDescription("A quirk that traanfers other's quirks");
+
+        dao.addPower(powerTwo);
+        powerList.add(powerTwo.getPowerId());
+
+        Organization organizationTwo = new Organization();
+        organizationTwo.setName("League of Villains");
+        organizationTwo.setDescription("group of villans inspired by Stain's philosiphy");
+        organizationTwo.setAddress("Somewhere in Kamino Ward");
+        organizationTwo.setPhone("2345678901");
+        organizationTwo.setEmail("freeStain@jol.com");
+
+        dao.addOrganization(organizationTwo);
+        organizationList.add(organizationTwo.getOrganizationId());
+
+        superhuman.setName("All-for-One");
+        superhuman.setDescription("Leader of the League of Villans");
+        superhuman.setPowers(powerList);
+        superhuman.setOrganizations(organizationList);
+        dao.updateSuperhuman(superhuman);
+
+        Superhuman updatedFromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
+        assertEquals(updatedFromDao, superhuman);
     }
 
     /**
@@ -148,6 +206,67 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testGetAllSuperhumans() {
+        Power power = new Power();
+        power.setName("One-for-All");
+        power.setDescription("A Quirk that stockpiles power");
+
+        dao.addPower(power);
+
+        List<Integer> powerList = new ArrayList<>();
+        powerList.add(power.getPowerId());
+
+        Organization organization = new Organization();
+        organization.setName("U.A. High School");
+        organization.setDescription("academy where students learn and train to become heroes");
+        organization.setAddress("31 Tenzu Street Musutafu, Japan");
+        organization.setPhone("1234567890");
+        organization.setEmail("plusUltra@Comcast.net");
+
+        dao.addOrganization(organization);
+
+        List<Integer> organizationList = new ArrayList<>();
+        organizationList.add(organization.getOrganizationId());
+
+        Superhuman superhuman = new Superhuman();
+        superhuman.setName("All Might");
+        superhuman.setDescription("#1 Hero");
+        superhuman.setPowers(powerList);
+        superhuman.setOrganizations(organizationList);
+
+        dao.addSuperhuman(superhuman);
+
+        Superhuman fromDao = dao.getSuperhumanWithId(superhuman.getHeroId());
+        assertEquals(fromDao, superhuman);
+
+        Power powerTwo = new Power();
+        powerTwo.setName("All-for-One");
+        powerTwo.setDescription("A quirk that traanfers other's quirks");
+
+        dao.addPower(powerTwo);
+
+        List<Integer> powerTwoList = new ArrayList<>();
+        powerTwoList.add(powerTwo.getPowerId());
+
+        Organization organizationTwo = new Organization();
+        organizationTwo.setName("League of Villains");
+        organizationTwo.setDescription("group of villans inspired by Stain's philosiphy");
+        organizationTwo.setAddress("Somewhere in Kamino Ward");
+        organizationTwo.setPhone("2345678901");
+        organizationTwo.setEmail("freeStain@jol.com");
+
+        dao.addOrganization(organizationTwo);
+
+        List<Integer> organizationTwoList = new ArrayList<>();
+        organizationTwoList.add(organizationTwo.getOrganizationId());
+
+        Superhuman superhumanTwo = new Superhuman();
+        superhumanTwo.setName("All-for-One");
+        superhumanTwo.setDescription("Leader of the League of Villans");
+        superhumanTwo.setPowers(powerTwoList);
+        superhumanTwo.setOrganizations(organizationTwoList);
+        dao.addSuperhuman(superhumanTwo);
+        
+        assertEquals(dao.getAllSuperhumans().size(), 2);
     }
 
     /**
@@ -156,7 +275,7 @@ public class SuperheroSightingsDaoTest {
      */
     @Test
     public void testGetAllSuperhumansInOrganization() {
-        
+
     }
 
     /**
