@@ -39,25 +39,37 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Organizations <a href="${pageContext.request.contextPath}/createorganization" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new Organization</a></h2>
-                <table id="organizationTable" class="table table-striped">
-                    <tr>
-                        <th width="16%">Name</th>
-                        <th width="16%">Description</th>
-                        <th width="16%">Address</th>
-                        <th width="16%">Phone</th>
-                        <th width="16%">Email</th>
-                        <th width="10%"></th>
-                        <th width="10%"></th>
-                    </tr>
-                </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Organizations <a href="${pageContext.request.contextPath}/createorganization" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new Organization</a></h2>
+                    <table id="organizationTable" class="table table-striped">
+                        <tr>
+                            <th width="70%">Name</th>
+                            <th width="10%"></th>
+                            <th width="10%"></th>
+                            <th width="10%"></th>
+                        </tr>
+                        <c:forEach var="currentOrganization" items="${organizationList}">
+                            <tr>
+                                <td>
+                                    <c:out value="${currentOrganization.name}"/>
+                                </td>
+                                <td>
+                                    Details
+                                </td>
+                                <td>
+                                    Edit
+                                </td>
+                                <td>
+                                    Delete
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </table>
+                </div>
             </div>
-        </div>
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+            <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     </body>
 </html>

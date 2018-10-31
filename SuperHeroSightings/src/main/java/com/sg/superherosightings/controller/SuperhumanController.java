@@ -36,7 +36,6 @@ public class SuperhumanController {
     public String displayRoguesGallery(Model model) {
 
         List<Superhuman> superhumanList = service.getAllSuperhumans();
-
         model.addAttribute("superhumanList", superhumanList);
 
         return "roguesgallery";
@@ -78,7 +77,7 @@ public class SuperhumanController {
 
         model.addAttribute("superhumanList", superhumanList);
 
-        return "roguesgallery";
+        return "redirect: roguesgallery";
     }
 
     @RequestMapping(value = "/displayherodetails", method = RequestMethod.GET)

@@ -5,12 +5,13 @@
  */
 package com.sg.superherosightings.controller;
 
-import com.sg.superherosightings.dao.SuperheroSightingsDao;
 import com.sg.superherosightings.model.Power;
 import com.sg.superherosightings.service.SuperheroSightingsService;
+import java.util.List;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -29,7 +30,11 @@ public class PowerController {
     }
 
     @RequestMapping(value = "/powerlist", method = RequestMethod.GET)
-    public String displayPowerlistPage() {
+    public String displayPowerlistPage(Model model) {
+        
+        List<Power> powerList = service.getAllPowers();
+        model.addAttribute("powerList", powerList);
+        
         return "powerlist";
     }
 
@@ -46,6 +51,6 @@ public class PowerController {
         
         service.addPower(power);
         
-        return "powerlist";
+        return "redirect: powerlist";
     }
 }

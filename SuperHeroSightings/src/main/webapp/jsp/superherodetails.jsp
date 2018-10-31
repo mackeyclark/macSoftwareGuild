@@ -24,6 +24,24 @@
                 <h2><c:out value="${superhuman.name}"/></h2>
                 <p><c:out value="${superhuman.description}"/></p>
             </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>Powers</li>
+                        <c:forEach var="currentPowers" items="${heroPowers}">
+                            <c:out value="${currentPower.name}"/>
+                        </c:forEach>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>Organizations</li>
+                        <c:forEach var="currentOrganization" items="${heroOrganizations}">
+                            <c:out value="${currentOrganization.name}"/>
+                        </c:forEach>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>

@@ -39,22 +39,37 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Power List <a href="${pageContext.request.contextPath}/createpower" class="btn btn-default" style=" vertical-align: middle; float: right;">Add New Power</a></h2>
-                <table id="powerTable" class="table table-striped">
-                    <tr>
-                        <th width="30%">Name</th>
-                        <th width="50%">Description</th>
-                        <th width="10%"></th>
-                        <th width="10%"></th>
-                    </tr>
-                </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Power List <a href="${pageContext.request.contextPath}/createpower" class="btn btn-default" style=" vertical-align: middle; float: right;">Add New Power</a></h2>
+                    <table id="powerTable" class="table table-striped">
+                        <tr>
+                            <th width="30%">Name</th>
+                            <th width="50%">Description</th>
+                            <th width="10%"></th>
+                            <th></th>
+                        </tr>
+                        <c:forEach var="currentPower" items="${powerList}">
+                            <tr>
+                                <td>
+                                    <c:out value="${currentPower.name}"/>
+                                </td>
+                                <td>
+                                    <c:out value="${currentPower.description}"/>
+                                </td>
+                                <td>
+                                    Edit
+                                </td>
+                                <td>
+                                    Delete
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </table>
+                </div>
             </div>
-        </div>
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+            <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
     </body>
 </html>
