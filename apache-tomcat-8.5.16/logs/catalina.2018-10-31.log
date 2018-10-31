@@ -1,0 +1,1123 @@
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.16
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 21 2017 17:01:09 UTC
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.16.0
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\logging.properties
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|LAPTOP-1960114R
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\temp
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.12] using APR version [1.5.2].
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+31-Oct-2018 08:48:28.244 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+31-Oct-2018 08:48:28.869 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2k  26 Jan 2017]
+31-Oct-2018 08:48:28.994 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Oct-2018 08:48:29.150 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+31-Oct-2018 08:48:29.150 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+31-Oct-2018 08:48:29.150 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+31-Oct-2018 08:48:29.150 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1275 ms
+31-Oct-2018 08:48:29.197 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2018 08:48:29.197 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.16
+31-Oct-2018 08:48:29.197 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml]
+31-Oct-2018 08:48:29.244 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/FactorizorJspServlet]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@3c4dd857]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4992)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\macam\Desktop\macameron-clark-individual-work\New Folder\FactorizorJspServlet\target\FactorizorJspServlet-1.0-SNAPSHOT] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:733)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:691)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+31-Oct-2018 08:48:29.244 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/FactorizorJspServlet]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 08:48:29.244 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorJspServlet.xml] has finished in [47] ms
+31-Oct-2018 08:48:29.244 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorSpringMVC.xml]
+31-Oct-2018 08:48:31.386 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 08:48:31.448 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 08:48:31.526 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 08:48:31 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:31.589 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:48:31.979 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 08:48:32.167 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:48:32.510 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/factorNumber],methods=[POST]}" onto public java.lang.String com.sg.factorizorspringmvc.FactorizorController.factorNumber(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+31-Oct-2018 08:48:32.526 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.factorizorspringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+31-Oct-2018 08:48:32.588 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 08:48:33.120 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:31 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:33.198 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:31 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:33.338 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1890 ms
+31-Oct-2018 08:48:33.354 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FactorizorSpringMVC.xml] has finished in [4,110] ms
+31-Oct-2018 08:48:33.354 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculator.xml]
+31-Oct-2018 08:48:33.510 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculator.xml] has finished in [156] ms
+31-Oct-2018 08:48:33.510 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculatorSpringMVC.xml]
+31-Oct-2018 08:48:35.244 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 08:48:35.291 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 08:48:35.369 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 08:48:35 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:35.447 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:48:35.635 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 08:48:35.806 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:48:36.041 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/calculateFloor],methods=[POST]}" onto public java.lang.String com.sg.flooringcalculatorspringmvc.FloooringCalculatorSpringMvc.returnValues(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+31-Oct-2018 08:48:36.041 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.flooringcalculatorspringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+31-Oct-2018 08:48:36.088 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 08:48:36.556 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:35 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:36.603 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:35 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:36.713 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1422 ms
+31-Oct-2018 08:48:36.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\FlooringCalculatorSpringMVC.xml] has finished in [3,203] ms
+31-Oct-2018 08:48:36.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml]
+31-Oct-2018 08:48:36.713 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HangmanSpringMVC]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@58bd6c1b]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4860)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4992)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\macam\Desktop\macameron-clark-individual-work\HangmanSpringMVC\target\spring-mvc-webapp] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:733)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:691)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+31-Oct-2018 08:48:36.713 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Error deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/HangmanSpringMVC]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 08:48:36.713 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HangmanSpringMVC.xml] has finished in [0] ms
+31-Oct-2018 08:48:36.744 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HelloSecurity.xml]
+31-Oct-2018 08:48:38.807 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 08:48:38.870 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 08:48:38.917 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 08:48:38 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:38.964 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:48:39.198 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 08:48:39.541 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:48:39.792 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/editUser],methods=[POST]}" onto public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserAction(java.lang.String[],java.lang.Boolean,java.lang.Integer)
+31-Oct-2018 08:48:39.792 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.sg.hellosecurity.controller.AdminController.displayAdminPage(org.springframework.ui.Model)
+31-Oct-2018 08:48:39.792 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deleteUser],methods=[POST]}" onto public java.lang.String com.sg.hellosecurity.controller.AdminController.deleteUser(java.lang.Integer)
+31-Oct-2018 08:48:39.792 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/editUser],methods=[GET]}" onto public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer)
+31-Oct-2018 08:48:39.792 WARNING [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer) mapped.
+31-Oct-2018 08:48:39.792 SEVERE [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1842)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'adminController' method 
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer)
+to {[/editUser],methods=[GET]}: There is already 'adminController' bean method
+public java.lang.String com.sg.hellosecurity.controller.AdminController.editUserDisplay(org.springframework.ui.Model,java.lang.Integer,java.lang.Integer) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 25 more
+
+31-Oct-2018 08:48:39.839 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+31-Oct-2018 08:48:39.839 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/HelloSecurity] startup failed due to previous errors
+31-Oct-2018 08:48:39.855 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\HelloSecurity.xml] has finished in [3,111] ms
+31-Oct-2018 08:48:39.855 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml]
+31-Oct-2018 08:48:41.496 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 08:48:41.527 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 08:48:41.590 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 08:48:41 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:41.652 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:48:41.840 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 08:48:41.981 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:48:42.262 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/hello/sayhi],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvc.HelloController.sayHi(java.util.Map<java.lang.String, java.lang.Object>)
+31-Oct-2018 08:48:42.324 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 08:48:42.746 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:41 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:42.808 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:41 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:42.887 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1360 ms
+31-Oct-2018 08:48:42.902 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVC.xml] has finished in [3,047] ms
+31-Oct-2018 08:48:42.902 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml]
+31-Oct-2018 08:48:44.636 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 08:48:44.667 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 08:48:44.730 INFO [localhost-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 08:48:44 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:44.777 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:48:44.980 INFO [localhost-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 08:48:45.136 INFO [localhost-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:48:45.370 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sg.vendingmachinespringmvcrevised.controller.VmController.displayAllItems(org.springframework.ui.Model)
+31-Oct-2018 08:48:45.433 INFO [localhost-startStop-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 08:48:45.980 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:44 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:46.026 INFO [localhost-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:48:44 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:48:46.120 INFO [localhost-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1453 ms
+31-Oct-2018 08:48:46.120 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\VendingMachineSpringMVCRevised.xml] has finished in [3,218] ms
+31-Oct-2018 08:48:46.120 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\docs]
+31-Oct-2018 08:48:46.151 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\docs] has finished in [31] ms
+31-Oct-2018 08:48:46.151 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\examples]
+31-Oct-2018 08:48:46.979 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\examples] has finished in [828] ms
+31-Oct-2018 08:48:46.979 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\host-manager]
+31-Oct-2018 08:48:47.011 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\host-manager] has finished in [32] ms
+31-Oct-2018 08:48:47.011 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\manager]
+31-Oct-2018 08:48:47.042 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\manager] has finished in [31] ms
+31-Oct-2018 08:48:47.042 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\ROOT]
+31-Oct-2018 08:48:47.057 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\webapps\ROOT] has finished in [15] ms
+31-Oct-2018 08:48:47.057 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Oct-2018 08:48:47.073 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+31-Oct-2018 08:48:47.073 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 17922 ms
+31-Oct-2018 08:49:06.898 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 08:49:08.070 INFO [http-nio-8080-exec-7] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 08:49:08.101 INFO [http-nio-8080-exec-7] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 08:49:08.210 INFO [http-nio-8080-exec-7] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 08:49:08 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:49:08.288 INFO [http-nio-8080-exec-7] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:49:08.523 INFO [http-nio-8080-exec-7] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 08:49:08.778 INFO [http-nio-8080-exec-7] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:09.088 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:09.119 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 08:49:09.119 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:09.119 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 08:49:09.166 INFO [http-nio-8080-exec-7] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 08:49:09.603 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:49:08 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:49:09.681 INFO [http-nio-8080-exec-7] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:49:08 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:49:09.934 INFO [http-nio-8080-exec-7] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1833 ms
+31-Oct-2018 08:49:09.949 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [3,051] ms
+31-Oct-2018 08:49:09.949 INFO [http-nio-8080-exec-1] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after start() had already been called. The second call will be ignored.
+31-Oct-2018 08:49:11.788 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization started
+31-Oct-2018 08:49:11.796 INFO [http-nio-8080-exec-6] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:11 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 08:49:11.796 INFO [http-nio-8080-exec-6] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:49:11.851 INFO [http-nio-8080-exec-6] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:49:11.898 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 08:49:11.899 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 08:49:11.900 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 08:49:11.902 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 08:49:11.903 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:11.903 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:11.903 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:11.904 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:11.904 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 08:49:11.904 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:11.905 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 08:49:11.905 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 08:49:11.906 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:11.906 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:11.921 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 08:49:11.921 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:11.922 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 08:49:12.024 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:11 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 08:49:12.062 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:11 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 08:49:12.179 INFO [http-nio-8080-exec-6] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization completed in 391 ms
+31-Oct-2018 08:49:28.448 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:11 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 08:49:28.460 INFO [http-nio-8080-exec-1] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Wed Oct 31 08:49:08 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:49:28.974 INFO [http-nio-8080-exec-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SuperHeroSightings]
+31-Oct-2018 08:49:29.001 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 08:49:30.474 INFO [http-nio-8080-exec-10] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 08:49:30.517 INFO [http-nio-8080-exec-10] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 08:49:30.600 INFO [http-nio-8080-exec-10] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 08:49:30 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:49:30.669 INFO [http-nio-8080-exec-10] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:49:30.924 INFO [http-nio-8080-exec-10] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 08:49:31.157 INFO [http-nio-8080-exec-10] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:49:31.450 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 08:49:31.451 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 08:49:31.451 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 08:49:31.453 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 08:49:31.453 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:31.453 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:31.454 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:31.454 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:31.454 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 08:49:31.455 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:31.455 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 08:49:31.455 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 08:49:31.457 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:31.457 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:31.498 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 08:49:31.499 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:31.500 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 08:49:31.586 INFO [http-nio-8080-exec-10] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 08:49:32.041 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:49:30 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:49:32.104 INFO [http-nio-8080-exec-10] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 08:49:30 CDT 2018]; root of context hierarchy
+31-Oct-2018 08:49:32.375 INFO [http-nio-8080-exec-10] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1857 ms
+31-Oct-2018 08:49:32.381 INFO [http-nio-8080-exec-10] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [3,380] ms
+31-Oct-2018 08:49:32.385 INFO [http-nio-8080-exec-4] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after start() had already been called. The second call will be ignored.
+31-Oct-2018 08:49:32.585 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization started
+31-Oct-2018 08:49:32.591 INFO [http-nio-8080-exec-8] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:32 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 08:49:32.592 INFO [http-nio-8080-exec-8] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 08:49:32.661 INFO [http-nio-8080-exec-8] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 08:49:32.707 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 08:49:32.707 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 08:49:32.707 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 08:49:32.708 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 08:49:32.708 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:32.708 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:32.708 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:32.709 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:32.709 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 08:49:32.709 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:32.709 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 08:49:32.709 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 08:49:32.710 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 08:49:32.710 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 08:49:32.730 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 08:49:32.731 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 08:49:32.731 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 08:49:32.793 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:32 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 08:49:32.815 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:32 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 08:49:32.911 INFO [http-nio-8080-exec-8] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization completed in 325 ms
+31-Oct-2018 08:52:26.907 WARNING [http-nio-8080-exec-20] org.springframework.web.servlet.PageNotFound.noHandlerFound No mapping found for HTTP request with URI [/SuperHeroSightings/css/bootstrap.min.css.map] in DispatcherServlet with name 'spring-dispatcher'
+31-Oct-2018 09:03:04.476 INFO [http-nio-8080-exec-12] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+31-Oct-2018 09:03:04.498 INFO [http-nio-8080-exec-12] org.springframework.jdbc.support.SQLErrorCodesFactory.<init> SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+31-Oct-2018 09:21:16.149 INFO [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/SuperHeroSightings] has started
+31-Oct-2018 09:21:16.151 INFO [http-nio-8080-exec-16] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 08:49:32 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 09:21:16.157 INFO [http-nio-8080-exec-16] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Wed Oct 31 08:49:30 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:21:16.170 WARNING [http-nio-8080-exec-16] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [SuperHeroSightings] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+31-Oct-2018 09:21:16.171 WARNING [http-nio-8080-exec-16] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [SuperHeroSightings] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:70)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+31-Oct-2018 09:21:17.181 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:986)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 09:21:17.182 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:986)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 09:21:17.182 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:986)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 09:21:17.182 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:986)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 09:21:17.283 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:986)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 09:21:17.283 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1305)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:986)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:96)
+	at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 09:21:17.444 INFO [http-nio-8080-exec-16] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 09:21:17.480 INFO [http-nio-8080-exec-16] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 09:21:17.554 INFO [http-nio-8080-exec-16] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 09:21:17 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:21:17.615 INFO [http-nio-8080-exec-16] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 09:21:17.853 INFO [http-nio-8080-exec-16] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 09:21:18.069 INFO [http-nio-8080-exec-16] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 09:21:18.438 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 09:21:18.440 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 09:21:18.440 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 09:21:18.442 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 09:21:18.442 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 09:21:18.443 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:21:18.443 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:21:18.443 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 09:21:18.444 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 09:21:18.444 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:21:18.444 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 09:21:18.444 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 09:21:18.447 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 09:21:18.447 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:21:18.482 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 09:21:18.482 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:21:18.483 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 09:21:18.545 INFO [http-nio-8080-exec-16] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 09:21:19.094 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:21:17 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:21:19.153 INFO [http-nio-8080-exec-16] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:21:17 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:21:19.273 WARNING [http-nio-8080-exec-16] org.springframework.web.context.support.XmlWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+31-Oct-2018 09:21:19.275 SEVERE [http-nio-8080-exec-16] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3800)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:346)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 50 more
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:271)
+	... 63 more
+Caused by: java.lang.RuntimeException: Uncompilable source code - com.sg.superherosightings.service.SuperheroSightingsServiceImpl is not abstract and does not override abstract method deleteOrganization(int) in com.sg.superherosightings.service.SuperheroSightingsService
+	at com.sg.superherosightings.service.SuperheroSightingsServiceImpl.<clinit>(SuperheroSightingsServiceImpl.java:20)
+	... 70 more
+
+31-Oct-2018 09:21:19.294 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+31-Oct-2018 09:21:19.300 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.startInternal Context [/SuperHeroSightings] startup failed due to previous errors
+31-Oct-2018 09:21:19.311 INFO [http-nio-8080-exec-16] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/SuperHeroSightings] is completed
+31-Oct-2018 09:23:37.518 INFO [http-nio-8080-exec-23] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after stop() had already been called. The second call will be ignored.
+31-Oct-2018 09:23:38.020 INFO [http-nio-8080-exec-23] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SuperHeroSightings]
+31-Oct-2018 09:23:38.046 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 09:23:39.280 INFO [http-nio-8080-exec-13] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 09:23:39.311 INFO [http-nio-8080-exec-13] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 09:23:39.383 INFO [http-nio-8080-exec-13] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 09:23:39 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:23:39.441 INFO [http-nio-8080-exec-13] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 09:23:39.654 INFO [http-nio-8080-exec-13] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 09:23:39.900 INFO [http-nio-8080-exec-13] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 09:23:40.202 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 09:23:40.203 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 09:23:40.203 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 09:23:40.205 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 09:23:40.205 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 09:23:40.205 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:23:40.205 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:23:40.206 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 09:23:40.206 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 09:23:40.206 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:23:40.207 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 09:23:40.207 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 09:23:40.209 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 09:23:40.209 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:23:40.239 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 09:23:40.239 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:23:40.239 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 09:23:40.298 INFO [http-nio-8080-exec-13] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 09:23:40.745 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:23:39 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:23:40.830 INFO [http-nio-8080-exec-13] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:23:39 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:23:40.952 WARNING [http-nio-8080-exec-13] org.springframework.web.context.support.XmlWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+31-Oct-2018 09:23:40.954 SEVERE [http-nio-8080-exec-13] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1483)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:904)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:336)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 63 more
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:271)
+	... 76 more
+Caused by: java.lang.RuntimeException: Uncompilable source code - com.sg.superherosightings.service.SuperheroSightingsServiceImpl is not abstract and does not override abstract method deleteOrganization(int) in com.sg.superherosightings.service.SuperheroSightingsService
+	at com.sg.superherosightings.service.SuperheroSightingsServiceImpl.<clinit>(SuperheroSightingsServiceImpl.java:20)
+	... 83 more
+
+31-Oct-2018 09:23:41.000 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+31-Oct-2018 09:23:41.001 SEVERE [http-nio-8080-exec-13] org.apache.catalina.core.StandardContext.startInternal Context [/SuperHeroSightings] startup failed due to previous errors
+31-Oct-2018 09:23:41.013 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [2,967] ms
+31-Oct-2018 09:23:41.074 INFO [http-nio-8080-exec-25] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after stop() had already been called. The second call will be ignored.
+31-Oct-2018 09:23:41.576 INFO [http-nio-8080-exec-25] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SuperHeroSightings]
+31-Oct-2018 09:23:41.596 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 09:23:42.702 INFO [http-nio-8080-exec-12] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 09:23:42.739 INFO [http-nio-8080-exec-12] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 09:23:42.810 INFO [http-nio-8080-exec-12] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 09:23:42 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:23:42.867 INFO [http-nio-8080-exec-12] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 09:23:43.080 INFO [http-nio-8080-exec-12] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 09:23:43.307 INFO [http-nio-8080-exec-12] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 09:23:43.618 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 09:23:43.620 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 09:23:43.620 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 09:23:43.622 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 09:23:43.622 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 09:23:43.622 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:23:43.623 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:23:43.624 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 09:23:43.624 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 09:23:43.624 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:23:43.625 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 09:23:43.625 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 09:23:43.628 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 09:23:43.628 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:23:43.662 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 09:23:43.662 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:23:43.662 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 09:23:43.735 INFO [http-nio-8080-exec-12] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 09:23:44.172 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:23:42 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:23:44.228 INFO [http-nio-8080-exec-12] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:23:42 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:23:44.348 WARNING [http-nio-8080-exec-12] org.springframework.web.context.support.XmlWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+31-Oct-2018 09:23:44.350 SEVERE [http-nio-8080-exec-12] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1483)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:904)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:336)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 63 more
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:271)
+	... 76 more
+Caused by: java.lang.RuntimeException: Uncompilable source code - com.sg.superherosightings.service.SuperheroSightingsServiceImpl is not abstract and does not override abstract method deleteOrganization(int) in com.sg.superherosightings.service.SuperheroSightingsService
+	at com.sg.superherosightings.service.SuperheroSightingsServiceImpl.<clinit>(SuperheroSightingsServiceImpl.java:20)
+	... 83 more
+
+31-Oct-2018 09:23:44.373 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+31-Oct-2018 09:23:44.374 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardContext.startInternal Context [/SuperHeroSightings] startup failed due to previous errors
+31-Oct-2018 09:23:44.385 INFO [http-nio-8080-exec-12] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [2,789] ms
+31-Oct-2018 09:30:08.605 INFO [http-nio-8080-exec-27] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after stop() had already been called. The second call will be ignored.
+31-Oct-2018 09:30:09.107 INFO [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SuperHeroSightings]
+31-Oct-2018 09:30:09.123 INFO [http-nio-8080-exec-28] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 09:30:10.333 INFO [http-nio-8080-exec-28] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 09:30:10.377 INFO [http-nio-8080-exec-28] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 09:30:10.457 INFO [http-nio-8080-exec-28] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 09:30:10 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:30:10.519 INFO [http-nio-8080-exec-28] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 09:30:10.743 INFO [http-nio-8080-exec-28] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 09:30:11.009 INFO [http-nio-8080-exec-28] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 09:30:11.327 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 09:30:11.328 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 09:30:11.328 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 09:30:11.330 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 09:30:11.330 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 09:30:11.330 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:30:11.330 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:30:11.331 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 09:30:11.331 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 09:30:11.331 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:30:11.332 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 09:30:11.332 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 09:30:11.334 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 09:30:11.334 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:30:11.354 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 09:30:11.355 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:30:11.356 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 09:30:11.429 INFO [http-nio-8080-exec-28] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 09:30:11.876 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:30:10 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:30:11.935 INFO [http-nio-8080-exec-28] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:30:10 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:30:12.058 WARNING [http-nio-8080-exec-28] org.springframework.web.context.support.XmlWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+31-Oct-2018 09:30:12.060 SEVERE [http-nio-8080-exec-28] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'organizationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\OrganizationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1483)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:904)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:336)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 63 more
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:271)
+	... 76 more
+Caused by: java.lang.RuntimeException: Uncompilable source code - com.sg.superherosightings.service.SuperheroSightingsServiceImpl is not abstract and does not override abstract method deleteOrganization(int) in com.sg.superherosightings.service.SuperheroSightingsService
+	at com.sg.superherosightings.service.SuperheroSightingsServiceImpl.<clinit>(SuperheroSightingsServiceImpl.java:20)
+	... 83 more
+
+31-Oct-2018 09:30:12.065 SEVERE [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+31-Oct-2018 09:30:12.065 SEVERE [http-nio-8080-exec-28] org.apache.catalina.core.StandardContext.startInternal Context [/SuperHeroSightings] startup failed due to previous errors
+31-Oct-2018 09:30:12.075 INFO [http-nio-8080-exec-28] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [2,952] ms
+31-Oct-2018 09:31:55.413 INFO [http-nio-8080-exec-27] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after stop() had already been called. The second call will be ignored.
+31-Oct-2018 09:31:55.914 INFO [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SuperHeroSightings]
+31-Oct-2018 09:31:55.961 INFO [http-nio-8080-exec-22] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 09:31:57.434 INFO [http-nio-8080-exec-22] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 09:31:57.474 INFO [http-nio-8080-exec-22] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 09:31:57.562 INFO [http-nio-8080-exec-22] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 09:31:57 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:31:57.622 INFO [http-nio-8080-exec-22] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 09:31:57.623 SEVERE [http-nio-8080-exec-22] org.springframework.web.context.ContextLoader.initWebApplicationContext Context initialization failed
+ org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:613)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:514)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1483)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:904)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:336)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:141)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 60 more
+
+31-Oct-2018 09:31:57.669 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+31-Oct-2018 09:31:57.670 SEVERE [http-nio-8080-exec-22] org.apache.catalina.core.StandardContext.startInternal Context [/SuperHeroSightings] startup failed due to previous errors
+31-Oct-2018 09:31:57.674 INFO [http-nio-8080-exec-22] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Wed Oct 31 09:31:57 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:31:57.698 WARNING [http-nio-8080-exec-22] org.springframework.web.context.support.XmlWebApplicationContext.doClose Exception thrown from LifecycleProcessor on context close
+ java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Wed Oct 31 09:31:57 CDT 2018]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:417)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1002)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:961)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:581)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:116)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4792)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5429)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:226)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:630)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:501)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1654)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:300)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1483)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:904)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:336)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 09:31:57.773 INFO [http-nio-8080-exec-22] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [1,811] ms
+31-Oct-2018 09:31:57.829 INFO [http-nio-8080-exec-21] org.apache.catalina.util.LifecycleBase.stop The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after stop() had already been called. The second call will be ignored.
+31-Oct-2018 09:31:58.330 INFO [http-nio-8080-exec-21] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SuperHeroSightings]
+31-Oct-2018 09:31:58.375 INFO [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 09:31:59.459 INFO [http-nio-8080-exec-27] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 09:31:59.467 INFO [http-nio-8080-exec-27] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [1,092] ms
+31-Oct-2018 09:31:59.471 INFO [http-nio-8080-exec-26] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after start() had already been called. The second call will be ignored.
+31-Oct-2018 09:32:53.937 INFO [http-nio-8080-exec-22] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SuperHeroSightings]
+31-Oct-2018 09:33:08.701 INFO [http-nio-8080-exec-25] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml]
+31-Oct-2018 09:33:09.805 INFO [http-nio-8080-exec-25] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+31-Oct-2018 09:33:09.838 INFO [http-nio-8080-exec-25] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+31-Oct-2018 09:33:09.912 INFO [http-nio-8080-exec-25] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Wed Oct 31 09:33:09 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:33:09.970 INFO [http-nio-8080-exec-25] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 09:33:10.182 INFO [http-nio-8080-exec-25] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from class path resource [spring-persistence.xml]
+31-Oct-2018 09:33:10.397 INFO [http-nio-8080-exec-25] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 09:33:10.721 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 09:33:10.722 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 09:33:10.722 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 09:33:10.724 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 09:33:10.724 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 09:33:10.724 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:33:10.725 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deleteorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.deleteOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:10.725 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:10.725 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 09:33:10.726 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 09:33:10.726 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:10.726 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 09:33:10.726 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 09:33:10.728 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 09:33:10.728 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:33:10.729 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 09:33:10.729 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:10.729 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 09:33:10.784 INFO [http-nio-8080-exec-25] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 5.2.2.Final
+31-Oct-2018 09:33:11.234 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:33:09 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:33:11.297 INFO [http-nio-8080-exec-25] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Wed Oct 31 09:33:09 CDT 2018]; root of context hierarchy
+31-Oct-2018 09:33:11.516 INFO [http-nio-8080-exec-25] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1678 ms
+31-Oct-2018 09:33:11.519 INFO [http-nio-8080-exec-25] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor [C:\Users\macam\Desktop\macameron-clark-individual-work\apache-tomcat-8.5.16\conf\Catalina\localhost\SuperHeroSightings.xml] has finished in [2,817] ms
+31-Oct-2018 09:33:11.523 INFO [http-nio-8080-exec-27] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SuperHeroSightings]] after start() had already been called. The second call will be ignored.
+31-Oct-2018 09:33:11.673 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization started
+31-Oct-2018 09:33:11.679 INFO [http-nio-8080-exec-31] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 09:33:11 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 09:33:11.680 INFO [http-nio-8080-exec-31] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-dispatcher-servlet.xml]
+31-Oct-2018 09:33:11.720 INFO [http-nio-8080-exec-31] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+31-Oct-2018 09:33:11.752 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/home || /],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.HomeController.displayHomePage()
+31-Oct-2018 09:33:11.753 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createlocation],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayCreateLocationPage()
+31-Oct-2018 09:33:11.753 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/locations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.LocationController.displayLocationPage()
+31-Oct-2018 09:33:11.753 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayCreateOrganizationPage()
+31-Oct-2018 09:33:11.753 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/organizations],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationsPage(org.springframework.ui.Model)
+31-Oct-2018 09:33:11.753 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayorganizationdetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.displayOrganizationDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:33:11.753 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deleteorganization],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.deleteOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:11.754 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addorganization],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.OrganizationController.addOrganization(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:11.754 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/powerlist],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayPowerlistPage(org.springframework.ui.Model)
+31-Oct-2018 09:33:11.754 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createpower],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.displayCreatePowerPage()
+31-Oct-2018 09:33:11.754 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addpower],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.PowerController.addPower(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:11.754 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsighting],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displayCreateSightingPage()
+31-Oct-2018 09:33:11.754 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/sightings],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SightingController.displaySightingsPage()
+31-Oct-2018 09:33:11.755 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/createsuperhuman],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayCreateSuperhumanPage(org.springframework.ui.Model)
+31-Oct-2018 09:33:11.795 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/displayherodetails],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayHeroDetails(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+31-Oct-2018 09:33:11.795 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/roguesgallery],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.displayRoguesGallery(org.springframework.ui.Model)
+31-Oct-2018 09:33:11.795 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/deletehero],methods=[GET]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.deleteHero(javax.servlet.http.HttpServletRequest)
+31-Oct-2018 09:33:11.795 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/addsuperhuman],methods=[POST]}" onto public java.lang.String com.sg.superherosightings.controller.SuperhumanController.addSuperhuman(javax.servlet.http.HttpServletRequest,int[],int[],org.springframework.ui.Model)
+31-Oct-2018 09:33:11.839 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 09:33:11 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 09:33:11.854 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-dispatcher-servlet': startup date [Wed Oct 31 09:33:11 CDT 2018]; parent: Root WebApplicationContext
+31-Oct-2018 09:33:11.947 INFO [http-nio-8080-exec-31] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'spring-dispatcher': initialization completed in 274 ms

@@ -55,13 +55,13 @@
                                     <c:out value="${currentOrganization.name}"/>
                                 </td>
                                 <td>
-                                    Details
+                                    <a href="displayorganizationdetails?organizationId=${currentOrganization.organizationId}">Details</a>
                                 </td>
                                 <td>
                                     Edit
                                 </td>
                                 <td>
-                                    Delete
+                                    <a href="deleteorganization?organizationId=${currentOrganization.organizationId}">Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>

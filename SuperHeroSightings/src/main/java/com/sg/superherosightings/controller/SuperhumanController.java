@@ -82,8 +82,8 @@ public class SuperhumanController {
 
     @RequestMapping(value = "/displayherodetails", method = RequestMethod.GET)
     public String displayHeroDetails(HttpServletRequest request, Model model) {
-        String contactIdParameter = request.getParameter("heroId");
-        int heroId = Integer.parseInt(contactIdParameter);
+        String heroIdParameter = request.getParameter("heroId");
+        int heroId = Integer.parseInt(heroIdParameter);
 
         Superhuman superhuman = service.getSuperhumanWihId(heroId);
         model.addAttribute("superhuman", superhuman);
@@ -99,8 +99,8 @@ public class SuperhumanController {
 
     @RequestMapping(value = "/deletehero", method = RequestMethod.GET)
     public String deleteHero(HttpServletRequest request) {
-        String contactIdParameter = request.getParameter("heroId");
-        int heroId = Integer.parseInt(contactIdParameter);
+        String heroIdParameter = request.getParameter("heroId");
+        int heroId = Integer.parseInt(heroIdParameter);
         
         service.deleteSuperhuman(heroId);
         

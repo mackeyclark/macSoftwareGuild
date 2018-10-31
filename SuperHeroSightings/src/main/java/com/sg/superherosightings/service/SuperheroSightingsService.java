@@ -35,5 +35,9 @@ public interface SuperheroSightingsService {
     public List<Power> getPowersOfHero(int heroId);
 
     public List<Organization> getOrganizationsOfHero(int heroId);
+
+    public Organization getOrganizationWithId(int organizationId);
+
+    public void deleteOrganization(int organizationId);
     
 }

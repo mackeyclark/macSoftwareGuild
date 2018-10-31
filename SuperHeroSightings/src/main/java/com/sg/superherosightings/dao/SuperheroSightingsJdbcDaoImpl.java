@@ -229,7 +229,9 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     @Override
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deleteOrganization(int organizationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String DELETE_ORGANIZATION = "delete from organizations where organizationId = ?";
+
+        jdbcTemplate.update(DELETE_ORGANIZATION, organizationId);
     }
 
     @Override
@@ -240,7 +242,14 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public Organization getOrganizationWithId(int organizationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String SELECT_ORGANIZATION = "select * from organizations where organizationId = ?";
+
+        try {
+            return jdbcTemplate.queryForObject(SELECT_ORGANIZATION, new OrganizationMapper(), organizationId);
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
+
     }
 
     @Override

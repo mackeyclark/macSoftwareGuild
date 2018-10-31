@@ -28,13 +28,13 @@
                     <input type="text" class="form-control" name="description" placeholder="Quick description of the organization"/>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Address of organization"/>
+                    <input type="text" class="form-control" name="address" placeholder="Address of organization"/>
                 </div>
                 <div class="form-group">
-                    <input type="tel" class="form-control" name="name" placeholder="555-555-5555"/>
+                    <input type="tel" class="form-control" name="phone" placeholder="555-555-5555"/>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="name" placeholder="organization@host.org"/>
+                    <input type="email" class="form-control" name="email" placeholder="organization@host.org"/>
                 </div>
                 <div class="form-group">                   
                     <a href="${pageContext.request.contextPath}/organizations" class="btn btn-default">Cancel</a>

@@ -21,28 +21,28 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class OrganizationController {
-    
+
     SuperheroSightingsService service;
-    
+
     @Inject
     public OrganizationController(SuperheroSightingsService service) {
         this.service = service;
     }
-    
+
     @RequestMapping(value = "/organizations", method = RequestMethod.GET)
     public String displayOrganizationsPage(Model model) {
-        
+
         List<Organization> organizationList = service.getAllOrganizations();
         model.addAttribute("organizationList", organizationList);
-        
+
         return "organizations";
     }
-    
+
     @RequestMapping(value = "/createorganization", method = RequestMethod.GET)
     public String displayCreateOrganizationPage() {
         return "createorganization";
     }
-    
+
     @RequestMapping(value = "/addorganization", method = RequestMethod.POST)
     public String addOrganization(HttpServletRequest request) {
         Organization organization = new Organization();
@@ -51,9 +51,31 @@ public class OrganizationController {
         organization.setAddress(request.getParameter("address"));
         organization.setPhone(request.getParameter("phone"));
         organization.setEmail(request.getParameter("email"));
-        
+
         service.addOrganization(organization);
+
+        return "redirect: organizations";
+    }
+
+    @RequestMapping(value = "/displayorganizationdetails", method = RequestMethod.GET)
+    public String displayOrganizationDetails(HttpServletRequest request, Model model) {
+        String organizationIdParameter = request.getParameter("organizationId");
+        int organizationId = Integer.parseInt(organizationIdParameter);
+
+        Organization organization = service.getOrganizationWithId(organizationId);
+        model.addAttribute("organization", organization);
+
+        return "organizationdetails";
+    }
+
+    @RequestMapping(value = "/deleteorganization", method = RequestMethod.GET)
+    public String deleteOrganization(HttpServletRequest request) {
+        String organizationIdParameter = request.getParameter("organizationId");
+        int organizationId = Integer.parseInt(organizationIdParameter);
+        
+        service.deleteOrganization(organizationId);
         
         return "redirect: organizations";
     }
+
 }
