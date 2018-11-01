@@ -23,12 +23,12 @@
             <form class="form-horizontal" role="form" method="POST" action="addSighting">
                 <div class="form-group">
                     <div class="col-md-6">
-                        <select id="superhumanList" class="form-control" name="superhumanList" multiple="multiple">
+                        <select id="superhumanList" class="form-control" name="heroId" multiple="multiple">
                             <option disabled="true">Select Superhuman</option>
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <select id="locationList" class="form-control" name="locationList" multiple="multiple" style=" float: right;">
+                        <select id="locationList" class="form-control" name="locationId" multiple="multiple" style=" float: right;">
                             <option disabled="true">Select Location</option>
                         </select>
                     </div>

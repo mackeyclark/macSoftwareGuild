@@ -1,0 +1,131 @@
+01-Nov-2018 00:09:17.567 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:09:19.275 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:09:19.333 INFO [http-nio-8080-exec-26] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:19:19.531 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:19:21.267 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:19:21.307 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:24:41.755 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:24:43.585 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:24:43.641 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:25:03.980 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:25:05.839 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:25:05.872 INFO [http-nio-8080-exec-57] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:25:08.900 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:25:10.818 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:25:10.862 INFO [http-nio-8080-exec-56] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:27:06.946 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:27:08.802 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:27:08.838 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:27:19.374 INFO [http-nio-8080-exec-63] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:27:20.923 INFO [http-nio-8080-exec-63] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:27:20.959 INFO [http-nio-8080-exec-63] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:27:28.172 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:27:29.802 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:27:29.837 INFO [http-nio-8080-exec-54] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:27:55.618 INFO [http-nio-8080-exec-67] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:27:57.352 INFO [http-nio-8080-exec-67] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:27:57.384 INFO [http-nio-8080-exec-67] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:28:31.952 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:28:33.660 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:28:33.693 INFO [http-nio-8080-exec-69] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:30:09.399 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:30:11.018 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:30:11.057 INFO [http-nio-8080-exec-70] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:31:31.124 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:31:32.740 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:31:32.785 INFO [http-nio-8080-exec-74] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:31:35.337 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:31:36.913 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:31:36.945 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:31:39.532 SEVERE [http-nio-8080-exec-71] org.apache.catalina.core.StandardContext.listenerStart Exception sending context initialized event to listener instance of class [org.springframework.web.context.ContextLoaderListener]
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'locationController' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\controller\LocationController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4745)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5207)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3800)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:346)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'superheroSightingsServiceImpl' defined in file [C:\Users\macam\Desktop\macameron-clark-individual-work\SuperHeroSightings\target\spring-mvc-webapp\WEB-INF\classes\com\sg\superherosightings\service\SuperheroSightingsServiceImpl.class]: Bean instantiation via constructor failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:279)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 50 more
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:142)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:271)
+	... 63 more
+Caused by: java.lang.RuntimeException: Uncompilable source code - com.sg.superherosightings.service.SuperheroSightingsServiceImpl is not abstract and does not override abstract method addSighting(com.sg.superherosightings.model.Sighting) in com.sg.superherosightings.service.SuperheroSightingsService
+	at com.sg.superherosightings.service.SuperheroSightingsServiceImpl.<clinit>(SuperheroSightingsServiceImpl.java:22)
+	... 70 more
+
+01-Nov-2018 00:31:39.533 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:36:28.390 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:36:28.422 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:36:32.107 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:36:33.881 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:36:33.917 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:36:44.571 INFO [http-nio-8080-exec-82] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+01-Nov-2018 00:38:58.124 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+01-Nov-2018 00:38:58.158 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+01-Nov-2018 00:43:00.944 INFO [http-nio-8080-exec-95] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

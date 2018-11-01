@@ -50,6 +50,10 @@
                             <th width="10%"></th>
                             <th width="10%"></th>
                         </tr>
+                        <c:forEach var="currentSighting" items="${sightingList}">
+                            <tr>
+                            </tr>
+                        </c:forEach>
                     </table>
                 </div>
             </div>

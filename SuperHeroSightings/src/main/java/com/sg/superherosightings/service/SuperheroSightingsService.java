@@ -8,6 +8,7 @@ package com.sg.superherosightings.service;
 import com.sg.superherosightings.model.Location;
 import com.sg.superherosightings.model.Organization;
 import com.sg.superherosightings.model.Power;
+import com.sg.superherosightings.model.Sighting;
 import com.sg.superherosightings.model.Superhuman;
 import java.util.List;
 
@@ -50,5 +51,9 @@ public interface SuperheroSightingsService {
     public void deleteLocation(int locationId);
 
     public Location getLocationWithId(int locationId);
+
+    public List<Sighting> getAllSightings();
+
+    public void addSighting(Sighting sighting);
     
 }

@@ -16,8 +16,8 @@ public class Sighting {
     
     private int sightingId;
     private LocalDate date;
-    private Superhuman superhuman;
-    private Location location;
+    private int heroId;
+    private int locationId;
 
     public int getSightingId() {
         return sightingId;
@@ -35,29 +35,29 @@ public class Sighting {
         this.date = date;
     }
 
-    public Superhuman getSuperhuman() {
-        return superhuman;
+    public int getHeroId() {
+        return heroId;
     }
 
-    public void setSuperhuman(Superhuman superhuman) {
-        this.superhuman = superhuman;
+    public void setHeroId(int heroId) {
+        this.heroId = heroId;
     }
 
-    public Location getLocation() {
-        return location;
+    public int getLocationId() {
+        return locationId;
     }
 
-    public void setLocation(Location location) {
-        this.location = location;
+    public void setLocationId(int locationId) {
+        this.locationId = locationId;
     }
 
     @Override
     public int hashCode() {
-        int hash = 3;
-        hash = 31 * hash + this.sightingId;
-        hash = 31 * hash + Objects.hashCode(this.date);
-        hash = 31 * hash + Objects.hashCode(this.superhuman);
-        hash = 31 * hash + Objects.hashCode(this.location);
+        int hash = 7;
+        hash = 29 * hash + this.sightingId;
+        hash = 29 * hash + Objects.hashCode(this.date);
+        hash = 29 * hash + this.heroId;
+        hash = 29 * hash + this.locationId;
         return hash;
     }
 
@@ -76,13 +76,13 @@ public class Sighting {
         if (this.sightingId != other.sightingId) {
             return false;
         }
+        if (this.heroId != other.heroId) {
+            return false;
+        }
+        if (this.locationId != other.locationId) {
+            return false;
+        }
         if (!Objects.equals(this.date, other.date)) {
-            return false;
-        }
-        if (!Objects.equals(this.superhuman, other.superhuman)) {
-            return false;
-        }
-        if (!Objects.equals(this.location, other.location)) {
             return false;
         }
         return true;

@@ -138,7 +138,16 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public void addSighting(Sighting sighting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String INSERT_SIGHTING = "insert into sightings(date, heroId, locationId) values (?, ?, ?)";
+        
+        jdbcTemplate.update(INSERT_SIGHTING, 
+                sighting.getDate(),
+                sighting.getHeroId(),
+                sighting.getLocationId());
+        
+        int sightingId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+        
+        sighting.setSightingId(sightingId);
     }
 
     @Override
@@ -158,7 +167,9 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public List<Sighting> getAllSightings() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String SELECT_ALL_SIGHTINGS = "select * from sightings";
+
+        return jdbcTemplate.query(SELECT_ALL_SIGHTINGS, new SightingMapper());
     }
 
     @Override
@@ -302,7 +313,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     @Override
     public Location getLocationWithId(int locationId) {
         final String SELECT_LOCATION = "select * from locations where locationId = ?";
-        
+
         try {
             return jdbcTemplate.queryForObject(SELECT_LOCATION, new LocationMapper(), locationId);
         } catch (EmptyResultDataAccessException ex) {

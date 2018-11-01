@@ -212,14 +212,14 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     @Override
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addSighting(Sighting sighting) {
-        jdbcTemplate.update(SQL_INSERT_SIGHTING,
-                sighting.getDate().toString(),
-                sighting.getSuperhuman().getHeroId(),
-                sighting.getLocation().getLocationId());
-
-        int sightingId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
-
-        sighting.setSightingId(sightingId);
+//        jdbcTemplate.update(SQL_INSERT_SIGHTING,
+//                sighting.getDate().toString(),
+////                sighting.getSuperhuman().getHeroId(),
+////                sighting.getLocation().getLocationId());
+//
+////        int sightingId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+//
+////        sighting.setSightingId(sightingId);
     }
 
     @Override
@@ -233,8 +233,8 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
     public void updateSighting(Sighting sighting) {
         jdbcTemplate.update(SQL_UPDATE_SIGHTING,
                 sighting.getDate().toString(),
-                sighting.getSuperhuman().getHeroId(),
-                sighting.getLocation().getLocationId(),
+//                sighting.getSuperhuman().getHeroId(),
+//                sighting.getLocation().getLocationId(),
                 sighting.getSightingId());
 
     }

@@ -9,6 +9,7 @@ import com.sg.superherosightings.dao.SuperheroSightingsDao;
 import com.sg.superherosightings.model.Location;
 import com.sg.superherosightings.model.Organization;
 import com.sg.superherosightings.model.Power;
+import com.sg.superherosightings.model.Sighting;
 import com.sg.superherosightings.model.Superhuman;
 import java.util.List;
 import javax.inject.Inject;
@@ -111,6 +112,16 @@ public class SuperheroSightingsServiceImpl implements SuperheroSightingsService 
     @Override
     public Location getLocationWithId(int locationId) {
         return dao.getLocationWithId(locationId);
+    }
+
+    @Override
+    public List<Sighting> getAllSightings() {
+        return dao.getAllSightings();
+    }
+
+    @Override
+    public void addSighting(Sighting sighting) {
+        dao.addSighting(sighting);
     }
     
 }
