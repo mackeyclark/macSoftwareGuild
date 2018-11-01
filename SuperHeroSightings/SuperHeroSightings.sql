@@ -17,7 +17,7 @@ create table if not exists `Organizations` (
 `Name` varchar(35) not null,
 `Description` varchar(100),
 `Address` varchar(50),
-`Phone` varchar(10),
+`Phone` varchar(15),
 `Email` varchar(50),
 primary key (`OrganizationId`)
 ) engine=InnoDB default charset=latin1 auto_increment=1;

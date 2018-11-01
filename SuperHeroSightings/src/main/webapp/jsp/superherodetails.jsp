@@ -28,7 +28,7 @@
                 <div class="col-md-6">
                     <ul>
                         <li>Powers</li>
-                        <c:forEach var="currentPowers" items="${heroPowers}">
+                        <c:forEach var="currentPower" items="${heroPowers}">
                             <c:out value="${currentPower.name}"/>
                         </c:forEach>
                     </ul>

@@ -261,9 +261,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public List<Organization> getOrganizationsOfSuperhuman(int heroId) {
-        final String SELECT_ORGANIZATIONS_BY_HERO_ID = "select o.name, o.description, o.address, o. phone, "
-                + "o.email from organizations o join superhumansorganizations so on o.organizationId = so.organizationId "
-                + "where so.heroId = ?";
+        final String SELECT_ORGANIZATIONS_BY_HERO_ID = "select * from organizations where organizationId in (select organizationId from superhumansorganizations where heroId = ?)";
 
         return jdbcTemplate.query(SELECT_ORGANIZATIONS_BY_HERO_ID, new OrganizationMapper(), heroId);
     }
@@ -325,8 +323,7 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public List<Power> getPowersOfHero(int heroId) {
-        final String SELECT_POWERS_BY_HERO_ID = "select p.powerId, p.name, p.description from powers p "
-                + "join superhumanspowers sp on p.powerId = sp.powerId where sp.heroId = ?";
+        final String SELECT_POWERS_BY_HERO_ID = "select * from powers where powerId in (select powerId from superhumanspowers where heroId = ?)";
 
         return jdbcTemplate.query(SELECT_POWERS_BY_HERO_ID, new PowerMapper(), heroId);
     }
