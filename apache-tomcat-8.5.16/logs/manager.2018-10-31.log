@@ -488,3 +488,50 @@
 31-Oct-2018 21:04:46.206 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context1923080311319672373.xml'
 31-Oct-2018 21:04:49.357 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/SuperHeroSightings'
 31-Oct-2018 21:11:21.493 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Oct-2018 21:30:25.427 INFO [http-nio-8080-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Oct-2018 21:30:25.568 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/SuperHeroSightings'
+31-Oct-2018 21:30:55.234 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Oct-2018 21:30:55.265 INFO [http-nio-8080-exec-32] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/SuperHeroSightings'
+31-Oct-2018 21:30:55.265 SEVERE [http-nio-8080-exec-32] org.apache.catalina.core.ApplicationContext.log Manager: ManagerServlet.reload[/SuperHeroSightings]
+ java.lang.IllegalStateException: Context with name [/SuperHeroSightings] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3782)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:1006)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:346)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:595)
+	at org.apache.catalina.valves.RequestFilterValve.process(RequestFilterValve.java:319)
+	at org.apache.catalina.valves.RemoteAddrValve.invoke(RemoteAddrValve.java:88)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:624)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+31-Oct-2018 21:37:46.336 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Oct-2018 21:37:46.336 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Oct-2018 21:37:46.352 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/SuperHeroSightings'
+31-Oct-2018 21:37:46.883 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: install: Installing context configuration at 'file:/C:/Users/macam/AppData/Local/Temp/context189434387513119642.xml'
+31-Oct-2018 21:37:49.857 INFO [http-nio-8080-exec-40] org.apache.catalina.core.ApplicationContext.log Manager: start: Starting web application '/SuperHeroSightings'
+31-Oct-2018 21:41:03.455 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+31-Oct-2018 21:41:03.487 INFO [http-nio-8080-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: restart: Reloading web application '/SuperHeroSightings'
+31-Oct-2018 21:41:58.815 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'

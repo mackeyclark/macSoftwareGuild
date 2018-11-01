@@ -53,4 +53,14 @@ public class PowerController {
         
         return "redirect: powerlist";
     }
+    
+    @RequestMapping(value = "/deletepower", method = RequestMethod.GET)
+    public String deletePower(HttpServletRequest request) {
+        String powerIdParameter = request.getParameter("powerId");
+        int powerId = Integer.parseInt(powerIdParameter);
+        
+        service.deletePower(powerId);
+        
+        return "redirect: powerlist";
+    }
 }

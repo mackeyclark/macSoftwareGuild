@@ -61,7 +61,7 @@
                                     Edit
                                 </td>
                                 <td>
-                                    Delete
+                                    <a href="deletepower?powerId=${currentPower.powerId}">Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>

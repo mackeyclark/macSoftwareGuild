@@ -5,9 +5,14 @@
  */
 package com.sg.superherosightings.controller;
 
-import com.sg.superherosightings.dao.SuperheroSightingsDao;
+import com.sg.superherosightings.model.Location;
+import com.sg.superherosightings.service.SuperheroSightingsService;
+import java.math.BigDecimal;
+import java.util.List;
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -18,21 +23,53 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LocationController {
     
-    SuperheroSightingsDao dao;
+    SuperheroSightingsService service;
     
     @Inject
-    public LocationController(SuperheroSightingsDao dao) {
-        this.dao = dao;
+    public LocationController(SuperheroSightingsService service) {
+        this.service = service;
     }
     
     @RequestMapping(value = "/locations", method = RequestMethod.GET)
-    public String displayLocationPage() {
+    public String displayLocationPage(Model model) {
+        
+        List<Location> locationList = service.getAllLocations();
+        model.addAttribute("locationList", locationList);
+        
         return "locations";
     }
     
     @RequestMapping(value = "/createlocation", method = RequestMethod.GET)
     public String displayCreateLocationPage() {
         return "createlocation";
+    }
+    
+    @RequestMapping(value = "/addlocation", method = RequestMethod.POST)
+    public String addLocation(HttpServletRequest request) {
+        Location location = new Location();
+        location.setName(request.getParameter("name"));
+        location.setDescription(request.getParameter("description"));
+        location.setAddress(request.getParameter("address"));
+        
+        String latitude = request.getParameter("latitude");
+        location.setLatitude(new BigDecimal(latitude));
+        
+        String longitude = request.getParameter("longitude");
+        location.setLongitude(new BigDecimal(longitude));
+        
+        service.addLocation(location);
+        
+        return "redirect: locations";
+    }
+    
+    @RequestMapping(value = "/deletelocation", method = RequestMethod.GET)
+    public String deleteLocation(HttpServletRequest request) {
+        String locationIdParameter = request.getParameter("locationId");
+        int locationId = Integer.parseInt(locationIdParameter);
+        
+        service.deleteLocation(locationId);
+        
+        return "redirect: locations";
     }
     
 }

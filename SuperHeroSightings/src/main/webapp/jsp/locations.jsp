@@ -39,21 +39,34 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Locations <a href="${pageContext.request.contextPath}/createlocation" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new location</a></h2>
-                <table id="locationTable" class="table table-striped">
-                    <tr>
-                        <th width="10%">Name</th>
-                        <th width="25%">Description</th>
-                        <th width="25%">Address</th>
-                        <th width="10%">Latitude</th>
-                        <th width="10%">Longitude</th>
-                        <th width="10%"></th>
-                        <th width="10%"></th>
-                    </tr>
-                </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Locations <a href="${pageContext.request.contextPath}/createlocation" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new location</a></h2>
+                    <table id="locationTable" class="table table-striped">
+                        <tr>
+                            <th width="70%">Name</th>
+                            <th width="10%"></th>
+                            <th width="10%"></th>
+                            <th></th>
+                        </tr>
+                        <c:forEach var="currentLocation" items="${locationList}">
+                            <tr>
+                                <td>
+                                    <c:out value="${currentLocation.name}"/>
+                                </td>
+                                <td>
+                                    Details
+                                </td>
+                                <td>
+                                    Edit
+                                </td>
+                                <td>
+                                    <a href="deletelocation?locationId=${currentLocation.locationId}">Delete</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                    </table>
+                </div>
             </div>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->

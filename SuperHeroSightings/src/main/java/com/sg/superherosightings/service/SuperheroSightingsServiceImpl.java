@@ -6,6 +6,7 @@
 package com.sg.superherosightings.service;
 
 import com.sg.superherosightings.dao.SuperheroSightingsDao;
+import com.sg.superherosightings.model.Location;
 import com.sg.superherosightings.model.Organization;
 import com.sg.superherosightings.model.Power;
 import com.sg.superherosightings.model.Superhuman;
@@ -85,6 +86,26 @@ public class SuperheroSightingsServiceImpl implements SuperheroSightingsService 
     @Override
     public void deleteOrganization(int organizationId) {
         dao.deleteOrganization(organizationId);
+    }
+
+    @Override
+    public List<Location> getAllLocations() {
+        return dao.getAllLocations();
+    }
+
+    @Override
+    public void addLocation(Location location) {
+        dao.addLocation(location);
+    }
+
+    @Override
+    public void deletePower(int powerId) {
+        dao.deletePower(powerId);
+    }
+
+    @Override
+    public void deleteLocation(int locationId) {
+        dao.deleteLocation(locationId);
     }
     
 }

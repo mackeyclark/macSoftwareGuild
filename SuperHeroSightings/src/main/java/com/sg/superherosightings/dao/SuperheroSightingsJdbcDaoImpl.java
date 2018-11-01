@@ -187,7 +187,9 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     @Override
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deletePower(int powerId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String DELETE_POWER = "delete from powers where powerId = ?";
+
+        jdbcTemplate.update(DELETE_POWER, powerId);
     }
 
     @Override
@@ -267,16 +269,32 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void addLocation(Location location) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String INSERT_LOCATION = "insert into locations(name, description, address, latitude, longitude) values (?, ?, ?, ?, ?)";
+
+        jdbcTemplate.update(INSERT_LOCATION,
+                location.getName(),
+                location.getDescription(),
+                location.getAddress(),
+                location.getLatitude(),
+                location.getLongitude());
+
+        int locationId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+
+        location.setLocationId(locationId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void deleteLocation(int locationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String DELETE_LOCATION = "delete from locations where locationId = ?";
+
+        jdbcTemplate.update(DELETE_LOCATION, locationId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updateLocation(Location location) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -288,7 +306,9 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public List<Location> getAllLocations() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String SELECT_ALL_LOCATIONS = "select * from locations";
+
+        return jdbcTemplate.query(SELECT_ALL_LOCATIONS, new LocationMapper());
     }
 
     @Override
