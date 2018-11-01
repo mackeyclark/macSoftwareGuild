@@ -58,7 +58,7 @@
                                     <c:out value="${currentPower.description}"/>
                                 </td>
                                 <td>
-                                    Edit
+                                    <a href="editpowerform?powerId=${currentPower.powerId}">Edit</a>
                                 </td>
                                 <td>
                                     <a href="deletepower?powerId=${currentPower.powerId}">Delete</a>

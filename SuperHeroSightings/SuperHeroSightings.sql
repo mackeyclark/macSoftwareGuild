@@ -48,8 +48,8 @@ create table if not exists `Locations` (
 `Name` varchar(30) not null,
 `Description` varchar(100),
 `Address` varchar(50),
-`Latitude` decimal(2,2) not null,
-`Longitude` decimal(3,2) not null,
+`Latitude` varchar(10) not null,
+`Longitude` varchar(10) not null,
 primary key (`LocationId`)
 ) engine=InnoDB default charset=latin1 auto_increment=1;
 

@@ -55,5 +55,9 @@ public interface SuperheroSightingsService {
     public List<Sighting> getAllSightings();
 
     public void addSighting(Sighting sighting);
+
+    public Power getPowerWithId(int powerId);
+
+    public void editPower(Power power);
     
 }

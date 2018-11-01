@@ -527,8 +527,8 @@ public class SuperheroSightingsDaoJdbcTemplateImpl implements SuperheroSightings
             l.setName(rs.getString("name"));
             l.setDescription(rs.getString("description"));
             l.setAddress(rs.getString("address"));
-            l.setLatitude(rs.getBigDecimal("latitude"));
-            l.setLongitude(rs.getBigDecimal("longitude"));
+            l.setLatitude(rs.getString("latitude"));
+            l.setLongitude(rs.getString("longitude"));
             l.setLocationId(rs.getInt("locationId"));
             return l;
         }

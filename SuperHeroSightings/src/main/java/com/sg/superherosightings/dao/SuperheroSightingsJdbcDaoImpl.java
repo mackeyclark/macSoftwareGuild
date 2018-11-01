@@ -139,14 +139,14 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     @Override
     public void addSighting(Sighting sighting) {
         final String INSERT_SIGHTING = "insert into sightings(date, heroId, locationId) values (?, ?, ?)";
-        
-        jdbcTemplate.update(INSERT_SIGHTING, 
+
+        jdbcTemplate.update(INSERT_SIGHTING,
                 sighting.getDate(),
                 sighting.getHeroId(),
                 sighting.getLocationId());
-        
+
         int sightingId = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
-        
+
         sighting.setSightingId(sightingId);
     }
 
@@ -206,12 +206,25 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
     @Override
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void updatePower(Power power) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String UPDATE_POWER = "update powers set name = ?, description = ? where powerId = ?";
+
+        jdbcTemplate.update(UPDATE_POWER,
+                power.getName(),
+                power.getDescription(),
+                power.getPowerId());
+
     }
 
     @Override
     public Power getPowerWithId(int powerId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String SELECT_POWER = "select * from powers where powerId = ?";
+
+        try {
+            return jdbcTemplate.queryForObject(SELECT_POWER, new PowerMapper(), powerId);
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
+
     }
 
     @Override
@@ -428,8 +441,8 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
             l.setName(rs.getString("name"));
             l.setDescription(rs.getString("description"));
             l.setAddress(rs.getString("address"));
-            l.setLatitude(rs.getBigDecimal("latitude"));
-            l.setLongitude(rs.getBigDecimal("longitude"));
+            l.setLatitude(rs.getString("latitude"));
+            l.setLongitude(rs.getString("longitude"));
             l.setLocationId(rs.getInt("locationId"));
             return l;
         }

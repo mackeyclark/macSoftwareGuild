@@ -123,5 +123,15 @@ public class SuperheroSightingsServiceImpl implements SuperheroSightingsService 
     public void addSighting(Sighting sighting) {
         dao.addSighting(sighting);
     }
+
+    @Override
+    public Power getPowerWithId(int powerId) {
+        return dao.getPowerWithId(powerId);
+    }
+
+    @Override
+    public void editPower(Power power) {
+        dao.updatePower(power);
+    }
     
 }

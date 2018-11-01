@@ -50,19 +50,15 @@ public class LocationController {
         location.setName(request.getParameter("name"));
         location.setDescription(request.getParameter("description"));
         location.setAddress(request.getParameter("address"));
-
-        String latitude = request.getParameter("latitude");
-        location.setLatitude(new BigDecimal(latitude));
-
-        String longitude = request.getParameter("longitude");
-        location.setLongitude(new BigDecimal(longitude));
+        location.setLatitude(request.getParameter("latitude"));
+        location.setLongitude(request.getParameter("longitude"));
 
         service.addLocation(location);
 
         return "redirect: locations";
     }
 
-    @RequestMapping(value = "/deletelocation", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/deletelocation", method = RequestMethod.GET)
     public String deleteLocation(HttpServletRequest request) {
         String locationIdParameter = request.getParameter("locationId");
         int locationId = Integer.parseInt(locationIdParameter);
