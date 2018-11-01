@@ -55,7 +55,7 @@
                                     <c:out value="${currentLocation.name}"/>
                                 </td>
                                 <td>
-                                    Details
+                                    <a href="displaylocationdetails?locationId=${currentLocation.locationId}">Details</a>
                                 </td>
                                 <td>
                                     Edit

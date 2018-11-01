@@ -301,7 +301,13 @@ public class SuperheroSightingsJdbcDaoImpl implements SuperheroSightingsDao {
 
     @Override
     public Location getLocationWithId(int locationId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        final String SELECT_LOCATION = "select * from locations where locationId = ?";
+        
+        try {
+            return jdbcTemplate.queryForObject(SELECT_LOCATION, new LocationMapper(), locationId);
+        } catch (EmptyResultDataAccessException ex) {
+            return null;
+        }
     }
 
     @Override

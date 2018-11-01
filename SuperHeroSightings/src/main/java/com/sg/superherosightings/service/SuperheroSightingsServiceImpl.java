@@ -107,5 +107,10 @@ public class SuperheroSightingsServiceImpl implements SuperheroSightingsService 
     public void deleteLocation(int locationId) {
         dao.deleteLocation(locationId);
     }
+
+    @Override
+    public Location getLocationWithId(int locationId) {
+        return dao.getLocationWithId(locationId);
+    }
     
 }

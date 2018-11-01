@@ -48,5 +48,7 @@ public interface SuperheroSightingsService {
     public void deletePower(int powerId);
 
     public void deleteLocation(int locationId);
+
+    public Location getLocationWithId(int locationId);
     
 }

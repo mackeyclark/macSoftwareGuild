@@ -39,19 +39,19 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>All Sightings <a href="${pageContext.request.contextPath}/createsighting" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new Sighting</a></h2>
-                <table id="allSightingsTable" class="table table-striped">
-                    <tr>
-                        <th width="30%">Hero</th>
-                        <th width="30%">Location</th>
-                        <th width="30%">Date</th>
-                        <th width="5%"></th>
-                        <th width="5%"></th>
-                    </tr>
-                </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>All Sightings <a href="${pageContext.request.contextPath}/createsighting" class="btn btn-default" style=" vertical-align: middle; float: right;">Create new Sighting</a></h2>
+                    <table id="allSightingsTable" class="table table-striped">
+                        <tr>
+                            <th width="27%">Hero</th>
+                            <th width="27%">Location</th>
+                            <th width="27%">Date</th>
+                            <th width="10%"></th>
+                            <th width="10%"></th>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->

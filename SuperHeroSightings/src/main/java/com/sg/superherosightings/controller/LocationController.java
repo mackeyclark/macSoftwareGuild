@@ -22,54 +22,64 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class LocationController {
-    
+
     SuperheroSightingsService service;
-    
+
     @Inject
     public LocationController(SuperheroSightingsService service) {
         this.service = service;
     }
-    
+
     @RequestMapping(value = "/locations", method = RequestMethod.GET)
     public String displayLocationPage(Model model) {
-        
+
         List<Location> locationList = service.getAllLocations();
         model.addAttribute("locationList", locationList);
-        
+
         return "locations";
     }
-    
+
     @RequestMapping(value = "/createlocation", method = RequestMethod.GET)
     public String displayCreateLocationPage() {
         return "createlocation";
     }
-    
+
     @RequestMapping(value = "/addlocation", method = RequestMethod.POST)
     public String addLocation(HttpServletRequest request) {
         Location location = new Location();
         location.setName(request.getParameter("name"));
         location.setDescription(request.getParameter("description"));
         location.setAddress(request.getParameter("address"));
-        
+
         String latitude = request.getParameter("latitude");
         location.setLatitude(new BigDecimal(latitude));
-        
+
         String longitude = request.getParameter("longitude");
         location.setLongitude(new BigDecimal(longitude));
-        
+
         service.addLocation(location);
-        
+
         return "redirect: locations";
     }
-    
-    @RequestMapping(value = "/deletelocation", method = RequestMethod.GET)
+
+    @RequestMapping(value = "/deletelocation", method = RequestMethod.DELETE)
     public String deleteLocation(HttpServletRequest request) {
         String locationIdParameter = request.getParameter("locationId");
         int locationId = Integer.parseInt(locationIdParameter);
-        
+
         service.deleteLocation(locationId);
-        
+
         return "redirect: locations";
     }
-    
+
+    @RequestMapping(value = "/displaylocationdetails", method = RequestMethod.GET)
+    public String displayLocationDetails(HttpServletRequest request, Model model) {
+        String locationIdParameter = request.getParameter("locationId");
+        int locationId = Integer.parseInt(locationIdParameter);
+
+        Location location = service.getLocationWithId(locationId);
+        model.addAttribute("location", location);
+        
+        return "locationdetails";
+    }
 }
