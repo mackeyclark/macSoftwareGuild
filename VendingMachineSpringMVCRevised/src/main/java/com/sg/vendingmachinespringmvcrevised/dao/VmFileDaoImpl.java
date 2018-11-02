@@ -92,17 +92,24 @@ public class VmFileDaoImpl implements VmDao {
 
         for (Item currentItem : itemList) {
 
-            if (!currentItem.getName().equals(name)) {
-                try {
-                    FileWriter writer = new FileWriter(VmFile);
-                    PrintWriter pWriter = new PrintWriter(writer);
-                    
+            try {
+                FileWriter writer = new FileWriter(VmFile);
+                PrintWriter pWriter = new PrintWriter(writer);
+                if (!currentItem.getName().equals(name)) {
+
                     pWriter.println(currentItem.getId() + DELIMITER + currentItem.getName() + DELIMITER + currentItem.getPrice() + DELIMITER + currentItem.getInventory());
                     pWriter.flush();
-                } catch (IOException e) {
 
+                } else {
+                    int vendedItemInv = currentItem.getInventory() - 1;
+                    currentItem.setInventory(vendedItemInv);
+                    
+                    pWriter.print(currentItem.getId() + DELIMITER + currentItem.getName() + DELIMITER + currentItem.getPrice() + DELIMITER + currentItem.getInventory());
                 }
+            } catch (IOException e) {
+
             }
+            
         }
 
     }

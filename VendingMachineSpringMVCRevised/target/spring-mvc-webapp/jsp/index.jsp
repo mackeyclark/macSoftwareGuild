@@ -16,7 +16,7 @@
             <div class="col-md-8">
                 <div id="buttonDiv">
                     <c:forEach var="currentItem" items="${itemList}">
-                        <button type="button" class="btn btn-block" id="item" onclick="saveName('${currentItem.name}')">
+                        <button type="button" class="btn btn-block" id="item" onclick="saveName('${currentItem.name}'), saveId('${currentItem.id}'), savePrice('${currentItem.price}'), saveInventory('${currentItem.inventory}')">
                             <c:out value="${currentItem.name}"/>
                         </button>
                     </c:forEach>
@@ -26,7 +26,7 @@
                 <h2 class="text-center">Total $ in</h2>
                 <form role="form" id="vend" method="POST" action="venditem">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="total-inserted-display" placeholder="$0.00" readonly/>
+                        <input type="text" class="form-control" id="total-inserted-display" name="totalInserted" placeholder="$0.00" readonly/>
                         <div class="col-md-offset-3" id="add-money">
                             <div class="row">
                                 <button type="button" class="btn btn-default" id="add-dollar" onclick="addMoney(0)">Add Dollar</button>
@@ -48,7 +48,9 @@
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="itemName" name="itemName" readonly />
                         </div>
-                        <input type="hidden" class="form-control" value=""/>
+                        <input type="hidden" class="form-control" name="itemId"/>
+                        <input type="hidden" class="form-control" name="itemPrice"/>
+                        <input type="hidden" class="form-control" name="itemInventory"/>
                         <button type="submit" class="btn btn-default" id="make-purchase">Make Purchase</button>
                     </div>
                 </form>

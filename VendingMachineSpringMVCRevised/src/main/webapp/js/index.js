@@ -35,8 +35,20 @@ $('#add-nickel').click(function () {
     addMoney(0.05);
 });
 
+function saveId(id) {
+    $('#itemId').val(id);
+}
+
 function saveName(name) {
     $('#itemName').val(name);
+}
+
+function savePrice(price) {
+    $('#itemPrice').val(price);
+}
+
+function saveInventory(inventory) {
+    $('#itemInventory').val(inventory);
 }
 
 function clearMessages() {
