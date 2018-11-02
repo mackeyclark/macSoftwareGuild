@@ -10,15 +10,15 @@ package com.sg.vendingmachinespringmvcrevised.dto;
  * @author macam
  */
 public class Change {
-    
-        int dollars;
+
+    int dollars;
     int quarters;
     int dimes;
     int nickles;
     int pennies;
-    
-    public Change(int pennies){
-        
+
+    public Change(int pennies) {
+
         dollars = pennies / 100;
         pennies %= 100;
         quarters = pennies / 25;
@@ -49,6 +49,5 @@ public class Change {
     public int getPennies() {
         return pennies;
     }
-
 
 }

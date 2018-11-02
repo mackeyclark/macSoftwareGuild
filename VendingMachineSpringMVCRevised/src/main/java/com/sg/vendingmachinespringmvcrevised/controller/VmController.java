@@ -10,6 +10,7 @@ import com.sg.vendingmachinespringmvcrevised.dto.Item;
 import com.sg.vendingmachinespringmvcrevised.service.InsufficentFundsException;
 import com.sg.vendingmachinespringmvcrevised.service.NoItemInventoryException;
 import com.sg.vendingmachinespringmvcrevised.service.VmService;
+import java.math.BigDecimal;
 import java.util.List;
 import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
@@ -47,14 +48,20 @@ public class VmController {
         //create a new change objext once they've been validated
         String name = request.getParameter("itemName");
 
-        String change = request.getParameter("totalInserted");
-        int money = Integer.parseInt(change);
+        int money;
+        if (!request.getParameter("totalInserted").isEmpty()) {
+            String change = request.getParameter("totalInserted");
+            money = new BigDecimal(change).multiply(new BigDecimal(100)).intValue();
+        } else {
+            money = 0;
+        }
 
         String itemId = request.getParameter("itemId");
         int id = Integer.parseInt(itemId);
 
         String itemPrice = request.getParameter("itemPrice");
-        int price = Integer.parseInt(itemPrice);
+        
+        int price = new BigDecimal(itemPrice).multiply(new BigDecimal(100)).intValue();
 
         String itemInventory = request.getParameter("itemInventory");
         int inventory = Integer.parseInt(itemInventory);
@@ -65,8 +72,8 @@ public class VmController {
             Change returnChange = service.vend(money, item);
             model.addAttribute("returnChange", returnChange);
         } catch (InsufficentFundsException | NoItemInventoryException ex) {
-            String exception = ex.toString();
-            model.addAttribute("exception", exception);
+            String exceptionError = ex.getMessage();
+            model.addAttribute("exceptionError", exceptionError);
         }
 
         return "redirect: index";

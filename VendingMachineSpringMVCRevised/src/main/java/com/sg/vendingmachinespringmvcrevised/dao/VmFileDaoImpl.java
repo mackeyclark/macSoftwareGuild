@@ -89,12 +89,12 @@ public class VmFileDaoImpl implements VmDao {
     private void WriteVm(String name) {
 
         List<Item> itemList = this.getAllProducts();
+        try {
+            FileWriter writer = new FileWriter(VmFile);
+            PrintWriter pWriter = new PrintWriter(writer);
 
-        for (Item currentItem : itemList) {
+            for (Item currentItem : itemList) {
 
-            try {
-                FileWriter writer = new FileWriter(VmFile);
-                PrintWriter pWriter = new PrintWriter(writer);
                 if (!currentItem.getName().equals(name)) {
 
                     pWriter.println(currentItem.getId() + DELIMITER + currentItem.getName() + DELIMITER + currentItem.getPrice() + DELIMITER + currentItem.getInventory());
@@ -103,14 +103,18 @@ public class VmFileDaoImpl implements VmDao {
                 } else {
                     int vendedItemInv = currentItem.getInventory() - 1;
                     currentItem.setInventory(vendedItemInv);
-                    
-                    pWriter.print(currentItem.getId() + DELIMITER + currentItem.getName() + DELIMITER + currentItem.getPrice() + DELIMITER + currentItem.getInventory());
-                }
-            } catch (IOException e) {
 
+                    pWriter.println(currentItem.getId() + DELIMITER + currentItem.getName() + DELIMITER + currentItem.getPrice() + DELIMITER + currentItem.getInventory());
+                    pWriter.flush();
+
+                }
             }
             
+            pWriter.close();
+        } catch (IOException e) {
+
         }
 
     }
+
 }

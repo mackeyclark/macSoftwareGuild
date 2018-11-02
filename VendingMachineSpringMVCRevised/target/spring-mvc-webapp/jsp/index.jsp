@@ -41,8 +41,7 @@
                     <hr/>
                     <h2 class="text-center">Messages</h2>
                     <div class="form-group">
-                        
-                        <input type="text" class="form-control" id="messages-display" readonly />
+                        <input type="text" class="form-control" id="messages-display" value="${exceptionError}" readonly />
                         <label for="item-display" class="col-md-2 control-label">
                             <h4>Item:</h4>
                         </label>
@@ -59,7 +58,7 @@
                 <h2 class="text-center">Change</h2>
                 <form role="form" id="change">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="change-display" readonly />
+                        <input type="text" class="form-control" id="change-display" value="${returnChange}" readonly />
                         <button type="button" class="btn btn-default" id="cancel">Return Change</button>
                     </div>
                 </form>
