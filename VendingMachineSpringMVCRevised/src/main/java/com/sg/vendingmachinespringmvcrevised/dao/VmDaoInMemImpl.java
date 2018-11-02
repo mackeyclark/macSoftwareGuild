@@ -24,5 +24,9 @@ public class VmDaoInMemImpl implements VmDao {
     public List<Item> getAllProducts() {
         return new ArrayList<Item>(items.values());
     }
-    
+
+    @Override
+    public void saveItem(Item selectItem) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

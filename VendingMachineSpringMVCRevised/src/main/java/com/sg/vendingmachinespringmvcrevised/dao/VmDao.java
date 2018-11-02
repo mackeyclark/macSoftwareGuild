@@ -16,4 +16,7 @@ import java.util.List;
 public interface VmDao {
     
     public List<Item> getAllProducts();
+    
+    public void saveItem(Item selectItem);
+    
 }

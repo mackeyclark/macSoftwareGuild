@@ -9,6 +9,7 @@ import com.sg.vendingmachinespringmvcrevised.dao.VmDao;
 import com.sg.vendingmachinespringmvcrevised.dto.Item;
 import java.util.List;
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,6 +38,24 @@ public class VmController {
         
         return "index";
     }
+    
+        @RequestMapping(value="/venditem", method=RequestMethod.POST)
+    public String vendItem(HttpServletRequest request) {
+        //grab the incoming values of user change input and item input and
+        //create a new change objext once they've been validated
+        String name = request.getParameter("itemName");
+        
+        String change = request.getParameter("total-inserted-display");
+        int money = Integer.parseInt(change);
+        
+        
+        
+//        Item item = new Item();
+//        Change returnChange = service.vend(money ,item);
+        
+        return "redirect: index";
+    }
+
     
     
 }

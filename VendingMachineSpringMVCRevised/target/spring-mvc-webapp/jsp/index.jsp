@@ -16,7 +16,7 @@
             <div class="col-md-8">
                 <div id="buttonDiv">
                     <c:forEach var="currentItem" items="${itemList}">
-                        <button type="button" class="btn btn-block" id="item" onClick="itemSelect()">
+                        <button type="button" class="btn btn-block" id="item" onclick="saveName('${currentItem.name}')">
                             <c:out value="${currentItem.name}"/>
                         </button>
                     </c:forEach>
@@ -24,36 +24,32 @@
             </div>
             <div class="col-md-4">
                 <h2 class="text-center">Total $ in</h2>
-                <form role="form" id="money">
+                <form role="form" id="vend" method="POST" action="venditem">
                     <div class="form-group">
                         <input type="text" class="form-control" id="total-inserted-display" placeholder="$0.00" readonly/>
                         <div class="col-md-offset-3" id="add-money">
                             <div class="row">
-                                <button type="button" class="btn btn-default" id="add-dollar" value="1" onclick="addMoney()">Add Dollar</button>
-                                <button type="button" class="btn btn-default" id="add-quarter" value="0.25">Add Quarter</button>
+                                <button type="button" class="btn btn-default" id="add-dollar" onclick="addMoney(0)">Add Dollar</button>
+                                <button type="button" class="btn btn-default" id="add-quarter" onclick="addMoney(0)">Add Quarter</button>
                             </div>
                             <div class="row">
-                                <button type="button" class="btn btn-default" id="add-dime" value="0.1">Add Dime</button>
-                                <button type="button" class="btn btn-default" id="add-nickel" value="0.05">Add Nickel</button>
+                                <button type="button" class="btn btn-default" id="add-dime" onclick="addMoney(0)">Add Dime</button>
+                                <button type="button" class="btn btn-default" id="add-nickel" onclick="addMoney(0)">Add Nickel</button>
                             </div>
                         </div>
                     </div>
-                </form>
-                <hr/>
-                <h2 class="text-center">Messages</h2>
-                <form role="form" id="messages">
+                    <hr/>
+                    <h2 class="text-center">Messages</h2>
                     <div class="form-group">
                         <input type="text" class="form-control" id="messages-display" readonly />
                         <label for="item-display" class="col-md-2 control-label">
                             <h4>Item:</h4>
                         </label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" id="item-display" readonly />
+                            <input type="text" class="form-control" id="itemName" name="itemName" readonly />
                         </div>
-                        <form class="form-group" name="makePurchase" method="post" action="vendItem">
-                            <input type="hidden" class="form-control" value="${}"
-                            <button type="button" class="btn btn-default" id="make-purchase">Make Purchase</button>
-                        </form>
+                        <input type="hidden" class="form-control" value=""/>
+                        <button type="submit" class="btn btn-default" id="make-purchase">Make Purchase</button>
                     </div>
                 </form>
                 <hr />

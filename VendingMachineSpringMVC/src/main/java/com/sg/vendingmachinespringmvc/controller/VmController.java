@@ -6,6 +6,7 @@
 package com.sg.vendingmachinespringmvc.controller;
 
 import com.sg.vendingmachinespringmvc.dao.VmDao;
+import com.sg.vendingmachinespringmvc.dao.VmPersistenceException;
 import com.sg.vendingmachinespringmvc.model.Change;
 import com.sg.vendingmachinespringmvc.model.Item;
 import com.sg.vendingmachinespringmvc.service.VmService;
@@ -34,24 +35,26 @@ public class VmController {
     }
     
     @RequestMapping(value="/", method=RequestMethod.GET)
-    public String displayItems(Model model) {
+    public String displayItems(Model model) throws VmPersistenceException{
         //get all items from dao
         List<Item> itemList = dao.getProducts();
         
         model.addAttribute("itemList", itemList);
         
         return "index";
-        //do I have to build a button for each item here?
     }
     
-    @RequestMapping(value="/", method=RequestMethod.POST)
-    public String vendItem(HttpServletRequest request) {
+    @RequestMapping(value="/venditem", method=RequestMethod.POST)
+    public String vendItem(HttpServletRequest request) throws InsufficentFundsException, NoItemInventoryException, VmPersistenceException {
         //grab the incoming values of user change input and item input and
         //create a new change objext once they've been validated
-        Item item = new Item(request.getParameter(selectedItem));
         String change = request.getParameter("moneyIn");
         int money = Integer.parseInt(change);
-        Change returnChange = service.vend(money ,item);
+        
+        
+        
+//        Item item = new Item();
+//        Change returnChange = service.vend(money ,item);
         
         return "index";
     }
