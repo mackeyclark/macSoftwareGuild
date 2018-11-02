@@ -22,53 +22,54 @@ import org.springframework.web.bind.annotation.RequestMethod;
  *
  * @author macam
  */
-
 @Controller
 public class VmController {
-    
+
     VmService service;
-    
+
     @Inject
     public VmController(VmService service) {
         this.service = service;
     }
-    
-    @RequestMapping(value="/", method=RequestMethod.GET)
+
+    @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
     public String displayAllItems(Model model) {
         List<Item> itemList = service.getAllProducts();
-        
+
         model.addAttribute("itemList", itemList);
-        
+
         return "index";
     }
-    
-        @RequestMapping(value="/venditem", method=RequestMethod.POST)
+
+    @RequestMapping(value = "/venditem", method = RequestMethod.POST)
     public String vendItem(HttpServletRequest request, Model model) throws InsufficentFundsException, NoItemInventoryException {
         //grab the incoming values of user change input and item input and
         //create a new change objext once they've been validated
         String name = request.getParameter("itemName");
-        
+
         String change = request.getParameter("totalInserted");
         int money = Integer.parseInt(change);
-        
+
         String itemId = request.getParameter("itemId");
         int id = Integer.parseInt(itemId);
-        
+
         String itemPrice = request.getParameter("itemPrice");
         int price = Integer.parseInt(itemPrice);
-        
+
         String itemInventory = request.getParameter("itemInventory");
         int inventory = Integer.parseInt(itemInventory);
-        
+
         Item item = new Item(id, name, price, inventory);
-                
-        Change returnChange = service.vend(money ,item);
-        
-        model.addAttribute("returnChange", returnChange);
-        
+
+        try {
+            Change returnChange = service.vend(money, item);
+            model.addAttribute("returnChange", returnChange);
+        } catch (InsufficentFundsException | NoItemInventoryException ex) {
+            String exception = ex.toString();
+            model.addAttribute("exception", exception);
+        }
+
         return "redirect: index";
     }
 
-    
-    
 }

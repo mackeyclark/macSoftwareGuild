@@ -80,9 +80,9 @@ public class VmFileDaoImpl implements VmDao {
     }
 
     @Override
-    public void saveItem(Item selectItem) {
-        items.put(selectItem.getName(), selectItem);
-        String name = selectItem.getName();
+    public void saveItem(Item item) {
+        items.put(item.getName(), item);
+        String name = item.getName();
         WriteVm(name);
     }
 

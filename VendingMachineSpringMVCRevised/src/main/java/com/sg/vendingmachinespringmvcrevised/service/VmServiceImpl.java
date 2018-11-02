@@ -9,11 +9,13 @@ import com.sg.vendingmachinespringmvcrevised.dao.VmDao;
 import com.sg.vendingmachinespringmvcrevised.dto.Change;
 import com.sg.vendingmachinespringmvcrevised.dto.Item;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author macam
  */
+@Service
 public class VmServiceImpl implements VmService {
 
     VmDao dao;

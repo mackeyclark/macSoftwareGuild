@@ -17,7 +17,7 @@
                 <div id="buttonDiv">
                     <c:forEach var="currentItem" items="${itemList}">
                         <button type="button" class="btn btn-block" id="item" onclick="saveName('${currentItem.name}'), saveId('${currentItem.id}'), savePrice('${currentItem.price}'), saveInventory('${currentItem.inventory}')">
-                            <c:out value="${currentItem.name}"/>
+                            <c:out value="${currentItem.id}, ${currentItem.name}, ${currentItem.price}, ${currentItem.inventory}"/>
                         </button>
                     </c:forEach>
                 </div>
@@ -41,6 +41,7 @@
                     <hr/>
                     <h2 class="text-center">Messages</h2>
                     <div class="form-group">
+                        
                         <input type="text" class="form-control" id="messages-display" readonly />
                         <label for="item-display" class="col-md-2 control-label">
                             <h4>Item:</h4>
@@ -48,9 +49,9 @@
                         <div class="col-md-10">
                             <input type="text" class="form-control" id="itemName" name="itemName" readonly />
                         </div>
-                        <input type="hidden" class="form-control" name="itemId"/>
-                        <input type="hidden" class="form-control" name="itemPrice"/>
-                        <input type="hidden" class="form-control" name="itemInventory"/>
+                        <input type="hidden" class="form-control" id="itemId" name="itemId" value=""/>
+                        <input type="hidden" class="form-control" id="itemPrice" name="itemPrice" value=""/>
+                        <input type="hidden" class="form-control" id="itemInventory" name="itemInventory" value=""/>
                         <button type="submit" class="btn btn-default" id="make-purchase">Make Purchase</button>
                     </div>
                 </form>

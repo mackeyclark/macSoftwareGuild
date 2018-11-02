@@ -57,7 +57,7 @@ function clearMessages() {
 
 $('#cancel').click(function () {
     if (totalInserted > 0) {
-        $('#total-money-display').val('');
+        $('#total-inserted-display').val('');
         $('#change-display').val(totalInserted);
         totalInserted = 0;
     } else {
