@@ -1,0 +1,25 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+$('#getProduct').click(function() {
+    var id = $('#idInput').val();
+    //all valid ids in "avaliable_to_promised_network" should be attached to model on page
+    $.ajax({
+        type: 'GET',
+        url: 'http://redsky.target.com/v2/pdp/tcin/' + id,
+        success: function (itemArray) {
+            $.each(itemArray, function (item) {
+                var name = item.name;
+                //how do I get price from NoSQL DB?
+                $('#itemDisplayDiv').val(id + ' ' + name);
+            });
+        },
+        error: function (jsXHR, statusMessage, causeThrown) {
+            $('#itemDisplayDiv').append('Error calling webservice. Please try again later.');
+        }
+    });
+});
